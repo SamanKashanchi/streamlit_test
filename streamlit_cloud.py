@@ -22,7 +22,7 @@ def get_binary_file_downloader_html(file_path, file_label):
     return f'<a href="{href}" download="{file_label}">Download url {file_label}</a>'
 
 
-def split_video_into_chunks(video_path, chunk_duration=20):
+def split_video_into_chunks(video_path, chunk_duration):
     clip = VideoFileClip(video_path)
     total_duration = clip.duration
     chunks = []
@@ -58,7 +58,7 @@ if uploaded_file is not None:
 
 
             # Split the video into chunks
-            video_chunks = split_video_into_chunks(temp_file_path)
+            video_chunks = split_video_into_chunks(temp_file_path, chunk_size)
 
             # Provide download links for each chunk
             for i, chunk in enumerate(video_chunks):
