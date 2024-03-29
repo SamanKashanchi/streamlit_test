@@ -26,7 +26,7 @@ def split_video_into_chunks(video_path, chunk_duration):
     clip = VideoFileClip(video_path)
     total_duration = clip.duration
     chunks = []
-    for i in range(0, int(total_duration), chunk_duration):
+    for i in range(0, int(total_duration), int(chunk_duration)):
         start_time = i
         end_time = min(i + chunk_duration, total_duration)
         chunk = clip.subclip(start_time, end_time)
