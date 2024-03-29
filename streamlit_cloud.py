@@ -1,5 +1,7 @@
 import streamlit as st
-from moviepy.editor import VideoFileClip
+from moviepy.editor import VideoFileClip, AudioFileClip, clips_array, TextClip, CompositeVideoClip, concatenate_videoclips
+from moviepy.editor import *
+
 import os
 
 st.write('Hello world! How are yous. Its time to tawek over the world')
@@ -40,7 +42,7 @@ def main():
             # Save each segment to the user's desktop
             desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
             for i, segment in enumerate(segments):
-                segment_name = f"{os.path.splitext(uploaded_file.name)[0]}_{i}.mp4"
+                segment_name = str(i) + ".mp4"
                 segment_path = os.path.join(desktop_path, segment_name)
                 segment.write_videofile(segment_path)
             
