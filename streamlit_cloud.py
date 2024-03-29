@@ -16,7 +16,7 @@ def get_binary_file_downloader_html(file_path, file_label):
         data = f.read()
     b64 = base64.b64encode(data).decode()
     href = f'data:video/mp4;base64,{b64}'
-    return f'<a href="{href}" download="{file_label}">Download Chunk</a>'
+    return f'<a href="{href}" download="{file_label}">Download url {file_label}</a>'
 
 
 def split_video_into_chunks(video_path, chunk_duration=20):
@@ -55,6 +55,8 @@ if uploaded_file is not None:
             for i, chunk in enumerate(video_chunks):
                 chunk_file_path = f"{temp_file_path}_chunk_{i}.mp4"
                 chunk.write_videofile(chunk_file_path, codec="libx264", fps=24, audio_codec="aac")
+
+                st.text(f"Link for Video {i}: ")
                 st.markdown(get_binary_file_downloader_html(chunk_file_path, f"{file_name}_chunk_{i}.mp4"), unsafe_allow_html=True)
 
 
