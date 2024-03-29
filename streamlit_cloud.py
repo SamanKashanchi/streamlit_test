@@ -16,25 +16,42 @@ def get_binary_file_downloader_html(file_path, file_label):
         data = f.read()
     b64 = base64.b64encode(data).decode()
     href = f'data:video/mp4;base64,{b64}'
-    return f'<a href="{href}" download="{file_label}">Click here to download</a>'
+    return f'<a href="{href}" download="{file_label}">Download Chunk</a>'
+
+
+def split_video_into_chunks(video_path, chunk_duration=20):
+    clip = VideoFileClip(video_path)
+    total_duration = clip.duration
+    chunks = []
+    for i in range(0, int(total_duration), chunk_duration):
+        start_time = i
+        end_time = min(i + chunk_duration, total_duration)
+        chunk = clip.subclip(start_time, end_time)
+        chunks.append(chunk)
+    return chunks
 
 
 if uploaded_file is not None:
     st.video(uploaded_file)
 
-
-    file_content = uploaded_file.getvalue()
-    file_name = uploaded_file.name
-      
-   
+    if st.button("Split Video into Chunks"):
 
 
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_file:
-        temp_file.write(file_content)
+        file_content = uploaded_file.getvalue()
+          
 
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_file:
+            temp_file.write(file_content)
+            file_name = uploaded_file.name
 
-    st.markdown(get_binary_file_downloader_html(temp_file.name, file_name), unsafe_allow_html=True)
+            # Split the video into chunks
+            video_chunks = split_video_into_chunks(temp_file_path)
 
+            # Provide download links for each chunk
+            for i, chunk in enumerate(video_chunks):
+                chunk_file_path = f"{temp_file_path}_chunk_{i}.mp4"
+                chunk.write_videofile(chunk_file_path, codec="libx264", fps=24)
+                st.markdown(get_binary_file_downloader_html(chunk_file_path, f"{file_name}_chunk_{i}.mp4"), unsafe_allow_html=True)
 
 
 
