@@ -44,7 +44,7 @@ def main():
             # Save each segment to the user's desktop
             desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
             for i, segment in enumerate(segments):
-                segment_name = f"{os.path.splitext(uploaded_file.name)[0]}_{i}.mp4"
+                segment_name = f"{i}.mp4"
                 segment_path = os.path.join(desktop_path, segment_name)
                 segment.write_videofile(segment_path)
             
