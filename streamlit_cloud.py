@@ -34,7 +34,9 @@ def split_video_into_chunks(video_path, chunk_duration=20):
     return chunks
 
 st.subheader("Video Splitter")
-uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
+
+chunk_size = st.input("How many seconds do you want each chunk to be: ")
+uploaded_file = st.file_uploader("Upload a video and split into customizbale chunks: ", type=["mp4", "avi", "mov"])
 
 if uploaded_file is not None:
     st.video(uploaded_file)
