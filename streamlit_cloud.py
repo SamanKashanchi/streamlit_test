@@ -6,7 +6,7 @@ import base64
 import uuid
 
 st.set_page_config(
-    page_title="Shorts Video Editor",
+    page_title="Video Editor",
     page_icon="chart_with_upwards_trend",
     layout="wide",
 )
