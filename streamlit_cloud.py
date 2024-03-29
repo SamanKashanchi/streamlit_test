@@ -23,7 +23,10 @@ if uploaded_file is not None:
 
     # Move uploaded file to desktop
     desktop_file_path = os.path.join(desktop_dir, file_name)
-    os.rename(file_name, desktop_file_path)
 
-    st.info(f"File has been downloaded to your desktop.")
+    st.text(desktop_file_path)
+
+    # os.rename(file_name, desktop_file_path)
+
+    # st.info(f"File has been downloaded to your desktop.")
     
