@@ -16,9 +16,9 @@ def split_video_into_minutes(video_path):
     duration = clip.duration
     # Split the video into minute-long segments
     minute_segments = []
-    for i in range(0, int(duration // 60)):
-        start_time = i * 60
-        end_time = min((i + 1) * 60, duration)
+    for i in range(0, int(duration // 20)):
+        start_time = i * 20
+        end_time = min((i + 1) * 20, duration)
         segment = clip.subclip(start_time, end_time)
         minute_segments.append(segment)
     return minute_segments
