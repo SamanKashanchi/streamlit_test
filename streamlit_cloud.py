@@ -45,14 +45,17 @@ if uploaded_file is not None:
             file_name = uploaded_file.name
             temp_file_path = temp_file.name
 
-            # Split the video into chunks
-            video_chunks = split_video_into_chunks(temp_file_path)
+            st.markdown(get_binary_file_downloader_html(temp_file.name, file_name), unsafe_allow_html=True)
 
-            # Provide download links for each chunk
-            for i, chunk in enumerate(video_chunks):
-                chunk_file_path = f"{temp_file_path}_chunk_{i}.mp4"
-                chunk.write_videofile(chunk_file_path, codec="libx264", fps=24)
-                st.markdown(get_binary_file_downloader_html(chunk_file_path, f"{file_name}_chunk_{i}.mp4"), unsafe_allow_html=True)
+
+            # # Split the video into chunks
+            # video_chunks = split_video_into_chunks(temp_file_path)
+
+            # # Provide download links for each chunk
+            # for i, chunk in enumerate(video_chunks):
+            #     chunk_file_path = f"{temp_file_path}_chunk_{i}.mp4"
+            #     chunk.write_videofile(chunk_file_path, codec="libx264", fps=24)
+            #     st.markdown(get_binary_file_downloader_html(chunk_file_path, f"{file_name}_chunk_{i}.mp4"), unsafe_allow_html=True)
 
 
 
