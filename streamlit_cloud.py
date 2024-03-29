@@ -28,11 +28,12 @@ def main():
     
     uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
     
-     if uploaded_file is not None:
+    if uploaded_file is not None:
         st.video(uploaded_file)
         if st.button("Split Video and Save to Desktop"):
             # Create a temporary directory to store the video segments
-            temp_dir = tempfile.mkdtemp()
+            temp_dir = st._get_report_ctx().session_id
+            os.makedirs(temp_dir, exist_ok=True)
             video_path = os.path.join(temp_dir, uploaded_file.name)
             with open(video_path, "wb") as f:
                 f.write(uploaded_file.getvalue())
@@ -48,6 +49,6 @@ def main():
                 segment.write_videofile(segment_path)
             
             st.success("Video split and saved to desktop successfully!")
-
+            
 if __name__ == "__main__":
     main()
