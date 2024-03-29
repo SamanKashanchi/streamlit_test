@@ -26,4 +26,6 @@ def trim_video(input_file, duration=59):
         pass
 uploaded_file = st.file_uploader("Choose a file")
 
- 
+if uploaded_file is not None:
+    st.video(uploaded_file)
+
