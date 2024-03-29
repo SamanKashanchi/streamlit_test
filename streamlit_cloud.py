@@ -4,7 +4,6 @@ import os
 import tempfile
 
 st.write('Hello world! How are yous. Its time to tawek over the world')
-s
 
 uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
 
