@@ -6,10 +6,11 @@ import base64
 import uuid
 
 st.set_page_config(
-    page_title="Video Editor",
-    page_icon="chart_with_upwards_trend",
-    layout="wide",
+    page_title="Saman Portfolio",
+    page_icon="chart_with_upwards_trend"
 )
+
+st.title("Short Video Editor 🎬")
 uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
 
 
