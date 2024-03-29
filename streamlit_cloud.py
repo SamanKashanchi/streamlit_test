@@ -5,8 +5,11 @@ import tempfile
 import base64
 import uuid
 
-st.write('Hello world! How are yous. Its time to tawek over the world')
-
+st.set_page_config(
+    page_title="Shorts Video Editor",
+    page_icon="chart_with_upwards_trend",
+    layout="wide",
+)
 uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
 
 
