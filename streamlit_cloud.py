@@ -1,31 +1,50 @@
 import streamlit as st
+from moviepy.editor import VideoFileClip
+import os
 
 st.write('Hello world! How are yous. Its time to tawek over the world')
 
 
 
-def trim_video(input_file, duration=59):
+def split_video_into_minutes(video_path):
+    # Load the video clip
+    clip = VideoFileClip(video_path)
+    duration = clip.duration
+    # Split the video into minute-long segments
+    minute_segments = []
+    for i in range(0, int(duration // 60)):
+        start_time = i * 60
+        end_time = min((i + 1) * 60, duration)
+        segment = clip.subclip(start_time, end_time)
+        minute_segments.append(segment)
+    return minute_segments
 
-    try:
-        clip = VideoFileClip(input_file)
-    except:
-        st.text("FAILD AT READING THE VIDEO FROM TRIMING")
+def main():
+    st.title("Video Uploader and Splitter App")
+    
+    uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi", "mov"])
+    
+    if uploaded_file is not None:
+        st.video(uploaded_file)
+        if st.button("Split Video and Save to Desktop"):
+            # Create a temporary directory to store the video segments
+            temp_dir = st._get_report_ctx().session_id
+            os.makedirs(temp_dir, exist_ok=True)
+            video_path = os.path.join(temp_dir, uploaded_file.name)
+            with open(video_path, "wb") as f:
+                f.write(uploaded_file.getvalue())
 
-    if clip.duration > 59:
-        st.text(clip.duration)
-        st.text("Original duration.")
-        st.text("MAKING TRIMED VID")
-        st.text(input_file)
-        st.text("^^^the fucken input file")
-        New_input_file = input_file[:-4] + "_" + '.mp4'
-        clip = clip.subclip(0, duration)
-        clip.write_videofile(New_input_file, codec="libx264", audio_codec="aac")
-        clip.close()
-        os.remove(input_file)
-    else:
-        pass
-uploaded_file = st.file_uploader("Choose a file")
+            # Split the video into minute-long segments
+            segments = split_video_into_minutes(video_path)
+            
+            # Save each segment to the user's desktop
+            desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+            for i, segment in enumerate(segments):
+                segment_name = f"{os.path.splitext(uploaded_file.name)[0]}_{i}.mp4"
+                segment_path = os.path.join(desktop_path, segment_name)
+                segment.write_videofile(segment_path)
+            
+            st.success("Video split and saved to desktop successfully!")
 
-if uploaded_file is not None:
-    st.video(uploaded_file)
-
+if __name__ == "__main__":
+    main()
