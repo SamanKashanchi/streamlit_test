@@ -49,7 +49,7 @@ if uploaded_file is not None:
         file_content = uploaded_file.getvalue()
           
 
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".mov") as temp_file:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_file:
             temp_file.write(file_content)
             file_name = uploaded_file.name
             temp_file_path = temp_file.name
