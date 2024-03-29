@@ -34,7 +34,7 @@ def split_video_into_chunks(video_path, chunk_duration=20):
         chunks.append(chunk)
     return chunks
 
-
+st.subheader("Video Splitter")
 if uploaded_file is not None:
     st.video(uploaded_file)
 
