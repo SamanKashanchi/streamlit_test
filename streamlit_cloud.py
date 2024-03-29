@@ -43,6 +43,7 @@ if uploaded_file is not None:
         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_file:
             temp_file.write(file_content)
             file_name = uploaded_file.name
+            temp_file_path = temp_file.name
 
             # Split the video into chunks
             video_chunks = split_video_into_chunks(temp_file_path)
