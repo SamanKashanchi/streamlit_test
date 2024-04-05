@@ -33,6 +33,28 @@ def split_video_into_chunks(video_path, chunk_duration):
         chunks.append(chunk)
     return chunks
 
+
+def get_frames(video_path, output_folder, num_frames):
+
+    clip = VideoFileClip(video_path)
+
+    duration = clip.duration
+
+    interval = duration / num_frames
+
+    # Create output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    for i in range(num_frames):
+        t = i * interval
+        frame = clip.get_frame(t)
+        frame_filename = os.path.join(output_folder, f"frame_{i+1:05d}.jpg")
+        frame.save(frame_filename)
+        print(f"Saved frame {i+1} at time {t:.2f} seconds")
+
+    print("Frames extraction completed.")
+
+
 st.markdown("---")
 
 
@@ -69,6 +91,28 @@ if uploaded_file is not None:
 
                 st.text(f"Link for Video {i}: ")
                 st.markdown(get_binary_file_downloader_html(chunk_file_path, f"{file_name}_chunk_{i}.mp4"), unsafe_allow_html=True)
+
+
+st.subheader("Make Image data set")
+
+uploaded_file = st.file_uploader("Upload a video file", type=["mp4", "avi", "mov"])
+
+if uploaded_file is not None:
+    # Save the uploaded video to a temporary location
+    with st.spinner("Saving uploaded video..."):
+        temp_video_path = os.path.join("/tmp", uploaded_file.name)
+        with open(temp_video_path, "wb") as f:
+            f.write(uploaded_file.getvalue())
+
+    # Get the folder name from the user
+    output_folder = st.text_input("Enter the folder name to save frames:", "frames")
+    num_frames = st.text_input("Enter the number of frames to be extracted:", "frames")
+
+
+    # Button to trigger frame extraction
+    if st.button("Extract Frames"):
+        # Save frames to the specified folder
+        get_frames(temp_video_path, output_folder, num_frames)
 
 
 
