@@ -41,6 +41,8 @@ def get_frames(video_path, output_folder, num_frames):
     desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
     output_folder_path = os.path.join(desktop_path, output_folder)
 
+    st.text(output_folder_path)
+
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder_path):
         os.makedirs(output_folder_path)
