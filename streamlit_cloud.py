@@ -49,7 +49,7 @@ def get_frames(video_path, output_folder, num_frames):
         t = i * interval
         frame = clip.get_frame(t)
         frame_filename = os.path.join(output_folder, f"frame_{i+1:05d}.jpg")
-        frame.save(frame_filename)
+        frame.save_frame(frame_filename)
         print(f"Saved frame {i+1} at time {t:.2f} seconds")
 
     print("Frames extraction completed.")
