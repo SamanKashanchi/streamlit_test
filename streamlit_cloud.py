@@ -112,7 +112,7 @@ if uploaded_file is not None:
     # Button to trigger frame extraction
     if st.button("Extract Frames"):
         # Save frames to the specified folder
-        get_frames(temp_video_path, output_folder, num_frames)
+        get_frames(temp_video_path, output_folder, int(num_frames))
 
 
 
