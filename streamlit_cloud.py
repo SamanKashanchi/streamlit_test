@@ -41,11 +41,15 @@ def get_frames(video_path, output_folder, num_frames):
     desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
     output_folder_path = os.path.join(desktop_path, output_folder)
 
+
     st.text(output_folder_path)
+
+
 
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder_path):
         os.makedirs(output_folder_path)
+        st.text("Made directory")
 
     clip = VideoFileClip(video_path)
 
@@ -53,12 +57,9 @@ def get_frames(video_path, output_folder, num_frames):
 
     interval = duration / num_frames
 
-    # Create output folder if it doesn't exist
-    os.makedirs(output_folder, exist_ok=True)
-
     for i in range(num_frames):
         t = i * interval
-        frame_filename = os.path.join(output_folder, f"frame_{i+1:05d}.jpg")
+        frame_filename = os.path.join(output_folder_path, f"frame_{i+1:05d}.jpg")
 
         st.text(frame_filename)
         clip.save_frame(frame_filename, t)
