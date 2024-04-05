@@ -105,8 +105,8 @@ if uploaded_file is not None:
             f.write(uploaded_file.getvalue())
 
     # Get the folder name from the user
-    output_folder = st.text_input("Enter the folder name to save frames:", "frames")
-    num_frames = st.text_input("Enter the number of frames to be extracted:", "frames")
+    output_folder = st.text_input("Enter the folder name to save frames:")
+    num_frames = st.text_input("Enter the number of frames to be extracted:")
 
 
     # Button to trigger frame extraction
