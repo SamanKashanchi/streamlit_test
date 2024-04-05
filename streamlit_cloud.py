@@ -23,6 +23,8 @@ def get_binary_file_downloader_html(file_path, file_label):
 
 
 def split_video_into_chunks(video_path, chunk_duration):
+
+
     clip = VideoFileClip(video_path)
     total_duration = clip.duration
     chunks = []
@@ -35,6 +37,13 @@ def split_video_into_chunks(video_path, chunk_duration):
 
 
 def get_frames(video_path, output_folder, num_frames):
+
+    desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+    output_folder_path = os.path.join(desktop_path, output_folder)
+
+    # Create the output folder if it doesn't exist
+    if not os.path.exists(output_folder_path):
+        os.makedirs(output_folder_path)
 
     clip = VideoFileClip(video_path)
 
