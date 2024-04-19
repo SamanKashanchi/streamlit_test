@@ -1,20 +1,23 @@
 import streamlit as st
 import  yfinance as yf
+import pandas as pd
+
 # import plotly.graph_objs as go
 
 
 st.text("HELLO")
 
+df = pd.read_excel("DATA_MMM.xlsx")
+
+st.dataframe(df)
+
+
 # st.set_page_config(page_title="ALGO BACKTEST", layout= "wide")
 
 
 # # Fetch daily price data from Yahoo Finance
-@st.cache
-def get_data():
-    data = yf.download('MMM', start='2024-03-01', end='2024-04-01')
-    return data
-df = get_data()
-st.dataframe(df)
+
+
 # # Calculate rolling mean and standard deviation with a window of 10 days
 # rolling_mean = data['Close'].rolling(window=10).mean()
 # rolling_std = data['Close'].rolling(window=10).std()
