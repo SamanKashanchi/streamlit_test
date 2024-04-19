@@ -73,7 +73,7 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data.index, data['C
 print(f"\nFinal Balance: {balance}")
 
 # Create a candlestick chart
-fig = go.Figure(data=[go.Candlestick(x=data.index,
+fig = go.Figure(data=[go.Candlestick(x=data['Date'],
                                      open=data['Open'],
                                      high=data['High'],
                                      low=data['Low'],
