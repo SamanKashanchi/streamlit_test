@@ -9,7 +9,7 @@ st.text("HELLO")
 
 
 # # Fetch daily price data from Yahoo Finance
-@st.cache_data(ttl=1*60*60)
+@st.cache
 def get_data():
     data = yf.download('MMM', start='2023-01-01', end='2024-04-01')
     return data
