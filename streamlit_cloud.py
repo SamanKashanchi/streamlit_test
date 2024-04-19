@@ -9,8 +9,12 @@ st.text("HELLO")
 
 
 # # Fetch daily price data from Yahoo Finance
-# data = yf.download('MMM', start='2023-01-01', end='2024-04-01')
-
+@st.cache_data(ttl=1*60*60)
+def get_data():
+    data = yf.download('MMM', start='2023-01-01', end='2024-04-01')
+    return data
+df = get_data()
+st.dataframe(df)
 # # Calculate rolling mean and standard deviation with a window of 10 days
 # rolling_mean = data['Close'].rolling(window=10).mean()
 # rolling_std = data['Close'].rolling(window=10).std()
