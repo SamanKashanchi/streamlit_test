@@ -26,7 +26,7 @@ sell_signals = []
 short_signals = []
 cover_signals = []
 balance_over_time = []  # To store balance over time
-# balance_over_time.append(balance)
+balance_over_time.append(data.index[0], balance)
 
 # Loop through the data to identify buy, sell, short, and cover signals
 for date, close_price, mean, buy_thresh, short_thresh in zip(data.index, data['Close'], rolling_mean, buy_threshold, short_threshold):
