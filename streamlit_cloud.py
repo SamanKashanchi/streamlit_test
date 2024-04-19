@@ -11,12 +11,6 @@ data = pd.read_excel("DATA_MMM.xlsx")
 
 st.dataframe(data)
 
-
-
-
-# Fetch daily price data from Yahoo Finance
-
-
 # Calculate rolling mean and standard deviation with a window of 10 days
 rolling_mean = data['Close'].rolling(window=10).mean()
 rolling_std = data['Close'].rolling(window=10).std()
@@ -31,52 +25,50 @@ buy_signals = []
 sell_signals = []
 short_signals = []
 cover_signals = []
-transactions = []  # To store transaction details
 balance_over_time = []  # To store balance over time
+balance_over_time.append(balance)
 
 # Loop through the data to identify buy, sell, short, and cover signals
 for date, close_price, mean, buy_thresh, short_thresh in zip(data.index, data['Close'], rolling_mean, buy_threshold, short_threshold):
-    if close_price < buy_thresh and position is None and balance > 0:
+    if close_price < buy_thresh and position is None and balance > close_price:
+
         buy_signals.append((date, close_price))
-        position = 'long'
         # Buy action
-        transaction_cost = close_price
-        balance -= transaction_cost
-        transactions.append(('Buy', date, close_price, transaction_cost))
+
+        price_executed = close_price
+        balance -= close_price
+        balance_over_time.append((date , balance))
+        position = 'long'
+
     elif close_price > mean and position == 'long':
+
         sell_signals.append((date, close_price))
         # Sell action
-        revenue = close_price
-        profit_loss = revenue - transaction_cost
-        balance += revenue
-        transactions.append(('Sell', date, close_price, revenue, profit_loss))
-        position = None
+
+        profit_loss = close_price -  price_executed
+        balance += profit_loss
         balance_over_time.append((date, balance))
-    elif close_price > short_thresh and position is None and balance > 0:
+        position = None
+
+    elif close_price > short_thresh and position is None and balance > close_price:
+
         short_signals.append((date, close_price))
-        position = 'short'
         # Short action
-        transaction_cost = close_price
-        balance += transaction_cost
-        transactions.append(('Short', date, close_price, transaction_cost))
+
+        price_executed = close_price
+        balance -= close_price
+        balance_over_time.append((date, balance))
+        position = 'short'
+
     elif close_price < mean and position == 'short':
         cover_signals.append((date, close_price))
         # Cover action
-        revenue = close_price
-        profit_loss = transaction_cost - revenue
+
+        profit_loss = price_executed - close_price
         balance += profit_loss  # Adjust balance with the profit/loss from covering the short
-        transactions.append(('Cover', date, close_price, revenue, profit_loss))
-        position = None
         balance_over_time.append((date, balance))
-
-# Print transaction details
-print("Transaction Details:")
-for transaction in transactions:
-    if len(transaction) >= 5:
-        print(f"{transaction[0]} at {transaction[1]} - Price: {transaction[2]}, Amount: {transaction[3]}, Profit/Loss: {transaction[4] if transaction[4] else 'N/A'}")
-    else:
-        print(f"{transaction[0]} at {transaction[1]} - Price: {transaction[2]}, Amount: {transaction[3]}")
-
+        position = None
+        
 # Print final balance
 print(f"\nFinal Balance: {balance}")
 
