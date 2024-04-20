@@ -11,6 +11,8 @@ data = pd.read_excel("DATA_MMM.xlsx")
 
 st.dataframe(data)
 
+st.input_text("Please input the desired Stander devation for excuting trdaes")
+
 # Calculate rolling mean and standard deviation with a window of 10 days
 rolling_mean = data['Close'].rolling(window=10).mean()
 rolling_std = data['Close'].rolling(window=10).std()
