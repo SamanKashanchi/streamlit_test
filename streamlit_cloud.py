@@ -12,7 +12,7 @@ data = pd.read_excel("DATA_MMM.xlsx")
 st.dataframe(data)
 
 # Calculate rolling mean and standard deviation with a window of 10 days
-rolling_mean = data['Close'].rolling(window=10).mean()
+rolling_mean = data['Close'].rolling(window=90).mean()
 rolling_std = data['Close'].rolling(window=10).std()
 # Determine the thresholds for buy and short signals
 buy_threshold = rolling_mean - 0.07757002261912865 * rolling_std
