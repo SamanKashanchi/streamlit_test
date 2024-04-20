@@ -77,12 +77,12 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
         st.text(balance)
 
         st.text(profit_loss)
-        
+
         balance += profit_loss  # Adjust balance with the profit/loss from covering the short
         
         st.text(balance)
 
-        st.text("LONG CLOSED")
+        st.text("SHORT CLOSED")
 
 
         balance_over_time.append((date, balance))
