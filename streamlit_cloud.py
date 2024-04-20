@@ -49,7 +49,7 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
 
         st.text(profit_loss)
 
-        balance += close_price
+        balance += profit_loss
 
         st.text(balance)
 
