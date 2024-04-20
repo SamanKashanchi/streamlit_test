@@ -36,7 +36,6 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
         # Buy action
 
         price_executed = close_price
-        balance -= close_price
         balance_over_time.append((date , balance))
         position = 'long'
 
@@ -45,7 +44,7 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
         sell_signals.append((date, close_price))
         # Sell action
 
-        # profit_loss = close_price -  price_executed
+        profit_loss = close_price -  price_executed
         balance += close_price
         balance_over_time.append((date, balance))
         position = None
