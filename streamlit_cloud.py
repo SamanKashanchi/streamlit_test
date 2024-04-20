@@ -15,8 +15,8 @@ st.dataframe(data)
 rolling_mean = data['Close'].rolling(window=10).mean()
 rolling_std = data['Close'].rolling(window=10).std()
 # Determine the thresholds for buy and short signals
-buy_threshold = rolling_mean - 1.5 * rolling_std
-short_threshold = rolling_mean + 1.5 * rolling_std
+buy_threshold = rolling_mean - 0.07757002261912865 * rolling_std
+short_threshold = rolling_mean + 0.08201316274413653  * rolling_std
 
 # # Initialize variables
 balance = 10000  # Starting balance
