@@ -64,7 +64,6 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
         # Short action
 
         price_executed = close_price
-        balance -= close_price
         balance_over_time.append((date, balance))
         position = 'short'
 
