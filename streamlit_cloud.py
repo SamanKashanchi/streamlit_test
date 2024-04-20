@@ -106,7 +106,7 @@ for date, price in cover_signals:
     fig.add_annotation(x=date, y=price, text=f'Cover at ${price:.2f}', showarrow=True, arrowhead=1, arrowcolor='orange')
 
 # Add the rolling mean to the plot
-fig.add_trace(go.Scatter(x=rolling_mean["Date"], y=rolling_mean, mode='lines', name='6-Month Rolling Mean'))
+# fig.add_trace(go.Scatter(x=rolling_mean["Date"], y=rolling_mean, mode='lines', name='6-Month Rolling Mean'))
 
 # Customize layout
 fig.update_layout(title='MMM Daily Stock Prices with Buy, Sell, Short, and Cover Signals',
