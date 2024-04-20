@@ -45,29 +45,29 @@ for date, close_price, mean, buy_thresh, short_thresh in zip(data['Date'], data[
         sell_signals.append((date, close_price))
         # Sell action
 
-        profit_loss = close_price -  price_executed
-        balance += profit_loss
+        # profit_loss = close_price -  price_executed
+        balance += close_price
         balance_over_time.append((date, balance))
         position = None
 
-    elif close_price > short_thresh and position is None and balance > close_price:
+    # elif close_price > short_thresh and position is None and balance > close_price:
 
-        short_signals.append((date, close_price))
-        # Short action
+    #     short_signals.append((date, close_price))
+    #     # Short action
 
-        price_executed = close_price
-        balance -= close_price
-        balance_over_time.append((date, balance))
-        position = 'short'
+    #     price_executed = close_price
+    #     balance -= close_price
+    #     balance_over_time.append((date, balance))
+    #     position = 'short'
 
-    elif close_price < mean and position == 'short':
-        cover_signals.append((date, close_price))
-        # Cover action
+    # elif close_price < mean and position == 'short':
+    #     cover_signals.append((date, close_price))
+    #     # Cover action
 
-        profit_loss = price_executed - close_price
-        balance += profit_loss  # Adjust balance with the profit/loss from covering the short
-        balance_over_time.append((date, balance))
-        position = None
+    #     profit_loss = price_executed - close_price
+    #     balance += profit_loss  # Adjust balance with the profit/loss from covering the short
+    #     balance_over_time.append((date, balance))
+    #     position = None
 
 # Print final balance
 print(f"\nFinal Balance: {balance}")
