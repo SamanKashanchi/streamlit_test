@@ -12,6 +12,27 @@ import statsmodels.api as sm
 import numpy as np
 
 st.set_page_config(page_title="ALGO BACKTEST")
+
+
+# Add elements to the sidebar
+st.sidebar.title('Sidebar Title')
+st.sidebar.header('Header')
+st.sidebar.subheader('Subheader')
+st.sidebar.text('Text')
+st.sidebar.markdown('Markdown')
+st.sidebar.checkbox('Checkbox')
+st.sidebar.radio('Radio', ['Option 1', 'Option 2'])
+st.sidebar.selectbox('Selectbox', ['Option 1', 'Option 2'])
+st.sidebar.multiselect('Multiselect', ['Option 1', 'Option 2', 'Option 3'])
+st.sidebar.slider('Slider', min_value=0, max_value=100)
+st.sidebar.number_input('Number Input')
+st.sidebar.text_input('Text Input')
+st.sidebar.text_area('Text Area')
+st.sidebar.date_input('Date Input')
+st.sidebar.time_input('Time Input')
+st.sidebar.file_uploader('File Uploader')
+st.sidebar.color_picker('Color Picker')
+
 warnings.filterwarnings("ignore")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
