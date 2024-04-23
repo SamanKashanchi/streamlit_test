@@ -27,11 +27,14 @@ data = pd.read_excel("DATA_"+ticker+".xlsx")
 st.dataframe(data, use_container_width = True)
 
 returns = data['Close'].pct_change().dropna()  # Calculate daily returns
+
 plt.figure(figsize=(10, 6))
-sns.distplot(returns, bins=150, color='blue', kde=True)
+plt.hist(returns, bins=150, color='blue', density=True)
 plt.title('Distribution of Daily Returns')
 plt.xlabel('Daily Returns')
 plt.ylabel('Frequency')
+
+# Display the plot using Streamlit
 st.pyplot()
 
 statistic, p_value = shapiro(returns)
