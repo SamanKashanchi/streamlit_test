@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.graph_objs as go
 
 import matplotlib.pyplot as plt
-import seaborn as sns
 import warnings
 
 from scipy.stats import shapiro
