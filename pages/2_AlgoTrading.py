@@ -107,6 +107,7 @@ if std_input != "" and mean_input != "":
 
     # # Initialize variables
     balance = 10000  # Starting balance
+    num_shares = 10
     position = None
     buy_signals = []
     sell_signals = []
@@ -134,7 +135,7 @@ if std_input != "" and mean_input != "":
             profit_loss = close_price -  price_executed
 
 
-            balance += profit_loss
+            balance += profit_loss * num_shares
 
 
             balance_over_time.append((date, balance))
@@ -155,7 +156,7 @@ if std_input != "" and mean_input != "":
 
             profit_loss = price_executed - close_price
 
-            balance += profit_loss  # Adjust balance with the profit/loss from covering the short
+            balance += profit_loss * num_shares
             
 
             balance_over_time.append((date, balance))
