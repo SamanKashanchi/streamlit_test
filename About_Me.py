@@ -28,7 +28,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-python_lottie = load_lottieurl("<https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json>")
+python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json")
 
 
 
