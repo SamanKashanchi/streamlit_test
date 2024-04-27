@@ -38,7 +38,7 @@ python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa3
 
 sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379a505e/gMAp1Y5Hk9.json')
 
-docker_lottie = load_lottieurl("<https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json>")
+docker_lottie = load_lottieurl("https://lottie.host/9ccbd771-096b-4cfc-9e7c-bec8a7afbaf2/Kl4y97DOt4.json")
 
 
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
