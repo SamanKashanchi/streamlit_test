@@ -53,6 +53,6 @@ st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
 
 st.subheader('Research')
 
-reserch_pic = 'research.jpeg'  
+reserch_pic = 'research.jpg'  
 
 st.sidebar.image(reserch_pic, caption='Reserch Board', use_column_width=True)
