@@ -23,7 +23,7 @@ st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
-                f'<span style="color:{color3};">{content1}</span><br>'
+                f'<span style="color:{color3};font-family:Calibri;">{content1}</span><br>'
                 f'<span style="color:white;font-size:17px;">{content2}</span></h1>',
                 unsafe_allow_html=True)
 
@@ -41,7 +41,7 @@ sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 
 # Call the "gradient" function to display a gradient title
-gradient('#FF5733','#1B1464','e0fbfc',f"Hi, I'm Saman", content2)
+gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
 st.write("")  # Add an empty line
 
 
