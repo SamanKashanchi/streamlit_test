@@ -13,8 +13,8 @@ import numpy as np
 # Load your profile picture
 profile_pic = 'profile.jpeg'  
 
-st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
-
+# st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
+st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
 st.title("MEAN REVERSION")
 
