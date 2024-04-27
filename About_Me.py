@@ -55,4 +55,4 @@ st.subheader('Research')
 
 reserch_pic = 'research.jpg'  
 
-st.sidebar.image(reserch_pic, caption='Reserch Board', use_column_width=True)
+st.image(reserch_pic, caption='Reserch Board', use_column_width=True)
