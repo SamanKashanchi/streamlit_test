@@ -53,4 +53,4 @@ st.write('Versatile and accomplished Data Scientist with a solid foundation in C
 st.subheader('Skills')
 st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
 st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
-st_lottie(docker_lottie, height=90,width=90, key="sql", speed=2.5)
+st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
