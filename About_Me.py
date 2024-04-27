@@ -10,6 +10,8 @@ from scipy.stats import shapiro
 import statsmodels.api as sm
 import numpy as np
 import requests
+from streamlit_lottie import st_lottie
+
 # st.set_page_config(page_title="PORTFOLIO")
 
 
@@ -30,5 +32,5 @@ def load_lottieurl(url: str):
 
 python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json")
 
-
+st_lottie(python_lottie, height=70,width=70, key="python", speed=2.5)
 
