@@ -44,8 +44,15 @@ st.write("")  # Add an empty line
 
 
 
-st.write("Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions.", use_column_width=True)
+st.markdown("""
+    <style>
+        .wide-text {
+            width: 100%;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
+st.markdown('<p class="wide-text">Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions.</p>', unsafe_allow_html=True)
 
 st.subheader('Skills')
 st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
