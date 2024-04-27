@@ -51,3 +51,8 @@ st.subheader('Skills')
 st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
 st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
 
+st.subheader('Research')
+
+reserch_pic = 'reserch.jpeg'  
+
+st.sidebar.image(reserch_pic, caption='Reserch Board', use_column_width=True)
