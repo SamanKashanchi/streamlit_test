@@ -41,7 +41,7 @@ sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 
 # Call the "gradient" function to display a gradient title
-gradient('#1B1464','#1B1464','e0fbfc',f"Hi, I'm Saman", content2)
+gradient('#FF5733','#1B1464','e0fbfc',f"Hi, I'm Saman", content2)
 st.write("")  # Add an empty line
 
 
