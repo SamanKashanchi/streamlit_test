@@ -13,7 +13,8 @@ import numpy as np
 # Load your profile picture
 profile_pic = 'profile.jpeg'  
 
-st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
+# st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
+st.sidebar.markdown(f"![Saman Kashanchi]({profile_pic})")
 
 
 st.title("MEAN REVERSION")
