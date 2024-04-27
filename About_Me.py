@@ -38,6 +38,9 @@ python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa3
 
 sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379a505e/gMAp1Y5Hk9.json')
 
+docker_lottie = load_lottieurl("<https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json>")
+
+
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 
 # Call the "gradient" function to display a gradient title
@@ -50,3 +53,4 @@ st.write('Versatile and accomplished Data Scientist with a solid foundation in C
 st.subheader('Skills')
 st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
 st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
+st_lottie(docker_lottie, height=90,width=90, key="sql", speed=2.5)
