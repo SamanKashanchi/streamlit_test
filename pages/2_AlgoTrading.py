@@ -10,6 +10,10 @@ from scipy.stats import shapiro
 import statsmodels.api as sm
 import numpy as np
 
+# Load your profile picture
+profile_pic = 'profile.jpeg'  
+
+st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
 
 
 st.title("MEAN REVERSION")
@@ -107,7 +111,6 @@ if std_input != "" and mean_input != "":
 
     # # Initialize variables
     balance = 10000  # Starting balance
-    num_shares = 10
     position = None
     buy_signals = []
     sell_signals = []
@@ -135,7 +138,7 @@ if std_input != "" and mean_input != "":
             profit_loss = close_price -  price_executed
 
 
-            balance += profit_loss * num_shares
+            balance += profit_loss
 
 
             balance_over_time.append((date, balance))
@@ -156,7 +159,7 @@ if std_input != "" and mean_input != "":
 
             profit_loss = price_executed - close_price
 
-            balance += profit_loss * num_shares
+            balance += profit_loss  # Adjust balance with the profit/loss from covering the short
             
 
             balance_over_time.append((date, balance))
