@@ -40,12 +40,13 @@ sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379
 
 docker_lottie = load_lottieurl("https://lottie.host/9ccbd771-096b-4cfc-9e7c-bec8a7afbaf2/Kl4y97DOt4.json")
 
+mango_lottie = load_lottieurl("mangodb.jason")
 
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 
 # Call the "gradient" function to display a gradient title
 gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
-st.write("")  # Add an empty line
+st.write("---")  # Add an empty line
 
 
 
@@ -54,3 +55,4 @@ st.subheader('Skills')
 st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
 st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
 st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
+st_lottie()
