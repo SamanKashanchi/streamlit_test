@@ -32,5 +32,8 @@ def load_lottieurl(url: str):
 
 python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json")
 
+sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379a505e/gMAp1Y5Hk9.json')
+
 st_lottie(python_lottie, height=70,width=70, key="python", speed=2.5)
+st_lottie(sql_lottie, height=70,width=70, key="python", speed=2.5)
 
