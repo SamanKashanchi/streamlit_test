@@ -20,8 +20,11 @@ profile_pic = 'profile.jpeg'
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
-st.write("Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions.")
-
+def gradient(color1, color2, color3, content1):
+    # Create an HTML structure with styling for a gradient header
+    st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
+                f'<span style="color:{color3};">{content1}</span><br>', 
+                unsafe_allow_html=True)
 
 # Load a Lottie animation from a URL
 def load_lottieurl(url: str):
@@ -35,7 +38,16 @@ python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa3
 sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379a505e/gMAp1Y5Hk9.json')
 
 
-st.subheader("Skills")
-st_lottie(python_lottie, height=70,width=70, key="python", speed=2.5)
-st_lottie(sql_lottie, height=70,width=70, key="sql", speed=2.5)
+# Call the "gradient" function to display a gradient title
+gradient('#FFD4DD','#000395','e0fbfc',f"Hi, I'm Saman👋")
+st.write("")  # Add an empty line
+
+
+
+st.write("Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions.")
+
+
+st.subheader('Skills')
+st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
+st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
 
