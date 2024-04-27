@@ -16,5 +16,7 @@ st.set_page_config(page_title="PORTFOLIO")
 # Load your profile picture
 profile_pic = 'profile.jpeg'  
 
-st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
+
+st.sidebar.markdown(f"![Saman Kashanchi]({profile_pic})")
+
 
