@@ -9,7 +9,7 @@ import warnings
 from scipy.stats import shapiro
 import statsmodels.api as sm
 import numpy as np
-
+import requests
 # st.set_page_config(page_title="PORTFOLIO")
 
 
@@ -18,7 +18,17 @@ profile_pic = 'profile.jpeg'
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
-st.write("Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions..")
+st.write("Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions.")
+
+
+# Load a Lottie animation from a URL
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+python_lottie = load_lottieurl("<https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json>")
 
 
 
