@@ -49,9 +49,14 @@ st.write("---")  # Add an empty line
 
 
 st.write('Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions')
-st.subheader('Skills')
-st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
-st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
-st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
-st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
+
+with st.container():
+    st.subheader('⚒️ Skills')
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+    with col1:
+        st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
+        st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
+    with col2:
+        st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
+        st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
 
