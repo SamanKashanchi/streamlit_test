@@ -75,7 +75,7 @@ with backtest:
     
     returns = data['Close'].pct_change().dropna()  # Calculate daily returns
     
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(6, 3))
     plt.hist(returns, bins=150, color='blue', density=True)
     plt.title('Distribution of Daily Returns')
     plt.xlabel('Daily Returns')
