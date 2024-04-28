@@ -16,7 +16,7 @@ st.set_page_config(page_title="PORTFOLIO", layout='wide')
 
 
 # Load your profile picture
-profile_pic = 'profile_pic.jpg'  
+profile_pic = 'profile_pic.jpeg'  
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
