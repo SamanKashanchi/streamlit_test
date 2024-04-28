@@ -42,8 +42,6 @@ docker_lottie = load_lottieurl("https://lottie.host/9ccbd771-096b-4cfc-9e7c-bec8
 
 content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 
-st.write("")
-
 # Call the "gradient" function to display a gradient title
 gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
 st.write("---")  # Add an empty line
