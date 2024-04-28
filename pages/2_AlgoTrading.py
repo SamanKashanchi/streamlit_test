@@ -29,7 +29,7 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FFD4DD','#000395','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')
+    gradient('#FF5733','#1B1464','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')
     st.write("")  # Add an empty line
     
 # # Inside the second column (col2):
