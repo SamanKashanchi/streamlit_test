@@ -48,7 +48,7 @@ with col2:
     st_lottie(lottie_gif, height=280, key="data")
 
 
-journey, backtest, optimization = st.tabs(["My Journey Into Algorithmic Trading", "Live Strategy BackTester", "Strategy Optimization"])
+journey, backtest, optimization = st.tabs(["My Journey", "Live Strategy BackTester", "Strategy Optimization"])
 
 with journey:
     st.subheader("Where it all began")
