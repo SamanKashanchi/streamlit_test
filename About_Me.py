@@ -52,6 +52,7 @@ st.write('Versatile and accomplished Data Scientist with a solid foundation in C
 
 with st.container():
     st.subheader('⚒️ Skills')
+    st.write("---")
     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     with col1:
         st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
