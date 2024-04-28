@@ -23,6 +23,15 @@ def gradient(color1, color2, color3, content1, content2):
                  f'<span style="color:white;font-size:14px;font-family:Calibri;">{content2}</span></h1>',
                 unsafe_allow_html=True)
 
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+
+lottie_gif = load_lottieurl("https://lottie.host/155bf63c-c86c-41c5-a157-6c07916e6cbc/sftMI66ekO.json")
+
 with st.container():
     # Divide the container into two columns, with widths 8 and 3
     col1, col2 = st.columns([8, 3])
@@ -32,10 +41,10 @@ with col1:
     gradient('#FF5733','#1B1464','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')
     st.write("")  # Add an empty line
     
-# # Inside the second column (col2):
-# with col2:
-#     # Display a Lottie animation using the st_lottie function
-#     st_lottie(lottie_gif, height=280, key="data")
+# Inside the second column (col2):
+with col2:
+    # Display a Lottie animation using the st_lottie function
+    st_lottie(lottie_gif, height=280, key="data")
 
 
 journey, backtest, optimization = st.tabs(["My Journey Into Algorithmic Trading", "Live Strategy BackTester", "Strategy Optimization"])
