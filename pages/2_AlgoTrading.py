@@ -16,6 +16,28 @@ profile_pic = 'profile_pic.jpeg'
 # st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
+def gradient(color1, color2, color3, content1, content2):
+    # Create an HTML structure with styling for a gradient header
+    st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
+                f'<span style="color:{color3};font-family:Calibri;">{content1}</span><br>'
+                f'<span style="color:white;font-size:17px;">{content2}</span></h1>',
+                unsafe_allow_html=True)
+
+with st.container():
+    # Divide the container into two columns, with widths 8 and 3
+    col1, col2 = st.columns([8, 3])
+
+with col1:
+    # Call the "gradient" function to display a gradient title
+    gradient('#FFD4DD','#000395','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')
+    st.write("")  # Add an empty line
+    
+# # Inside the second column (col2):
+# with col2:
+#     # Display a Lottie animation using the st_lottie function
+#     st_lottie(lottie_gif, height=280, key="data")
+
+
 journey, backtest, optimization = st.tabs(["My Journey Into Algorithmic Trading", "Live Strategy BackTester", "Strategy Optimization"])
 
 with journey:
