@@ -41,9 +41,7 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')
-    st.write("")  # Add an empty line
-    
+    gradient('#FF5733','#1B1464','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')    
 # Inside the second column (col2):
 with col2:
     # Display a Lottie animation using the st_lottie function
