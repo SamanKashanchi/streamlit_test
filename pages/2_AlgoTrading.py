@@ -9,6 +9,7 @@ import warnings
 from scipy.stats import shapiro
 import statsmodels.api as sm
 import numpy as np
+import requests
 
 # Load your profile picture
 profile_pic = 'profile_pic.jpeg'  
