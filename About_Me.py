@@ -55,4 +55,15 @@ st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
 st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
 st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
 
-
+st.subheader("📨 Contact Me")
+email = 's.kashanchi@gmail.com"
+contact_form = f"""
+<form action="<https://formsubmit.co/{email}>" method="POST">
+    <input type="hidden" name="_captcha value="false">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message here" required></textarea>
+    <button type="submit">Send</button>
+</form>
+"""
+st.markdown(contact_form, unsafe_allow_html=True)
