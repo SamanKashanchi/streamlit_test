@@ -56,7 +56,7 @@ st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
 st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
 
 st.subheader("📨 Contact Me")
-email = 's.kashanchi@gmail.com"
+email = 's.kashanchi@gmail.com'
 contact_form = f"""
 <form action="<https://formsubmit.co/{email}>" method="POST">
     <input type="hidden" name="_captcha value="false">
