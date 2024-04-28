@@ -11,7 +11,7 @@ import statsmodels.api as sm
 import numpy as np
 
 # Load your profile picture
-profile_pic = 'profile.jpeg'  
+profile_pic = 'profile_pic.jpeg'  
 
 # st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
