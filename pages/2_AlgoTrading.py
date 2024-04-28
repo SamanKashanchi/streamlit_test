@@ -53,7 +53,9 @@ journey, backtest, optimization = st.tabs(["My Journey Into Algorithmic Trading"
 with journey:
     st.subheader("Where it all began")
     st.write("In the sophomore year of 2020, I was introduced to a friend in a data mining class who had recently switched from finance. He shared insights into financial markets and trading. That summer, many of us missed out on internship opportunities due to the outbreak of COVID-19. So, I decided to gather a group of friends from diverse backgrounds to work on a project together over the summer. The group consisted of computer scientists, mathematicians, and finance majors, totaling six people. Throughout the summer, we met for hours each week, delving into understanding the foreign exchange markets and devising strategies to capitalize on arbitrage opportunities arising from currency mispricing. After two months of countless backtests and learning from mistakes, we developed our very first trading strategies.")
-
+    st.write("")
+    st.write("After the summer, we decided to continue on this journey of developing trading strategies. We entered a prestigious trading competition called FTMO. After failing twice, we found ourselves on our last attempt. It was then that we learned the crucial lesson that proper risk management is just as important as the trading strategies themselves. So, we began exploring different methods of risk management, from implementing dynamic stop losses and take profits to utilizing state-space models that could detect market shifts and sentiment models that scoured news feeds and Twitter for quick increases in volatility. Since our strategies primarily relied on horizontal movements and steady markets, it was imperative that we understood and prepared for such occurrences.")
+    
 with backtest:
     st.title("MEAN REVERSION")
     
