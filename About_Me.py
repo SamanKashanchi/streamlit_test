@@ -64,5 +64,5 @@ with st.container():
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
 
     with col3:
-        st.markdown('<img style="margin-right: 20px;" width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
+        st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
