@@ -64,6 +64,10 @@ with st.container():
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
 
     with col3:
-        st.markdown('<img width="90" height="90" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
-        st.markdown('<img width="90" height="90" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
+        st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
+        st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
+# Path to your Lottie JSON file
+lottie_json_path = "mongodb-5.json"
 
+# Display the Lottie animation
+st_lottie(lottie_json_path, height=200, width=200)
