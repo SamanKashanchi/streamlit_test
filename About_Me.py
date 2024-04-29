@@ -66,5 +66,5 @@ with st.container():
 
         st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
 
-st.markdown('<img width="48" height="48" src="https://icons8.com/icon/33039/amazon-web-services" alt="power-bi"/>', unsafe_allow_html=True)
+st.markdown('<img width="48" height="48" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
 
