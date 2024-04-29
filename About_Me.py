@@ -65,6 +65,6 @@ with st.container():
 
     with col3:
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
-        st.markdown('<div style="height: 20px;"></div>', unsafe_allow_html=True)  # Add vertical space
+        st.markdown('<div style="height: 50px;"></div>', unsafe_allow_html=True)  # Add vertical space
 
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
