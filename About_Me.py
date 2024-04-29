@@ -18,7 +18,6 @@ st.set_page_config(page_title="PORTFOLIO", layout='wide')
 # Load your profile picture
 profile_pic = 'profile_pic.jpeg'  
 
-st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
@@ -50,7 +49,6 @@ st.write("---")  # Add an empty line
 
 st.write('Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions')
 
-st.markdown('<img width="48" height="48" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
 
 
 with st.container():
@@ -62,5 +60,7 @@ with st.container():
         st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
     with col2:
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
+        st.markdown('<img width="48" height="48" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
+
         st_lottie("mongodb.json", height=90,width=90, key="mangodb", speed=2.5)
 
