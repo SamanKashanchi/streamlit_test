@@ -50,6 +50,17 @@ st.write("---")  # Add an empty line
 st.write('Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions')
 
 
+svg_content = '''
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="713" viewBox="0 0 512 146" id="mongodb">
+  <g fill="none" fill-rule="evenodd">
+    <!-- Your SVG path elements here -->
+  </g>
+</svg>
+'''
+
+# Display the SVG using HTML syntax
+st.markdown(svg_content, unsafe_allow_html=True)
+
 
 with st.container():
     st.subheader('⚒️ Skills')
