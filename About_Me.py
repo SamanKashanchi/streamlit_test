@@ -63,6 +63,9 @@ st.download_button(
     mime="application/octet-stream"
 )
 
+linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
+
+st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
 with st.container():
     st.subheader('⚒️ Skills')
