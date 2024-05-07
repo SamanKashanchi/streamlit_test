@@ -18,6 +18,7 @@ st.set_page_config(page_title="PORTFOLIO", layout='wide')
 # Load your profile picture
 profile_pic = 'profile_pic.jpeg'  
 
+st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
