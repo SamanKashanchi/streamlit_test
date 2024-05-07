@@ -31,7 +31,7 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Research", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')    
+    gradient('#FF5733','#1B1464','e0fbfc',f"Research", 'Led the development of innovative Neural Network architectures tailored for the optics physics department.')    
 # Inside the second column (col2):
 st.subheader('Research')
 
