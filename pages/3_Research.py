@@ -21,7 +21,7 @@ def load_lottieurl(url: str):
 
 # Load your profile picture
 profile_pic = 'profile_pic.jpeg'  
-research_lottie = load_lottieurl("https://lottie.host/embed/e8315d73-10a2-49cb-ace5-6583616ce5bd/KGlhVphyDL.json")
+research_lottie = load_lottieurl("https://lottie.host/e8315d73-10a2-49cb-ace5-6583616ce5bd/KGlhVphyDL.json")
 
 # st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
