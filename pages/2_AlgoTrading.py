@@ -49,7 +49,13 @@ with col2:
 
 
 journey, backtest, optimization = st.tabs(["My Journey", "Live Strategy BackTester", "Strategy Optimization"])
-
+css = '''
+    <style>
+        .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"]
+        p {font-size:24px;}
+    </style>
+    '''
+st.markdown(css, unsafe_allow_html=True)
 with journey:
     st.subheader("Where it all began")
     st.write("""In my sophomore year of 2020, a friend from my data mining class, who had recently transitioned from finance, introduced me to the intricate world of financial markets and trading. With COVID-19 disrupting internship opportunities that summer, I seized the chance to collaborate with a diverse group of friends, including computer scientists, mathematicians, and 
