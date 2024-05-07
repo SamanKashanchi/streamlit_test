@@ -51,8 +51,9 @@ with col2:
 journey, backtest, optimization = st.tabs(["My Journey", "Live Strategy BackTester", "Strategy Optimization"])
 css = '''
     <style>
-        .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"]
-        p {font-size:24px;}
+        .stTabs [data-baseweb="tab-list"] button {
+            font-size: 24px;
+        }
     </style>
     '''
 st.markdown(css, unsafe_allow_html=True)
