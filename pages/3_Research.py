@@ -20,6 +20,7 @@ def load_lottieurl(url: str):
 
 # Load your profile picture
 profile_pic = 'profile_pic.jpeg'  
+research_lottie = load_lottieurl("https://lottie.host/e8315d73-10a2-49cb-ace5-6583616ce5bd/KGlhVphyDL.json")
 
 # st.sidebar.image(profile_pic, caption='Your Name', use_column_width=True)
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
@@ -31,7 +32,10 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Research", 'Led the development of innovative Neural Network architectures tailored for the optics physics department.')    
+    gradient('#FF5733','#1B1464','e0fbfc',f"Research", 'Led the development of innovative Neural Network architectures tailored for the optics physics department.')   
+with col2:
+
+    st_lottie(research_lottie, height=280, key="data")
 # Inside the second column (col2):
 st.subheader('Research')
 
