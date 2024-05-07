@@ -1,6 +1,7 @@
 
 import streamlit as st
-
+import requests
+from streamlit_lottie import st_lottie
 
 
 def gradient(color1, color2, color3, content1, content2):
