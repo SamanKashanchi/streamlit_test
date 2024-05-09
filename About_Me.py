@@ -154,7 +154,7 @@ st.markdown(
     "<br>"
     "</div>"
     
-    "</div>", unsafe_allow_html=True
+    "</div>", unsafe_allow_html=True)
 
 with st.container():
     st.subheader('⚒️ Skills')
