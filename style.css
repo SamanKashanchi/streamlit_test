@@ -1,8 +1,3 @@
-st.markdown(
-    """
-    <style>
-    {% include 'styles.css' %}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+body {
+    background-color: #051c2c;
+}
