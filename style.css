@@ -1,0 +1,8 @@
+st.markdown(
+    """
+    <style>
+    {% include 'styles.css' %}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
