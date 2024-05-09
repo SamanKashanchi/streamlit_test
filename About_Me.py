@@ -28,6 +28,9 @@ profile_pic = 'profile_pic.jpeg'
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
+# Add a header for Projects
+st.sidebar.markdown('## Projects')
+
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
