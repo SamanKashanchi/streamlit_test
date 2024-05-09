@@ -67,6 +67,44 @@ linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
+
+st.markdown(
+        "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+        "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+        "</div>"
+        "<p style='margin: 10px 0;'>Python</p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
+        "</div>"
+        "<p style='margin: 10px 0;'>SQL</p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='c' style='width: 50px; height: 50px;'>"
+        "</div>"            
+        "<p style='margin: 10px 0;'>C</p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='html' style='width: 50px; height: 50px;'>"
+        "</div>"             
+        "<p style='margin: 10px 0;'>HTML</p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' alt='css' style='width: 50px; height: 50px;'>"
+        "</div>"             
+        "<p style='margin: 10px 0;'>CSS</p>"
+        "<br>"
+        f"<div style='display: flex; justify-content: center;'>"
+        f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' alt='js' style='width: 50px; height: 50px;'>"
+        "</div>"             
+        "<p style='margin: 10px 0;'>JavaScript</p>"
+        "</div>",
+        unsafe_allow_html=True
+    )
+
 with st.container():
     st.subheader('⚒️ Skills')
     st.write("---")
