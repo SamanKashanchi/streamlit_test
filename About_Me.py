@@ -13,6 +13,14 @@ import requests
 from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="PORTFOLIO", layout='wide')
+st.markdown(
+    """
+    <style>
+    {% include 'styles.css' %}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # Load your profile picture
