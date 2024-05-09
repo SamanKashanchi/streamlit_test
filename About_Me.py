@@ -70,9 +70,7 @@ st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 st.markdown(
     "<div style='display: flex; flex-direction: column;'>"
     
-    "<div style='display: flex; justify-content: space-between;'>"
-    
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px;'>"
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
     "<div style='display: flex; flex-wrap: wrap; justify-content: center;'>"
     "<div style='margin: 5px;'>"
@@ -102,7 +100,7 @@ st.markdown(
     "</div>"
     "</div>"
     
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin-left: 20px;'>"
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%; margin-top: 20px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Libraries & Frameworks</strong></p>"
     "<div style='display: flex; flex-wrap: wrap; justify-content: center;'>"
     "<div style='margin: 5px;'>"
@@ -132,9 +130,7 @@ st.markdown(
     "</div>"
     "</div>"
     
-    "</div>"
-    
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin-top: 20px;'>"
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%; margin-top: 20px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Development Tools & Applications</strong></p>"
     "<div style='display: flex; flex-wrap: wrap; justify-content: center;'>"
     "<div style='margin: 5px;'>"
@@ -150,6 +146,7 @@ st.markdown(
     
     "</div>", unsafe_allow_html=True
 )
+
 
 
 
