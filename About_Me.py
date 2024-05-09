@@ -67,11 +67,12 @@ linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
-
 st.markdown(
-    "<div style='display: flex; justify-content: space-between;'>"
+    "<div style='display: flex; justify-content: flex-end; align-items: flex-end; height: 100vh;'>"
     
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+    "<div style='transform: rotate(-90deg); transform-origin: bottom left; margin-right: -80vh;'>"
+    
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
     "<br>"
     "<div style='display: flex; justify-content: center;'>"
@@ -105,7 +106,11 @@ st.markdown(
     "<p style='margin: 10px 0;'>JavaScript</p>"
     "</div>"
     
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+    "</div>"
+    
+    "<div style='transform: rotate(-90deg); transform-origin: bottom left; margin-right: -80vh;'>"
+    
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Libraries & Frameworks</strong></p>"
     "<br>"
     "<div style='display: flex; justify-content: center;'>"
@@ -139,7 +144,11 @@ st.markdown(
     "<p style='margin: 10px 0;'>statsmodels</p>"
     "</div>"
     
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+    "</div>"
+    
+    "<div style='transform: rotate(-90deg); transform-origin: bottom left; margin-right: -80vh;'>"
+    
+    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>Development Tools & Applications</strong></p>"
     "<br>"
     "<div style='display: flex; justify-content: center;'>"
@@ -154,7 +163,11 @@ st.markdown(
     "<br>"
     "</div>"
     
-    "</div>", unsafe_allow_html=True)
+    "</div>"
+    
+    "</div>", unsafe_allow_html=True
+)
+
 
 with st.container():
     st.subheader('⚒️ Skills')
