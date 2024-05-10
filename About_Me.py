@@ -89,7 +89,7 @@ with st.container():
     with col2:
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
         st.markdown('<img width="60" height="60" src="https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png" alt="power-bi"/>', unsafe_allow_html=True)
-        st.markdown("matplotlib")
+        st.markdown("Apache AirFlow")
 
 
     with col3:
