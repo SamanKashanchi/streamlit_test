@@ -161,7 +161,7 @@ with st.container():
     with col2:
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
         st.markdown('<img width="60" height="60" src="https://icon.icepanel.io/Technology/svg/Matplotlib.svg" alt="power-bi"/>', unsafe_allow_html=True)
-        st.markdown("<p style='margin: 5px 0;'>matplotlib</p>")
+        st.markdown("matplotlib")
 
 
     with col3:
