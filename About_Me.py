@@ -63,13 +63,12 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Algo Trading", 'Algorithmic trading is the practice of executing trades using computer programs grounded in strategies that typically rely on statistical methods for decision-making.')    
+    gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
+    
 # Inside the second column (col2):
 with col2:
     # Display a Lottie animation using the st_lottie function
-    st_lottie(lottie_gif, height=280, key="data")
-
-gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
+    pass
 st.write("---")  # Add an empty line
 
 
