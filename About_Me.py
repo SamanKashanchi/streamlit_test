@@ -51,7 +51,8 @@ sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379
 
 docker_lottie = load_lottieurl("https://lottie.host/9ccbd771-096b-4cfc-9e7c-bec8a7afbaf2/Kl4y97DOt4.json")
 
-content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
+# content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
+content2 = '"The only way to do great work is to love what you do." - Steve Jobs'
 
 # Call the "gradient" function to display a gradient title
 
@@ -74,7 +75,7 @@ st.write("---")  # Add an empty line
 
 
 st.write('Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions')
-st.write('/"The only way to do great work is to love what you do./" - Steve Jobs')
+st.write()
 
 resume_file = "Saman Kashanchi Resume 2024.pdf"
 
