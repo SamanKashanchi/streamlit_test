@@ -160,9 +160,7 @@ with st.container():
         # st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
     with col2:
 
-
-
-          st.markdown(
+        st.markdown(
                 "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
                 "<p style='margin: 10px 0; font-size: 20px;'><strong>DataBase Tools</strong></p>"
                 "<br>"
@@ -192,7 +190,7 @@ with st.container():
                 unsafe_allow_html=True
             )
 
-         st.markdown(
+        st.markdown(
                 "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
                 "<p style='margin: 10px 0; font-size: 20px;'><strong>Visualization Tools</strong></p>"
                 "<br>"
