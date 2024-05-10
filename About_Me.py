@@ -94,28 +94,32 @@ st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
 
 
-def icon_box(icons_texts):
-    box_html = ""
-    for icon, text in icons_texts:
+def icon_box_with_title(icon_texts, title):
+    box_html = f"""
+        <div style="padding: 10px; border: 2px solid #4CAF50; border-radius: 5px;">
+            <h3 style="text-align: center; margin-bottom: 10px;">{title}</h3>
+    """
+    for icon, text in icon_texts:
         box_html += f"""
-            <div style="display: flex; align-items: center; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            <div style="display: flex; align-items: center; padding: 10px;">
                 <div style="margin-right: 10px;">
-                    <i class="material-icons" style="font-size: 24px;">{icon}</i>
+                    <img width="60" height="60" src="{icon}" alt="{text}"/>
                 </div>
                 <div>{text}</div>
             </div>
         """
+    box_html += "</div>"
     return box_html
 
-# Define icons and texts
-icons_texts = [
-    ("cloud", "Cloud Services"),
-    ("settings", "Settings"),
-    ("dashboard", "Dashboard")
+# Define icons and texts for machine learning tools
+ml_icons_texts = [
+    ("https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715636965&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTYzNjk2NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=ZEl4ID--nH2qxecX5ADD71STYrL%7ENnF5CZ4qi3KvDQE1WpzHNRl3M9i0NBmAaKvfZx23gHODkNFLTp9wIcV7X-yvQWWN2NoZVyLDRfQPs42H6F4zbN1O6doXZUL8RQtP4We2YxuvxjCMCNcs8Ui3Glvn-9MN7RdIDV1WPVtHoKb6rHpauGHTFN7QK3uaNP4m0rZhOv5FjkkrIjhqQ3clbY0XU85aYRzUSPa3Yr9PyXji68%7Edv7SapXwZU9vk3GQOMaM5lHICY3aFRx8xaRfuPoVxyJ6VaWPDfLI-qXISYFKMsqGqDaxGW4EMwPlTIWn8gQArKSWUbpLIk9PkWyq%7EEg__&Key-Pair-Id=KVTP0A1DKRTAX", "HuggingFace"),
+    ("https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg", "scikit-learn")
 ]
 
-# Display icon box with multiple icons
-st.markdown(icon_box(icons_texts), unsafe_allow_html=True)
+# Display the icon box for machine learning tools
+st.markdown(icon_box_with_title(ml_icons_texts, "ML Tools"), unsafe_allow_html=True)
+
 
 
 with st.container():
