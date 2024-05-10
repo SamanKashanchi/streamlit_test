@@ -96,7 +96,9 @@ with st.container():
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
         st.markdown('<div style="height: 55px;"></div>', unsafe_allow_html=True)  # Add vertical space
 
-        st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
+        st.markdown('<img width="60" height="60" src="file:///C:/Users/skashanchi/Downloads/Power-BI-Logo.svg" alt="power-bi"/>', unsafe_allow_html=True)
+        st.markdown("PowerBI")
+
         
     with col4:
         st.markdown('<img width="60" height="60" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715635938&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTYzNTkzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=BK24DvmXtJPBdfBW%7ECjRRcfUgpPkNnkM3eElZq7yz3yw4cJOVkGNibLg3wbUQCltxGhj6X03uhj1cjQeBXorPrwOkiPfAgOeMnw3wdZXLdJmCI0RCfs7QPgwcac8K7eMy3R3aEY3O3Xhbp9%7ELtgyybjy3QdKJ18eRe9l9MGSWXrgo-lbN4PgSWViPYtgdKZC5KUr5uwAyqPzEcTifEYinSkvCmzDZ3n%7Eb-SmljtT8jfV--YLw9P23awsmU1zn7l8ATJfphe7im9rDp2SOFfawkC-mg9nbMwKhUaa2OVenoBt9-ylK4b02eBJQQjnLBi8JFddfMFtCzWG1%7Eqrpv-AtQ__&Key-Pair-Id=KVTP0A1DKRTAX" alt="power-bi"/>', unsafe_allow_html=True)
