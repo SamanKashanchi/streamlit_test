@@ -130,6 +130,36 @@ with st.container():
                 "</div>",
                 unsafe_allow_html=True
             )
+
+       st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Python</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' alt='docker' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Docker</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='tensorflow' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>TensorFlow</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' alt='pytorch' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>PyTorch</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True
+            )
         # st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
         # st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
     with col2:
