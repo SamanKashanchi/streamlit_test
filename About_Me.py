@@ -105,5 +105,5 @@ with st.container():
         st.markdown("HuggingFace")
         
         st.markdown('<img width="60" height="60" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="power-bi"/>', unsafe_allow_html=True)
-        st.markdown("HuggingFace")
+        st.markdown("scikit-learn")
 
