@@ -103,7 +103,7 @@ with st.container():
         
         st.markdown(
                 "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>ML Tools</strong></p>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
                 "<br>"
                 "<div style='display: flex; justify-content: space-around;'>"
                 "<div>"
@@ -138,7 +138,7 @@ with st.container():
 
           st.markdown(
                 "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>ML Tools</strong></p>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>DataBase Tools</strong></p>"
                 "<br>"
                 "<div style='display: flex; justify-content: space-around;'>"
                 "<div>"
