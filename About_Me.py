@@ -128,8 +128,7 @@ with st.container():
                 "</div>"
                 "</div>"
                 "</div>",
-                unsafe_allow_html=True
-            )
+                unsafe_allow_html=True)
 
        st.markdown(
                 "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
