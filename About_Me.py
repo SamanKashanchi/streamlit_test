@@ -69,7 +69,7 @@ with col1:
 # Inside the second column (col2):
 with col2:
     # Display a Lottie animation using the st_lottie function
-    st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
+    st.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
 st.write("---")  # Add an empty line
 
