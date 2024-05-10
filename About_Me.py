@@ -91,9 +91,6 @@ st.download_button(
 linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
-
-
-
 st.markdown(
     "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
     "<p style='margin: 10px 0; font-size: 20px;'><strong>ML Tools</strong></p>"
@@ -101,21 +98,21 @@ st.markdown(
     "<div style='display: flex; justify-content: space-around;'>"
     "<div>"
     f"<div style='display: flex; justify-content: center;'>"
-    f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+    f"{st_lottie(python_lottie, height=90,width=90, key='python', speed=2.5)}"
     "</div>"
     "<p style='margin: 10px 0;'>Python</p>"
     f"<div style='display: flex; justify-content: center;'>"
-    f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' alt='docker' style='width: 50px; height: 50px;'>"
+    f"{st_lottie(docker_lottie, height=90,width=90, key='docker', speed=2.5)}"
     "</div>"
     "<p style='margin: 10px 0;'>Docker</p>"
     "</div>"
     "<div>"
     f"<div style='display: flex; justify-content: center;'>"
-    f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='tensorflow' style='width: 50px; height: 50px;'>"
+    f"{st_lottie(tensorflow_lottie, height=90,width=90, key='tensorflow', speed=2.5)}"
     "</div>"
     "<p style='margin: 10px 0;'>TensorFlow</p>"
     f"<div style='display: flex; justify-content: center;'>"
-    f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' alt='pytorch' style='width: 50px; height: 50px;'>"
+    f"{st_lottie(pytorch_lottie, height=90,width=90, key='pytorch', speed=2.5)}"
     "</div>"
     "<p style='margin: 10px 0;'>PyTorch</p>"
     "</div>"
@@ -123,11 +120,6 @@ st.markdown(
     "</div>",
     unsafe_allow_html=True
 )
-
-
-
-
-
 
 
 with st.container():
