@@ -102,9 +102,7 @@ def icon_box_with_title(icon_texts, title):
     for icon, text in icon_texts:
         box_html += f"""
             <div style="display: flex; align-items: center; padding: 10px;">
-                <div style="margin-right: 10px;">
-                    <img width="60" height="60" src="{icon}" alt="{text}"/>
-                </div>
+                <img src="{icon}" alt="{text}" width="60" height="60" style="margin-right: 10px;">
                 <div>{text}</div>
             </div>
         """
@@ -119,6 +117,7 @@ ml_icons_texts = [
 
 # Display the icon box for machine learning tools
 st.markdown(icon_box_with_title(ml_icons_texts, "ML Tools"), unsafe_allow_html=True)
+
 
 
 
