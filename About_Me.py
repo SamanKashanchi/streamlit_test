@@ -158,8 +158,7 @@ with st.container():
                 "</div>"
                 "</div>"
                 "</div>",
-                unsafe_allow_html=True
-            )
+                unsafe_allow_html=True)
         # st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
         # st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
     with col2:
