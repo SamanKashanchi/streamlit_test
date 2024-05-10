@@ -107,7 +107,7 @@ with st.container():
                 "<div style='display: flex; justify-content: space-around;'>"
                 "<div>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+                f"<img src='https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json' alt='python' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>Python</p>"
                 f"<div style='display: flex; justify-content: center;'>"
