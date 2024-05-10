@@ -96,7 +96,7 @@ with st.container():
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
         st.markdown('<div style="height: 55px;"></div>', unsafe_allow_html=True)  # Add vertical space
 
-        st.markdown('<img width="60" height="60" src="file:///C:/Users/skashanchi/Downloads/Power-BI-Logo.svg" alt="power-bi"/>', unsafe_allow_html=True)
+        st.markdown('<img width="60" height="60" src="https://static-00.iconduck.com/assets.00/power-bi-icon-1536x2048-0xah5g2o.png" alt="power-bi"/>', unsafe_allow_html=True)
         st.markdown("PowerBI")
 
         
