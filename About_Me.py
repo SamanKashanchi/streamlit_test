@@ -78,78 +78,6 @@ linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
-st.markdown(
-    "<div style='display: flex; flex-direction: column;'>"
-    
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%;'>"
-    "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
-    "<div style='display: flex; flex-wrap: wrap; justify-content: space-around;'>"
-    "<div style='margin: 5px; flex-basis: 25%; display: flex; justify-content: space-around;'>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>Python</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>SQL</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='c' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>C</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='html' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>HTML</p>"
-    "</div>"
-    "</div>"
-    "</div>"
-    "</div>"
-    
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%; margin-top: 20px;'>"
-    "<p style='margin: 10px 0; font-size: 20px;'><strong>Libraries & Frameworks</strong></p>"
-    "<div style='display: flex; flex-wrap: wrap; justify-content: space-around;'>"
-    "<div style='margin: 5px; flex-basis: 25%; display: flex; justify-content: space-around;'>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' alt='pandas' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>Pandas</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' alt='numpy' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>NumPy</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://icon.icepanel.io/Technology/svg/Matplotlib.svg' alt='matplot' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>matplotlib</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png' alt='seaborn' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>seaborn</p>"
-    "</div>"
-    "</div>"
-    "</div>"
-    "</div>"
-    
-    "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 100%; margin-top: 20px;'>"
-    "<p style='margin: 10px 0; font-size: 20px;'><strong>Development Tools & Applications</strong></p>"
-    "<div style='display: flex; flex-wrap: wrap; justify-content: space-around;'>"
-    "<div style='margin: 5px; flex-basis: 25%; display: flex; justify-content: space-around;'>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' alt='mysql' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>MySQL</p>"
-    "</div>"
-    "<div style='display: flex; flex-direction: column;'>"
-    "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' alt='postgresql' style='width: 50px; height: 50px;'>"
-    "<p style='margin: 5px 0;'>PostgreSQL</p>"
-    "</div>"
-    "</div>"
-    "</div>"
-    "</div>"
-    
-    "</div>", unsafe_allow_html=True
-)
-
-
-
 
 with st.container():
     st.subheader('⚒️ Skills')
@@ -161,7 +89,6 @@ with st.container():
     with col2:
         st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
         st.markdown('<img width="60" height="60" src="https://icon.icepanel.io/Technology/svg/Matplotlib.svg" alt="power-bi"/>', unsafe_allow_html=True)
-        st.markdown('<img width="60" height="60" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715635938&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTYzNTkzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=BK24DvmXtJPBdfBW%7ECjRRcfUgpPkNnkM3eElZq7yz3yw4cJOVkGNibLg3wbUQCltxGhj6X03uhj1cjQeBXorPrwOkiPfAgOeMnw3wdZXLdJmCI0RCfs7QPgwcac8K7eMy3R3aEY3O3Xhbp9%7ELtgyybjy3QdKJ18eRe9l9MGSWXrgo-lbN4PgSWViPYtgdKZC5KUr5uwAyqPzEcTifEYinSkvCmzDZ3n%7Eb-SmljtT8jfV--YLw9P23awsmU1zn7l8ATJfphe7im9rDp2SOFfawkC-mg9nbMwKhUaa2OVenoBt9-ylK4b02eBJQQjnLBi8JFddfMFtCzWG1%7Eqrpv-AtQ__&Key-Pair-Id=KVTP0A1DKRTAX" alt="power-bi"/>', unsafe_allow_html=True)
         st.markdown("matplotlib")
 
 
@@ -170,3 +97,7 @@ with st.container():
         st.markdown('<div style="height: 55px;"></div>', unsafe_allow_html=True)  # Add vertical space
 
         st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/power-bi.png" alt="power-bi"/>', unsafe_allow_html=True)
+        
+    with col4:
+        st.markdown('<img width="60" height="60" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715635938&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTYzNTkzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=BK24DvmXtJPBdfBW%7ECjRRcfUgpPkNnkM3eElZq7yz3yw4cJOVkGNibLg3wbUQCltxGhj6X03uhj1cjQeBXorPrwOkiPfAgOeMnw3wdZXLdJmCI0RCfs7QPgwcac8K7eMy3R3aEY3O3Xhbp9%7ELtgyybjy3QdKJ18eRe9l9MGSWXrgo-lbN4PgSWViPYtgdKZC5KUr5uwAyqPzEcTifEYinSkvCmzDZ3n%7Eb-SmljtT8jfV--YLw9P23awsmU1zn7l8ATJfphe7im9rDp2SOFfawkC-mg9nbMwKhUaa2OVenoBt9-ylK4b02eBJQQjnLBi8JFddfMFtCzWG1%7Eqrpv-AtQ__&Key-Pair-Id=KVTP0A1DKRTAX" alt="power-bi"/>', unsafe_allow_html=True)
+        st.markdown("HuggingFace)
