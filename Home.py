@@ -74,7 +74,7 @@ with st.container():
         file_name=resume_file,
         mime="application/octet-stream")
         st.markdown(
-        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"> LinkedIn Profile</a>', unsafe_allow_html=True)
+        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
 
     with middle_column:
         st.empty()
