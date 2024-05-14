@@ -61,7 +61,7 @@ with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
 
-        Inner_left_column, Inner_middle_column, Inner_right_column = st.columns()
+        Inner_left_column, Inner_right_column = st.columns([4, 1])
 
         
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
