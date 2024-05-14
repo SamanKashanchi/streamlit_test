@@ -81,16 +81,8 @@ with st.container():
         st.empty()
     with right_column:
         
-        image = st.image(profile_pic, width=200)
+        image = st.image(profile_pic, width=200, hight = 300)
 
-        image.set_block_container_style(
-            """
-            {
-                border-radius: 50%;
-                overflow: hidden;
-            }
-            """
-        )
 
 
 st.write("---")  # Add an empty line
