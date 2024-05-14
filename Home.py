@@ -45,17 +45,9 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-python_lottie = load_lottieurl("https://lottie.host/9127127e-e4e5-494b-85a2-0aa303879534/KNejozHiWc.json")
-
-sql_lottie = load_lottieurl('https://lottie.host/365ff170-3177-4554-be41-065a379a505e/gMAp1Y5Hk9.json')
-
-docker_lottie = load_lottieurl("https://lottie.host/9ccbd771-096b-4cfc-9e7c-bec8a7afbaf2/Kl4y97DOt4.json")
-
 # content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 content2 = '"The only way to do great work is to love what you do." - Steve Jobs'
-
-# Call the "gradient" function to display a gradient title
-
+resume_file = "Saman Kashanchi Resume 2024.pdf"
 
 
 with st.container():
@@ -120,7 +112,6 @@ With a Master of Science in Computational Data Science and a Bachelor of Science
 Thanks for taking the time to visit my portfolio. I invite you to explore further and learn more about my professional experiences, personal projects, skills, and expertise.''')
 st.write()
 
-resume_file = "Saman Kashanchi Resume 2024.pdf"
 
 
 
