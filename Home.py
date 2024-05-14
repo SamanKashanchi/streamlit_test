@@ -58,8 +58,7 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
-    
+
 # Inside the second column (col2):
 with col2:
     # Display a Lottie animation using the st_lottie function
@@ -74,7 +73,12 @@ with open(resume_file, "rb") as pdf_file:
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
+
+        gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
+    
         st.header("About Me")
+        st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
+
         st.subheader("Aspiring Computer Vision Student")
         st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
         st.download_button( 
@@ -87,7 +91,11 @@ with st.container():
     with middle_column:
         st.empty()
     with right_column:
-        st.image(profile_pic)
+        
+        image.markdown(
+        f'<style>img.stImage {{border-radius: 50%;}}</style>',
+        unsafe_allow_html=True
+        )
 
 st.write("---")  # Add an empty line
 
