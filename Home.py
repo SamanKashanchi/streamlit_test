@@ -37,6 +37,26 @@ def gradient(color1, color2, color3, content1, content2):
                 f'<span style="color:white;font-size:17px;">{content2}</span></h1>',
                 unsafe_allow_html=True)
 
+
+def social_icons(width=24, height=24, **kwargs):
+    icon_template = '''
+    <a href="{url}" target="_blank" style="margin-right: 20px;">
+        <img src="{icon_src}" alt="{alt_text}" width="{width}" height="{height}">
+    </a>
+    '''
+
+    icons_html = ""
+    for name, url in kwargs.items():
+        icon_src = {
+            "linkedin": "https://www.pinclipart.com/picdir/big/574-5743993_linkedin-icon-white-png-clipart.png",
+            "github": "https://www.pinclipart.com/picdir/big/158-1581614_github-clipart.png",
+            "medium": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*psYl0y9DUzZWtHzFJLIvTw.png"
+        }.get(name.lower())
+
+        if icon_src:
+            icons_html += icon_template.format(url=url, icon_src=icon_src, alt_text=name.capitalize(), width=width, height=height)
+    return icons_html
+
 # Load a Lottie animation from a URL
 def load_lottieurl(url: str):
     r = requests.get(url)
@@ -60,8 +80,6 @@ with open(resume_file, "rb") as pdf_file:
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
-        L, R = st.columns(2)
-
         
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
     
@@ -78,6 +96,12 @@ with st.container():
         mime="application/octet-stream")
         st.markdown(
         f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
+
+
+        st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/issamjebnouni/", 
+                                         GitHub="https://github.com/issamjebnouni", 
+                                         Medium="https://medium.com/@issam.jebnouni"),
+                                         unsafe_allow_html=True)
 
     with middle_column:
        
