@@ -259,7 +259,7 @@ with st.container():
                 f"<div style='display: flex; justify-content: center;'>"
                 f"<img src='https://icon.icepanel.io/Technology/svg/scikit-learn.svg' alt='Sklearn' style='width: 50px; height: 50px;'>"
                 "</div>"
-                "<p style='margin: 10px 0;'>PyTorch</p>"
+                "<p style='margin: 10px 0;'>Scikit-learn</p>"
                 "</div>"
                 "</div>"
                 "</div>",
