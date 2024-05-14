@@ -184,7 +184,7 @@ with st.container():
                 "</div>"
                 "<div>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='tensorflow' style='width: 50px; height: 50px;'>"
+                f"<img src='https://asset.brandfetch.io/idBdG8DdKe/idSEhEKy8_.svg' alt='MySQL' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>TensorFlow</p>"
                 f"<div style='display: flex; justify-content: center;'>"
