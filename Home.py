@@ -120,7 +120,8 @@ with st.container():
                 "</div>"
                 "<p style='margin: 10px 0;'>SQL</p>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src=<img width="48" height="48" src="https://img.icons8.com/fluency/48/r-project.png" alt="r-project" style='width: 50px; height: 50px;'>"
+                f"<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
+
                 "</div>"
                 "<p style='margin: 10px 0;'>PyTorch</p>"
                 "</div>"
