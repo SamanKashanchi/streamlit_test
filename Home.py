@@ -86,7 +86,7 @@ with st.container():
         # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
         st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
-        st.write("-👋🏻 Hey, I'm Saman. A data scientist from Los Angeles, CA, driven by a passion for proactive problem-solving. With a keen eye for detail and a dedication to my craft, I specialize in crafting innovative strategies that anticipate challenges and drive meaningful change through data-driven insights.")
+        st.write("Welcome to my online portfolio! This digital space showcases my skills and journey in data science. Explore curated projects highlighting my expertise and problem-solving approach. Dive into interactive aspects of projects and research work, witnessing firsthand how data transforms into actionable insights. Beyond showcasing accomplishments, this portfolio offers a glimpse into the synergy of creativity, curiosity, and data. Let's embark on this journey of exploration and discovery together!")
 
         st.download_button( 
         label="📄 Download Resume",
