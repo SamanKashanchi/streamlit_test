@@ -75,7 +75,23 @@ st.write("---")  # Add an empty line
 
 
 
-st.write('Versatile and accomplished Data Scientist with a solid foundation in Computational Data Science and Mathematics, boasting a record of initiating and leading data-driven projects to successful completion. Proficient in leveraging advanced analytics, machine learning models, and data visualization techniques to drive strategic business decisions and operational efficiencies. Recognized for excellence in automation, demand forecasting, and research contributions')
+st.write('''Hey there,
+
+I'm Saman Kashanchi, a data science enthusiast based in Los Angeles, CA, and I'm glad you found your way to my online portfolio.
+
+With a background in Computational Data Science and Mathematics, I've been fortunate to work on a variety of real-world projects that have shaped my journey in this field. From optimizing supply chains to forecasting demand, I've had the opportunity to tackle some fascinating challenges head-on.
+
+One of my recent professional projects involved developing a custom supply chain simulation at Jetro Restaurant Depot, utilizing reinforcement learning to optimize product ordering and reduce stockouts across the western region. Additionally, I led the development of a comprehensive invoice auditor system across multiple facilities, resulting in significant cost savings through error identification and process improvements.
+
+Outside of my professional work, I'm always tinkering with personal projects that explore new ideas and technologies. For instance, I've developed a social media automation tool that manages over 30 channels with 2000+ subscribers, streamlining content creation and engagement across platforms.
+
+I've also delved into the world of algorithmic trading, exploring arbitrage techniques in the foreign exchange markets. It's an ever-evolving landscape that combines my love for data with the excitement of financial markets.
+
+Currently, I'm immersed in a personal project focused on database AI agents. These agents can visualize data, provide real-time insights, and automate workflows, offering a glimpse into the future of data-driven decision-making.
+
+With a Master of Science in Computational Data Science and a Bachelor of Science in Computer Science from Chapman University, along with certificates in Applied Statistical Analysis and Bloomberg Certified, I'm equipped with the skills and knowledge to tackle complex challenges in the data science realm.
+
+Thanks for taking the time to visit my portfolio. I invite you to explore further and learn more about my professional experiences, personal projects, skills, and expertise.''')
 st.write()
 
 resume_file = "Saman Kashanchi Resume 2024.pdf"
