@@ -73,13 +73,13 @@ with st.container():
         data= PDFbyte,
         file_name=resume_file,
         mime="application/octet-stream")
-       
+        st.markdown(
+        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
 
     with middle_column:
         st.empty()
     with right_column:
-        st.markdown(
-        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
+        
         image = st.image(profile_pic, use_column_width=True)
         
 
