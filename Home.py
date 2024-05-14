@@ -86,7 +86,7 @@ with st.container():
         # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
         st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
-        st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
+        st.write("-👋🏻 Hey, I'm Saman. A data scientist from Los Angeles, CA, driven by a passion for proactive problem-solving. With a keen eye for detail and a dedication to my craft, I specialize in crafting innovative strategies that anticipate challenges and drive meaningful change through data-driven insights.")
 
         st.download_button( 
         label="📄 Download Resume",
