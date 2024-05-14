@@ -243,7 +243,7 @@ with st.container():
                 "<div style='display: flex; justify-content: space-around;'>"
                 "<div>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/id6a4s3gXI/idgeMRvOWZ.svg' alt='LammaIidex' style='width: 10px; height: 100px;'>"
+                f"<img src='https://asset.brandfetch.io/id6a4s3gXI/idgeMRvOWZ.svg' alt='LammaIidex' style='width: 100px; height: 100px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>LlamaIndex</p>"
                 f"<div style='display: flex; justify-content: center;'>"
