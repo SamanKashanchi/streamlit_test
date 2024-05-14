@@ -68,8 +68,36 @@ with col1:
     
 # Inside the second column (col2):
 with col2:
+
+    st.W(
     # Display a Lottie animation using the st_lottie function
     pass
+
+with open(resume_file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+    
+
+
+
+with st.container():
+    left_column, middle_column, right_column = st.columns((1,0.2,0.6))
+    with left_column:
+        st.header("About Me", divider='red')
+        st.subheader("Aspiring Computer Vision Student")
+        st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
+        st.download_button( 
+        label="📄 Download Resume",
+        data= PDFbyte,
+        file_name=resume_file,
+        mime="application/octet-stream")
+        st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/issamjebnouni/", 
+                                         GitHub="https://github.com/issamjebnouni", 
+                                         Medium="https://medium.com/@issam.jebnouni"),
+                                         unsafe_allow_html=True)
+    with middle_column:
+        st.empty()
+    with right_column:
+        st.image(img)
 
 st.write("---")  # Add an empty line
 
@@ -96,15 +124,7 @@ st.write()
 
 resume_file = "Saman Kashanchi Resume 2024.pdf"
 
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-    
-st.download_button( 
-    label="📄 Download Resume",
-    data= PDFbyte,
-    file_name=resume_file,
-    mime="application/octet-stream"
-)
+
 
 linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
