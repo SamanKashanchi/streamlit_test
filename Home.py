@@ -25,7 +25,7 @@ st.markdown(
 
 # Load your profile picture
 
-profile_pic = 'profile_pic.jpeg'  
+profile_pic = 'profile_pic_circle.png'  
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
