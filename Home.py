@@ -49,7 +49,7 @@ def social_icons(width=24, height=24, **kwargs):
     for name, url in kwargs.items():
         icon_src = {
             "linkedin": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-            "github": "https://www.pinclipart.com/picdir/big/158-1581614_github-clipart.png",
+            "github": "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png",
         }.get(name.lower())
 
         if icon_src:
@@ -93,10 +93,7 @@ with st.container():
         data= PDFbyte,
         file_name=resume_file,
         mime="application/octet-stream")
-        st.markdown(
-        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
-
-
+       
         st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/saman-kashanchi/", 
                                          GitHub="https://github.com/SamanKashanchi"),
                                          unsafe_allow_html=True)
