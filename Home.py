@@ -81,7 +81,7 @@ with st.container():
         st.empty()
     with right_column:
         
-        image = st.image(profile_pic, width=200, hight = 300)
+        image = st.image(profile_pic, use_column_width=True)
 
 
 
