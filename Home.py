@@ -48,6 +48,8 @@ def load_lottieurl(url: str):
 # content2 = "From data to decisions: Unleashing the power of data science and predictive analytics to empower businesses"
 content2 = '"The only way to do great work is to love what you do." - Steve Jobs'
 resume_file = "Saman Kashanchi Resume 2024.pdf"
+linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
+
 
 
 with st.container():
@@ -80,10 +82,8 @@ with st.container():
         data= PDFbyte,
         file_name=resume_file,
         mime="application/octet-stream")
-        st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/issamjebnouni/", 
-                                         GitHub="https://github.com/issamjebnouni", 
-                                         Medium="https://medium.com/@issam.jebnouni"),
-                                         unsafe_allow_html=True)
+        st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
+
     with middle_column:
         st.empty()
     with right_column:
@@ -114,10 +114,6 @@ st.write()
 
 
 
-
-linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
-
-st.markdown(f"[LinkedIn Profile]({linkedin_url})", unsafe_allow_html=True)
 
 
 with st.container():
