@@ -24,7 +24,9 @@ st.markdown(
 
 
 # Load your profile picture
+
 profile_pic = 'profile_pic.jpeg'  
+image = st.image(profile_pic, width=200)
 
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
