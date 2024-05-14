@@ -72,7 +72,7 @@ with open(resume_file, "rb") as pdf_file:
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
-        st.header("About Me", divider='red')
+        st.header("About Me")
         st.subheader("Aspiring Computer Vision Student")
         st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
         st.download_button( 
