@@ -287,7 +287,7 @@ with st.container():
                 "</div>"
                 "<p style='margin: 10px 0;'>TensorFlow</p>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://icon.icepanel.io/Technology/svg/scikit-learn.svg' alt='Sklearn' style='width: 50px; height: 50px;'>"
+                f"<img src='https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png?api=v2' alt='Sklearn' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>Scikit-learn</p>"
                 "</div>"
