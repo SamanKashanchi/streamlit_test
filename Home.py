@@ -127,7 +127,7 @@ with st.container():
 
             
             f"<div style='display: flex; justify-content: center;'>"
-            f"<img src="https://img.icons8.com/fluency/48/rstudio.png" alt="rstudio" style='width: 50px; height: 50px;'>"
+            f"<img src='https://img.icons8.com/fluency/48/rstudio.png' alt='rstudio' style='width: 50px; height: 50px;'>"
             "</div>"
             "<p style='margin: 10px 0;'>PyTorch</p>"
             "</div>"
