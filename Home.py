@@ -112,7 +112,7 @@ st.write("---")  # Add an empty line
 
 
 st.subheader("About Me")
-st.write('''Hey there,
+st.write('''
 
 💼 At work, I'm the architect of innovation and impact, crafting solutions that not only crunch numbers but also catalyze change. From optimizing supply chains to forecasting demand, I've led projects that make a real-world difference.
 
