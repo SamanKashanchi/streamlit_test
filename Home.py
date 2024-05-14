@@ -188,7 +188,7 @@ with st.container():
                 "</div>"
                 "<p style='margin: 10px 0;'>TensorFlow</p>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' alt='pytorch' style='width: 50px; height: 50px;'>"
+                f"<img src='https://img.icons8.com/color/48/hadoop-distributed-file-system.png' alt='hadoop-distributed-file-system' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>PyTorch</p>"
                 "</div>"
