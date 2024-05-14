@@ -55,7 +55,7 @@ linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-image = st.image(profile_pic, width=200)
+# image = st.image(profile_pic, width=200)
  
 
 
@@ -82,11 +82,7 @@ with st.container():
         st.empty()
     with right_column:
         
-        
-        st.markdown(
-        f'<style>.circle-img {{ border-radius: 50%; }}</style>',
-        unsafe_allow_html=True
-        )
+        pass
 
 st.write("---")  # Add an empty line
 
