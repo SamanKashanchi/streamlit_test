@@ -82,8 +82,8 @@ with st.container():
         
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
     
-        st.header("About Me")
-        st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
+        # st.header("About Me")
+        # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
         st.subheader("Aspiring Computer Vision Student")
         st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
