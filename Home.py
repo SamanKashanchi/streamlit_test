@@ -82,15 +82,11 @@ with st.container():
         st.empty()
     with right_column:
         
-        image.set_css({"border-radius": "50%"})
         
         st.markdown(
         f'<style>.circle-img {{ border-radius: 50%; }}</style>',
         unsafe_allow_html=True
         )
-
-# Apply the CSS class to the image
-image.set_css({"border-radius": "50%"})
 
 st.write("---")  # Add an empty line
 
