@@ -48,7 +48,7 @@ def social_icons(width=24, height=24, **kwargs):
     icons_html = ""
     for name, url in kwargs.items():
         icon_src = {
-            "linkedin": "https://www.pinclipart.com/picdir/big/574-5743993_linkedin-icon-white-png-clipart.png",
+            "linkedin": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
             "github": "https://www.pinclipart.com/picdir/big/158-1581614_github-clipart.png",
         }.get(name.lower())
 
