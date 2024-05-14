@@ -87,7 +87,7 @@ with st.container():
     with middle_column:
         st.empty()
     with right_column:
-        st.image(img)
+        st.image(profile_pic)
 
 st.write("---")  # Add an empty line
 
