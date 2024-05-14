@@ -61,6 +61,9 @@ with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
 
+        Inner_left_column, Inner_middle_column, Inner_right_column = st.columns((02,0.2,0.2))
+
+        
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
     
         st.header("About Me")
@@ -68,13 +71,16 @@ with st.container():
 
         st.subheader("Aspiring Computer Vision Student")
         st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
-        st.download_button( 
-        label="📄 Download Resume",
-        data= PDFbyte,
-        file_name=resume_file,
-        mime="application/octet-stream")
-        st.markdown(
-        f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
+
+        with inner_left_column:
+            st.download_button( 
+            label="📄 Download Resume",
+            data= PDFbyte,
+            file_name=resume_file,
+            mime="application/octet-stream")
+        with Inner_middle_column:
+            st.markdown(
+            f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
 
     with middle_column:
         st.empty()
