@@ -100,35 +100,6 @@ with st.container():
     st.write("---")
     col1, col2, col3= st.columns([1, 1, 1])
     with col1:
-        # st.markdown(
-        #         "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-        #         "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
-        #         "<br>"
-        #         "<div style='display: flex; justify-content: space-around;'>"
-        #         "<div>"
-        #         f"<div style='display: flex; justify-content: center;'>"
-        #         f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
-        #         "</div>"
-        #         "<p style='margin: 10px 0;'>Python</p>"
-        #         f"<div style='display: flex; justify-content: center;'>"
-        #         f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='c' style='width: 50px; height: 50px;'>"
-        #         "</div>"
-        #         "<p style='margin: 10px 0;'>C</p>"
-        #         "<div>"
-            
-        #         f"<div style='display: flex; justify-content: center;'>"
-        #         f"<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
-        #         "</div>"
-        #         "<p style='margin: 10px 0;'>SQL</p>"
-            
-        #         f"<div style='display: flex; justify-content: center;'>"
-        #         f"<img src='https://img.icons8.com/fluency/48/r-project.png' alt='r-project' style='width: 50px; height: 50px;'>"
-        #         "</div>"
-        #         "<p style='margin: 10px 0;'>PyTorch</p>"
-        #         "</div>"
-        #         "</div>"
-        #         "</div>",
-        #         unsafe_allow_html=True)
 
         st.markdown(
             "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
@@ -272,7 +243,7 @@ with st.container():
                 "<div style='display: flex; justify-content: space-around;'>"
                 "<div>"
                 f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+                f"<img src='https://asset.brandfetch.io/id6a4s3gXI/idgeMRvOWZ.svg' alt='LammaIidex' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>Python</p>"
                 f"<div style='display: flex; justify-content: center;'>"
