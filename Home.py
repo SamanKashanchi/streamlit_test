@@ -49,7 +49,7 @@ def social_icons(width=24, height=24, **kwargs):
     for name, url in kwargs.items():
         icon_src = {
             "linkedin": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-            "github": "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png",
+            "github": "https://asset.brandfetch.io/idZAyF9rlg/idd6TtF-kc.png",
         }.get(name.lower())
 
         if icon_src:
