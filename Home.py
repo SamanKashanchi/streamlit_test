@@ -109,7 +109,7 @@ with st.container():
             
             "<div>"
             f"<div style='display: flex; justify-content: center;'>"
-            f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+            f"<img src='https://img.icons8.com/color/48/amazon-web-services.png' alt='amazon-web-services' style='width: 50px; height: 50px;'>"
             "</div>"
             "<p style='margin: 10px 0;'>Python</p>"
             
