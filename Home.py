@@ -52,18 +52,6 @@ linkedin_url = "https://www.linkedin.com/in/saman-kashanchi/"
 
 
 
-with st.container():
-    # Divide the container into two columns, with widths 8 and 3
-    col1, col2 = st.columns([8, 3])
-
-with col1:
-    # Call the "gradient" function to display a gradient title
-
-# Inside the second column (col2):
-with col2:
-    # Display a Lottie animation using the st_lottie function
-    pass
-
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
     
