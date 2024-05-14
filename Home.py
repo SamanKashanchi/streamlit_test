@@ -60,7 +60,7 @@ with open(resume_file, "rb") as pdf_file:
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
     with left_column:
-
+        L, R = st.columns(2)
 
         
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
@@ -81,7 +81,7 @@ with st.container():
 
     with middle_column:
        
-        # st.empty()
+        st.empty()
     with right_column:
         
         image = st.image(profile_pic, use_column_width=True)
