@@ -83,7 +83,6 @@ with st.container():
         
         gradient('#FF5733','#1B1464','e0fbfc',f"Saman Kashanchi", content2)
     
-        st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
         # st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
         st.write("Welcome to my online portfolio! This digital space showcases my skills and journey in data science. Explore curated projects highlighting my expertise and problem-solving approach. Dive into interactive aspects of projects and research work, witnessing firsthand how data transforms into actionable insights. Beyond showcasing accomplishments, this portfolio offers a glimpse into the synergy of creativity, curiosity, and data. Let's embark on this journey of exploration and discovery together!")
@@ -104,11 +103,12 @@ with st.container():
     with right_column:
         
         image = st.image(profile_pic, use_column_width=True)
+        st.write('The only way to do great work is to love what you do." - Steve Jobs')
         
 
 
 
-st.write("---")  # Add an empty line
+st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
 
 st.subheader("About Me")
