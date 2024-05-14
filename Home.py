@@ -68,8 +68,6 @@ with col1:
     
 # Inside the second column (col2):
 with col2:
-
-    st.W(
     # Display a Lottie animation using the st_lottie function
     pass
 
