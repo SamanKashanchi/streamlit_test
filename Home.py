@@ -190,7 +190,7 @@ with st.container():
                 f"<div style='display: flex; justify-content: center;'>"
                 f"<img src='https://img.icons8.com/color/48/hadoop-distributed-file-system.png' alt='hadoop-distributed-file-system' style='width: 50px; height: 50px;'>"
                 "</div>"
-                "<p style='margin: 10px 0;'>PyTorch</p>"
+                "<p style='margin: 10px 0;'>Apache Hadoop</p>"
                 "</div>"
                 "</div>"
                 "</div>",
