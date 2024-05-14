@@ -50,7 +50,6 @@ def social_icons(width=24, height=24, **kwargs):
         icon_src = {
             "linkedin": "https://www.pinclipart.com/picdir/big/574-5743993_linkedin-icon-white-png-clipart.png",
             "github": "https://www.pinclipart.com/picdir/big/158-1581614_github-clipart.png",
-            "medium": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*psYl0y9DUzZWtHzFJLIvTw.png"
         }.get(name.lower())
 
         if icon_src:
@@ -98,9 +97,8 @@ with st.container():
         f'<a href="{linkedin_url}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="30" style="vertical-align: middle;"></a>', unsafe_allow_html=True)
 
 
-        st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/issamjebnouni/", 
-                                         GitHub="https://github.com/issamjebnouni", 
-                                         Medium="https://medium.com/@issam.jebnouni"),
+        st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/saman-kashanchi/", 
+                                         GitHub="https://github.com/SamanKashanchi"),
                                          unsafe_allow_html=True)
 
     with middle_column:
