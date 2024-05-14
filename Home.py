@@ -83,8 +83,8 @@ with st.container():
     with right_column:
         
         image.markdown(
-        f'<style>img.stImage {{border-radius: 50%;}}</style>',
-        unsafe_allow_html=True
+            f'<style>.stImage > img {{border-radius: 50%;}}</style>',
+            unsafe_allow_html=True
         )
 
 st.write("---")  # Add an empty line
