@@ -85,7 +85,7 @@ with st.container():
         # st.header("About Me")
         # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
-        st.subheader("Aspiring Computer Vision Student")
+        st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
         st.write("- 👋🏻 Hi, I'm Issam! I am a Computer Vision engineer based in Tunisia. Currently engaged in my end-of-studies internship, I bring both experience and commitment to make meaningful contributions in the field.")
 
         st.download_button( 
