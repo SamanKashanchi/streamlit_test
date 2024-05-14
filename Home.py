@@ -125,7 +125,7 @@ with st.container():
                 f"<img src='https://img.icons8.com/fluency/48/r-project.png' alt='r-project' style='width: 50px; height: 50px;'>"
                 "</div>"
                 "<p style='margin: 10px 0;'>PyTorch</p>"
-                
+                "</div>"
                 "</div>"
                 "</div>",
                 unsafe_allow_html=True)
