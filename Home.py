@@ -86,8 +86,8 @@ with st.container():
         st.markdown("<br><br>", unsafe_allow_html=True)
 
         # st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
-        st.write("Welcome to my online portfolio, your gateway to interactive projects revealing the depth of my expertise in data science and machine learning. 
-        Dive into a curated collection showcasing my professional endeavors, personal projects, and contracted research, offering a vivid glimpse into my capabilities. Explore with curiosity, and gain a richer understanding of what I bring to the table.")
+        st.write('''Welcome to my online portfolio, your gateway to interactive projects revealing the depth of my expertise in data science and machine learning. 
+        Dive into a curated collection showcasing my professional endeavors, personal projects, and contracted research, offering a vivid glimpse into my capabilities. Explore with curiosity, and gain a richer understanding of what I bring to the table.''')
 
         st.markdown("<br>", unsafe_allow_html=True)
 
