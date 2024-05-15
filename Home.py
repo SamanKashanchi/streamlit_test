@@ -104,7 +104,7 @@ with st.container():
     with right_column:
         
         image = st.image(profile_pic, use_column_width=True)
-        st.write('"The only way to do great work is to love what you do." - Steve Jobs')
+        st.write("_\"The only way to do great work is to love what you do.\"_ - Steve Jobs")
         
 
 
