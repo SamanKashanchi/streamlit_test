@@ -88,6 +88,8 @@ with st.container():
         # st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
         st.write("Welcome to my online portfolio! This digital space showcases my skills and journey in data science. Explore curated projects highlighting my expertise and problem-solving approach. Dive into interactive aspects of projects and research work, witnessing firsthand how data transforms into actionable insights. Beyond showcasing accomplishments, this portfolio offers a glimpse into the synergy of creativity, curiosity, and data. Let's embark on this journey of exploration and discovery together!")
 
+        st.markdown("<br>", unsafe_allow_html=True)
+
         st.download_button( 
         label="📄 Download Resume",
         data= PDFbyte,
