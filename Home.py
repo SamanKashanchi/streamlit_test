@@ -111,12 +111,12 @@ with st.container():
         
 
 
+st.subheader("About Me")
 
 st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 # st.write("---")
 
 
-st.subheader("About Me")
 st.write('''
 
 💼 At work, I'm the architect of innovation and impact, crafting solutions that not only crunch numbers but also catalyze change. From optimizing supply chains to forecasting demand, I've led projects that make a real-world difference.
