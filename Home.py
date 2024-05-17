@@ -330,4 +330,4 @@ with st.container():
                 "</div>",
                 unsafe_allow_html=True)
              
-st.wrtie("---", color  ='red')
+st.write("---", color  ='red')
