@@ -330,17 +330,5 @@ with st.container():
                 "</div>",
                 unsafe_allow_html=True)
              
-        # st.markdown('<img width="60" height="60" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>', unsafe_allow_html=True)
-        # st.markdown('<div style="height: 55px;"></div>', unsafe_allow_html=True)  # Add vertical space
-
-        # st.markdown('<img width="60" height="60" src="https://static-00.iconduck.com/assets.00/power-bi-icon-1536x2048-0xah5g2o.png" alt="power-bi"/>', unsafe_allow_html=True)
-        # st.markdown("PowerBI")
-
-        # st.markdown("</div>")
-
-        # st.markdown('<img width="60" height="60" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715636965&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTYzNjk2NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=ZEl4ID--nH2qxecX5ADD71STYrL%7ENnF5CZ4qi3KvDQE1WpzHNRl3M9i0NBmAaKvfZx23gHODkNFLTp9wIcV7X-yvQWWN2NoZVyLDRfQPs42H6F4zbN1O6doXZUL8RQtP4We2YxuvxjCMCNcs8Ui3Glvn-9MN7RdIDV1WPVtHoKb6rHpauGHTFN7QK3uaNP4m0rZhOv5FjkkrIjhqQ3clbY0XU85aYRzUSPa3Yr9PyXji68%7Edv7SapXwZU9vk3GQOMaM5lHICY3aFRx8xaRfuPoVxyJ6VaWPDfLI-qXISYFKMsqGqDaxGW4EMwPlTIWn8gQArKSWUbpLIk9PkWyq%7EEg__&Key-Pair-Id=KVTP0A1DKRTAX"/>', unsafe_allow_html=True)
-        # st.markdown("HuggingFace")
-        
-        # st.markdown('<img width="60" height="60" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="power-bi"/>', unsafe_allow_html=True)
-        # st.markdown("scikit-learn")
+st.header("Projects", divider="red")
 
