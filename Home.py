@@ -110,11 +110,11 @@ with st.container():
         st.write("_\"The only way to do great work is to love what you do.\"_ - Steve Jobs")
         
 
+st.write("---")
 
 st.subheader("About Me")
 
 # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
-# st.write("---")
 
 
 st.write('''
