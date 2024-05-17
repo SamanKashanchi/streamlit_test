@@ -330,4 +330,4 @@ with st.container():
                 "</div>",
                 unsafe_allow_html=True)
              
-st.header("About Me", divider='red')
+st.header("Projects", divider='red')
