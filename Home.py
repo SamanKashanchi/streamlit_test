@@ -112,8 +112,8 @@ with st.container():
 
 
 
-# st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
-st.write("---")
+st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
+# st.write("---")
 
 
 st.subheader("About Me")
