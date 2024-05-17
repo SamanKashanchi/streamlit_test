@@ -330,5 +330,4 @@ with st.container():
                 "</div>",
                 unsafe_allow_html=True)
              
-st.header('This is a header with a divider', divider='rainbow')
-
+st.divider()
