@@ -329,7 +329,16 @@ with st.container():
                 "</div>"
                 "</div>",
                 unsafe_allow_html=True)
-             
+
+repo = {
+    "RAWG": "https://github.com/Kimchi21/RAWG.io_Game-Data-Analysis",
+    "AutoSales": "https://github.com/Kimchi21/Data-Analysis_Portfolio/tree/main/Automobile%20Sales",
+    "SSD": "https://github.com/Kimchi21/Solid-State-Drives_Analysis",
+    "Laz_Shopee": "https://github.com/Kimchi21/Lazada-vs.-Shopee_Sentiment-Analysis",
+    "Sperm": "https://github.com/Kimchi21/Sperm-Morphological-Quality-ImageSegmentation",
+    "Raisin": "https://github.com/Kimchi21/Raisin-Grain-Prediction-Using-a-StackedEnsembleModel"
+}
+
 st.header("Projects", divider='red')
 right, left = st.columns(2)
 with right:
