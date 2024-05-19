@@ -2,6 +2,8 @@ import os
 import pandas as pd
 import streamlit as st
 import llama_index
+from llama_index.llms import OpenAI
+
 import subprocess
 st.text("HI")
 
