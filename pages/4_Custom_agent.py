@@ -6,6 +6,19 @@ st.text("HI")
 
 st.text(llama_index)
 
+# Define the pip command you want to run
+pip_command = ["pip", "show", "llama_index"]
+
+# Run the pip command
+result = subprocess.run(pip_command, capture_output=True, text=True)
+
+# Check if the command was successful
+if result.returncode == 0:
+    # Print the output of the pip command
+    st.text(result.stdout)
+else:
+    # Print an error message if the command failed
+    st.text("Error:", result.stderr)
 
 
 try:
