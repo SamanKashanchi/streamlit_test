@@ -4,6 +4,10 @@ import streamlit as st
 st.text("HI")
 import streamlit as st
 
+st.text(llama_index.__version__)
+
+
+
 try:
     import llama_index
     st.write("llama_index is installed.")
