@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import * from llama_index
+from llama_index import * 
 
 # from llama_index.query_engine import PandasQueryEngine
 # # from prompts import context
