@@ -2,6 +2,8 @@ import os
 import pandas as pd
 import streamlit as st
 st.text("HI")
+import streamlit as st
+
 try:
     import llama_index
     st.write("llama_index is installed.")
@@ -9,11 +11,11 @@ try:
     st.write(dir(llama_index))
 
     try:
-        from llama_index import query_engine
-        st.write("\nModules in llama_index.query_engine:")
-        st.write(dir(query_engine))
+        from llama_index import llms
+        st.write("\nModules in llama_index.llms:")
+        st.write(dir(llms))
     except ImportError as e:
-        st.write("\nError importing query_engine:", e)
+        st.write("\nError importing llms:", e)
 
     try:
         from llama_index import readers
@@ -22,7 +24,21 @@ try:
     except ImportError as e:
         st.write("\nError importing readers:", e)
 
-    # Repeat for other submodules you are interested in
+    # Check individual submodules in llms and readers
+    try:
+        st.write("\nSubmodules in llama_index.llms:")
+        for submodule in dir(llms):
+            st.write(f"llms.{submodule}: {getattr(llms, submodule)}")
+    except Exception as e:
+        st.write("\nError listing submodules in llms:", e)
+
+    try:
+        st.write("\nSubmodules in llama_index.readers:")
+        for submodule in dir(readers):
+            st.write(f"readers.{submodule}: {getattr(readers, submodule)}")
+    except Exception as e:
+        st.write("\nError listing submodules in readers:", e)
+
 except ImportError as e:
     st.write("llama_index is not installed:", e)
 
