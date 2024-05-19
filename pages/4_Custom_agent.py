@@ -19,7 +19,7 @@ if result.returncode == 0:
     st.text(result.stdout)
 else:
     # Print an error message if the command failed
-    st.text("Error:", result.stderr)
+    st.text(result.stderr)
 
 
 try:
