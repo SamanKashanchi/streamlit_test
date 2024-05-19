@@ -2,6 +2,9 @@ import os
 import pandas as pd
 from llama_index import * 
 
+
+agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = "SAY HELLO")
+
 # from llama_index.query_engine import PandasQueryEngine
 # # from prompts import context
 # from llama_index.tools import QueryEngineTool, ToolMetadata
