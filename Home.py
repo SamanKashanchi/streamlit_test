@@ -12,6 +12,8 @@ import numpy as np
 import requests
 from streamlit_lottie import st_lottie
 
+from llama_index.llms import OpenAI
+
 
 st.set_page_config(page_title="PORTFOLIO", layout ='wide')
 st.markdown(
