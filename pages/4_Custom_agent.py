@@ -4,7 +4,7 @@ import streamlit as st
 import llama_index
 st.text("HI")
 
-st.text(llama_index.__version__)
+st.text(llama_index)
 
 
 
