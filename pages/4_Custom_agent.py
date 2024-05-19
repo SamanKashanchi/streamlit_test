@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 import llama_index
+import subprocess
 st.text("HI")
 
 st.text(llama_index)
