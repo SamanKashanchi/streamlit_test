@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit as st
 import llama_index
 from llama_index.llms.openai import OpenAI
+from llama_index.agent import ReActAgent
+
 
 import subprocess
 st.text("HI")
