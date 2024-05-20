@@ -5,7 +5,7 @@ import llama_index
 from llama_index.llms.openai import OpenAI
 from llama_index.core.agent import ReActAgent
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
-from llama_index.readers import PDFReader
+from llama_index.core.readers import PDFReader
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
 
 
