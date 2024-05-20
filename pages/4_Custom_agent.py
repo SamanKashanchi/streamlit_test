@@ -9,7 +9,7 @@ from llama_index.core.tools import QueryEngineTool, ToolMetadata
 
 import subprocess
 st.text("HI")
-st.text(OPENAI_API_KEY)
+st.text(os.getenv("OPENAI_API_KEY"))
 st.text(llama_index)
 
 # Define the pip command you want to run
