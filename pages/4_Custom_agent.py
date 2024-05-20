@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import llama_index
 from llama_index.llms.openai import OpenAI
-from llama_index.agent import ReActAgent
+from llama_index.core.agent import ReActAgent
 
 
 import subprocess
