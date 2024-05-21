@@ -45,7 +45,7 @@ saman_index = get_index(saman_pdf, 'saman')
 
 
 
-tools = [note_engine,   
+tools = [   
         QueryEngineTool(query_engine = saman_engine, 
                          metadata = ToolMetadata(name = "saman_pdfData",
                                                 description = 'this gives detailed information about Saman'))]
