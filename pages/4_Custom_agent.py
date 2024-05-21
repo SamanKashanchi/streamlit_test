@@ -10,5 +10,5 @@ from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_s
 
 
 
-# pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-# saman_pdf = PDFReader().load_data(file = pdf_path)
+pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+saman_pdf = PDFReader().load_data(file = pdf_path)
