@@ -23,7 +23,7 @@ def get_index(data, index_name):
     return index
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
-# openai.api_key = openai_api_key
+openai.api_key = openai_api_key
 
 
 if not openai_api_key:
