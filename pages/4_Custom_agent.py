@@ -21,7 +21,7 @@ def get_index(data, index_name):
         )
     return index
 
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+# os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
 saman_pdf = PDFReader().load_data(file = pdf_path)
