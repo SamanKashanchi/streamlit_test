@@ -64,10 +64,5 @@ if prompt != "":
     result = agent.query(prompt)
     with st.chat_message("assistant"):
 
-        st.write(result)
-
         st.markdown(result)
-# while (prompt :=  st.text_input("Enter a prompt (q to quit): ", key='prompt_KEY')) != "q":
-#     result = agent.query(prompt)
-#     st.text(result)
 
