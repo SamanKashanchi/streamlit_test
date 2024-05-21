@@ -63,7 +63,7 @@ result = agent.query(prompt)
 
 
 
-st.write(result.get("text", result))
+st.write(result)
 
 # while (prompt :=  st.text_input("Enter a prompt (q to quit): ", key='prompt_KEY')) != "q":
 #     result = agent.query(prompt)
