@@ -47,7 +47,8 @@ if st.button('Submit'):
     
     # Check if the API key is valid by making a simple API call
     try:
-        models = openai.Model.list()
+        openai.Engine.list()
+
         st.success("API key is valid!")
     except Exception as e:
         st.error("Error testing API key: {}".format(e))
