@@ -59,11 +59,12 @@ agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = contex
 
 
 prompt = st.text_input("Enter a prompt (q to quit): ", key='prompt_KEY')
-result = agent.query(prompt)
 
+if prompt != "":
+    result = agent.query(prompt)
+    with st.chat_message("assistant"):
 
-
-st.write(result)
+        st.write(result)
 
 # while (prompt :=  st.text_input("Enter a prompt (q to quit): ", key='prompt_KEY')) != "q":
 #     result = agent.query(prompt)
