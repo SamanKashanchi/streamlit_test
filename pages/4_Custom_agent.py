@@ -49,3 +49,18 @@ pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
 saman_pdf = PDFReader().load_data(file = pdf_path)
 saman_index = get_index(saman_pdf, 'saman')
 
+
+
+tools = [note_engine,   
+        QueryEngineTool(query_engine = saman_engine, 
+                         metadata = ToolMetadata(name = "saman_pdfData",
+                                                description = 'this gives detailed information about Saman'))]
+
+llm = OpenAI(model = "gpt-3.5-turbo-0613")
+agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+
+
+while (prompt := st.input("Enter a prompt (q to quit): ")) != "q":
+    result = agent.query(prompt)
+    st.text(result)
+
