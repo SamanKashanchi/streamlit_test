@@ -22,9 +22,10 @@ def get_index(data, index_name):
         )
     return index
 
-openai_api_key = os.getenv('OPENAI_API_KEY')
-openai.api_key = openai_api_key
+# openai_api_key = os.getenv('OPENAI_API_KEY')
+# openai.api_key = openai_api_key
 
+openai.api_key = st.secrets['OPENAI_API_KEY']
 
 if not openai_api_key:
     st.text("No OPENAI_API_KEY found in environment variables")
