@@ -58,7 +58,7 @@ llm = OpenAI(model = "gpt-3.5-turbo-0613")
 agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
 
 
-prompt = st.text_input("Enter a prompt (q to quit): ", key='prompt_KEY')
+prompt = st.text_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 
 if prompt != "":
     result = agent.query(prompt)
