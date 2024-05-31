@@ -8,6 +8,7 @@ from llama_index.core.agent import ReActAgent
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.readers.file import PDFReader
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
+from streamlit_lottie import st_lottie
 
 
 def gradient(color1, color2, color3, content1, content2):
@@ -17,16 +18,24 @@ def gradient(color1, color2, color3, content1, content2):
                 f'<span style="color:white;font-size:17px;">{content2}</span></h1>',
                 unsafe_allow_html=True)
 
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+chatbot_lottie = load_lottieurl("https://lottie.host/59c06850-02ed-4457-8e73-fd5bbc0e0c03/5jnQk9mfph.json")
 
 with st.container():
-    # Divide the container into two columns, with widths 8 and 3
     col1, col2 = st.columns([8, 3])
 
 with col1:
     # Call the "gradient" function to display a gradient title
     gradient('#FF5733','#1B1464','e0fbfc',f"My RAG Based Portfolio Assistent", 'This is a RAG agent with access to my past projects, experiences, passions, ambitions, and more. Feel free to ask anything!')   
 
+with col2:
 
+    st_lottie(chatbot_lottie, height=280, key="data")
 
 # Ask user to enter OpenAI API key
 openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
