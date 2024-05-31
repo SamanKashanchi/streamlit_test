@@ -9,6 +9,7 @@ from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.readers.file import PDFReader
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
 from streamlit_lottie import st_lottie
+import requests
 
 
 def gradient(color1, color2, color3, content1, content2):
