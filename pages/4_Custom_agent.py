@@ -25,7 +25,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-chatbot_lottie = load_lottieurl("https://lottie.host/embed/6e680517-c21a-4947-85b1-06166fbd42d9/k60NEBBsqe.json")
+chatbot_lottie = load_lottieurl("https://lottie.host/50f9b761-80d7-4db0-ba4c-f10325d58026/BCGz88DAGE.json")
 
 with st.container():
     col1, col2 = st.columns([8, 3])
