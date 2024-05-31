@@ -27,13 +27,13 @@ research_lottie = load_lottieurl("https://lottie.host/e8315d73-10a2-49cb-ace5-65
 st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
 
 
-with st.container():
-    # Divide the container into two columns, with widths 8 and 3
-    col1, col2 = st.columns([8, 3])
+# with st.container():
+#     # Divide the container into two columns, with widths 8 and 3
+#     col1, col2 = st.columns([8, 3])
 
-with col1:
-    # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Chapman Machine Learning Research", 'Custom generative models tailored for the Optical Engineering department, specializing in the design of nanoscale surfaces.')   
+# with col1:
+#     # Call the "gradient" function to display a gradient title
+gradient('#FF5733','#1B1464','e0fbfc',f"Chapman Machine Learning Research", 'Custom generative models tailored for the Optical Engineering department, specializing in the design of nanoscale surfaces.')   
 # with col2:
 
 #     st_lottie(research_lottie, height=280, key="data")
