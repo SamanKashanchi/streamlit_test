@@ -33,7 +33,7 @@ with st.container():
 
 with col1:
     # Call the "gradient" function to display a gradient title
-    gradient('#FF5733','#1B1464','e0fbfc',f"Research", 'Led the development of innovative Neural Network architectures tailored for the optics physics department.')   
+    gradient('#FF5733','#1B1464','e0fbfc',f"RAG-Powered Insights: My AI Portfolio Guide", 'Welcome to my own custom RAG chatbot. It knows about me , my projects and ')   
 with col2:
 
     st_lottie(research_lottie, height=280, key="data")
