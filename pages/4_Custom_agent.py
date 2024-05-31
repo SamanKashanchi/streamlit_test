@@ -38,17 +38,20 @@ with col2:
 
     st_lottie(chatbot_lottie, height=280, key="data")
 
-# Ask user to enter OpenAI API key
-openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
 
-# Create a button for the user to submit their API key
-if st.button('Submit'):
-    # Set the OpenAI API key as an environment variable
-    # Set the OpenAI API key directly
-    openai.api_key = openai_api_key
+if 'OPENAI_API_KEY' not in os.environ:
+
+    # Ask user to enter OpenAI API key
+    openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
     
-    # Check if the API key is valid by making a simple API call
-    os.environ["OPENAI_API_KEY"] = openai_api_key
+    # Create a button for the user to submit their API key
+    if st.button('Submit'):
+        # Set the OpenAI API key as an environment variable
+        # Set the OpenAI API key directly
+        openai.api_key = openai_api_key
+        
+        # Check if the API key is valid by making a simple API call
+        os.environ["OPENAI_API_KEY"] = openai_api_key
 
 
 def get_index(data, index_name):
