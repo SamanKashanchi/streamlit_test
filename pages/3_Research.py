@@ -34,9 +34,9 @@ with st.container():
 with col1:
     # Call the "gradient" function to display a gradient title
     gradient('#FF5733','#1B1464','e0fbfc',f"Chapman Machine Learning Research", 'Custom generative models tailored for the Optical Engineering department, specializing in the design of nanoscale surfaces.')   
-with col2:
+# with col2:
 
-    st_lottie(research_lottie, height=280, key="data")
+#     st_lottie(research_lottie, height=280, key="data")
 # Inside the second column (col2):
 st.subheader('Research')
 
