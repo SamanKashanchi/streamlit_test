@@ -96,7 +96,7 @@ prompt = st.chat_input("Ask me any question about Saman and his background ", ke
 
 #         st.markdown(result)
 
-if prompt := st.chat_input("What is up?"):
+if prompt :
     # Display user message in chat message container
     with st.chat_message("user"):
         st.markdown(prompt)
