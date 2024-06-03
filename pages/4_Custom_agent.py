@@ -90,7 +90,7 @@ agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = contex
 
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 
-if prompt != "":
+if prompt:
     result = agent.query(prompt)
     with st.chat_message("assistant"):
 
