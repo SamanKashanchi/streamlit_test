@@ -90,9 +90,15 @@ agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = contex
 
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 
-if prompt:
-    result = agent.query(prompt)
-    with st.chat_message("assistant"):
+# if prompt:
+#     result = agent.query(prompt)
+#     with st.chat_message("assistant"):
 
-        st.markdown(result)
+#         st.markdown(result)
 
+if prompt := st.chat_input("What is up?"):
+    # Display user message in chat message container
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    # Add user message to chat history
+    st.session_state.messages.append({"role": "user", "content": prompt})
