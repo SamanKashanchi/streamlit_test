@@ -108,7 +108,7 @@ for message in st.session_state.messages:
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 if prompt == 'Clear':
     st.session_state.messages = []
-
+    st.write( st.session_state.messages )
 
 if prompt :    
     st.session_state.messages.append({"role": "user", "content": prompt})
