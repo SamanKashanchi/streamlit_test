@@ -107,8 +107,9 @@ for message in st.session_state.messages:
         
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 
-with st.chat_message("user"):
-    st.markdown(prompt)
+if len(st.session_state.messages) != 0
+    with st.chat_message("user"):
+        st.markdown(prompt)
 # Add user message to chat history
 st.session_state.messages.append({"role": "user", "content": prompt})
 
