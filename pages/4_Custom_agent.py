@@ -106,11 +106,13 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
         
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+if prompt == 'Clear':
+    st.session_state.messages = []
 
-if prompt :
+
+if prompt :    
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    
     with st.chat_message("user"):
         st.markdown(prompt)
 
@@ -121,3 +123,5 @@ if prompt :
         st.markdown(result)
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": result })
+
+
