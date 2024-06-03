@@ -107,13 +107,15 @@ for message in st.session_state.messages:
         
 prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
 
+with st.chat_message("user"):
+    st.markdown(prompt)
+# Add user message to chat history
+st.session_state.messages.append({"role": "user", "content": prompt})
+
 if prompt :
     result = agent.query(prompt)
     # Display user message in chat message container
-    with st.chat_message("user"):
-        st.markdown(prompt)
-    # Add user message to chat history
-    st.session_state.messages.append({"role": "user", "content": prompt})
+  
     
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
