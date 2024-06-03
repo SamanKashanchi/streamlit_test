@@ -117,6 +117,6 @@ if prompt :
     
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
-        response  = st.write_stream(result)
+        st.markdown(result)
     # Add assistant response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": response })
+    st.session_state.messages.append({"role": "assistant", "content": result })
