@@ -25,6 +25,21 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
+
+
+def get_index(data, index_name):
+    index = None
+
+    if not os.path.exists(index_name):
+        print("Building index", index_name)
+        index = VectorStoreIndex.from_documents(data, show_progress = True)
+        index.storage_context.persist(persist_dir = index_name)
+    else:
+        index = load_index_from_storage(
+            StorageContext.from_defaults(persist_dir = index_name)
+        )
+    return index
+
 chatbot_lottie = load_lottieurl("https://lottie.host/ce2c1273-eca3-4ee4-bd54-ac10f2b7f7dd/gcZayDkN8E.json")
 
 with st.container():
@@ -52,74 +67,62 @@ if 'OPENAI_API_KEY' not in os.environ:
         
         # Check if the API key is valid by making a simple API call
         os.environ["OPENAI_API_KEY"] = openai_api_key
+else:
 
-
-def get_index(data, index_name):
-    index = None
-
-    if not os.path.exists(index_name):
-        print("Building index", index_name)
-        index = VectorStoreIndex.from_documents(data, show_progress = True)
-        index.storage_context.persist(persist_dir = index_name)
-    else:
-        index = load_index_from_storage(
-            StorageContext.from_defaults(persist_dir = index_name)
-        )
-    return index
-
-
-
-context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-            information Saman, his experiences and his background. """
-
-
-pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-saman_pdf = PDFReader().load_data(file = pdf_path)
-saman_index = get_index(saman_pdf, 'saman')
-saman_engine = saman_index.as_query_engine()
-
-
-tools = [   
-        QueryEngineTool(query_engine = saman_engine, 
-                         metadata = ToolMetadata(name = "saman_pdfData",
-                                                description = 'this gives detailed information about Saman'))]
-
-llm = OpenAI(model = "gpt-3.5-turbo-0613")
-agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
-
-
-
-
-# if prompt:
-#     result = agent.query(prompt)
-#     with st.chat_message("assistant"):
-
-#         st.markdown(result)
-
-# Initialize chat history
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-# Display chat messages from history on app rerun
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-        
-prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
-
-
-if prompt :    
-    st.session_state.messages.append({"role": "user", "content": prompt})
-
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
-
-    result = agent.query(prompt)  
     
-    with st.chat_message("assistant"):
-        st.markdown(result)
-    # Add assistant response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": result })
+    
+    
+    context = """Purpose: The primary role of this agent is to assist users by providing accurate 
+                information Saman, his experiences and his background. """
+    
+    
+    pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+    saman_pdf = PDFReader().load_data(file = pdf_path)
+    saman_index = get_index(saman_pdf, 'saman')
+    saman_engine = saman_index.as_query_engine()
+    
+    
+    tools = [   
+            QueryEngineTool(query_engine = saman_engine, 
+                             metadata = ToolMetadata(name = "saman_pdfData",
+                                                    description = 'this gives detailed information about Saman'))]
+    
+    llm = OpenAI(model = "gpt-3.5-turbo-0613")
+    agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+    
+    
+    
+    
+    # if prompt:
+    #     result = agent.query(prompt)
+    #     with st.chat_message("assistant"):
+    
+    #         st.markdown(result)
+    
+    # Initialize chat history
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+    
+    # Display chat messages from history on app rerun
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+            
+    prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+    
+    
+    if prompt :    
+        st.session_state.messages.append({"role": "user", "content": prompt})
+    
+        with st.chat_message("user"):
+            st.markdown(prompt)
+    
+    
+        result = agent.query(prompt)  
+        
+        with st.chat_message("assistant"):
+            st.markdown(result)
+        # Add assistant response to chat history
+        st.session_state.messages.append({"role": "assistant", "content": result })
 
 
