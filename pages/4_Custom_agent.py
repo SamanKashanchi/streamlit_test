@@ -82,7 +82,7 @@ if submit:
     # Check if the API key is valid by making a simple API call
     os.environ["OPENAI_API_KEY"] = openai_api_key
 
-    st.text(
+    st.text(openai_api_key)
 
     context = """Purpose: The primary role of this agent is to assist users by providing accurate 
                 information Saman, his experiences and his background. """
