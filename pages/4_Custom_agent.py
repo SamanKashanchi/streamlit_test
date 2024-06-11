@@ -70,14 +70,14 @@ if 'OPENAI_API_KEY' not in os.environ:
 
     
     
-# context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-#             information Saman, his experiences and his background. """
+context = """Purpose: The primary role of this agent is to assist users by providing accurate 
+            information Saman, his experiences and his background. """
 
 
-# pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-# saman_pdf = PDFReader().load_data(file = pdf_path)
-# saman_index = get_index(saman_pdf, 'saman')
-# saman_engine = saman_index.as_query_engine()
+pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+saman_pdf = PDFReader().load_data(file = pdf_path)
+saman_index = get_index(saman_pdf, 'saman')
+saman_engine = saman_index.as_query_engine()
 
 
 # tools = [   
