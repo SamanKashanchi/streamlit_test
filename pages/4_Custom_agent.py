@@ -70,7 +70,7 @@ if 'OPENAI_API_KEY' not in os.environ:
 
     
     
-
+st.text(os.environ["OPENAI_API_KEY"])
 context = """Purpose: The primary role of this agent is to assist users by providing accurate 
             information Saman, his experiences and his background. """
 
