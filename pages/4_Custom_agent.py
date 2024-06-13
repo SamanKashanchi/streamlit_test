@@ -31,7 +31,7 @@ def get_index(data, index_name):
     index = None
 
     if not os.path.exists(index_name):
-        st.text("Building index: " = index_name)
+        st.text("Building index: " + index_name)
         index = VectorStoreIndex.from_documents(data, show_progress = True)
         index.storage_context.persist(persist_dir = index_name)
     else:
