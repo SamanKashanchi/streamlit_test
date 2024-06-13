@@ -60,7 +60,9 @@ if 'OPENAI_API_KEY' not in os.environ:
     openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
     
     # Create a button for the user to submit their API key
-    if st.button('Submit'):
+
+    submit = st.button('Submit')
+    if submit:
         # Set the OpenAI API key as an environment variable
         # Set the OpenAI API key directly
         openai.api_key = openai_api_key
@@ -69,10 +71,10 @@ if 'OPENAI_API_KEY' not in os.environ:
         os.environ["OPENAI_API_KEY"] = openai_api_key
 
 
-openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
+# openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
 
 
-submit = st.button('Submit')
+# submit = st.button('Submit')
 # Create a button for the user to submit their API key
 if submit:
     # Set the OpenAI API key as an environment variable
