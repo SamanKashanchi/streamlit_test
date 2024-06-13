@@ -62,8 +62,9 @@ openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help
 
 submit = st.button('Submit')
 if submit:
-    # Set the OpenAI API key as an environment variable
-    # Set the OpenAI API key directly
+
+
+    del os.environ["OPENAI_API_KEY"]
     openai.api_key = openai_api_key
     
     # Check if the API key is valid by making a simple API call
