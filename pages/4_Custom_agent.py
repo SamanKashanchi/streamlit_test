@@ -115,13 +115,15 @@ with tab1:
             st.session_state.messages.append({"role": "user", "content": prompt})
         
             with st.chat_message("user"):
-                st.markdown(prompt)
+                # st.markdown(prompt)
+                pass
         
         
             result = agent.query(prompt)  
             
             with st.chat_message("assistant"):
-                st.markdown(result)
+                # st.markdown(result)
+                pass
             # Add assistant response to chat history
             st.session_state.messages.append({"role": "assistant", "content": result })
     
