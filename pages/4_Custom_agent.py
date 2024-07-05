@@ -68,6 +68,13 @@ secrets = toml.load(secrets_path)
 
 st.text(secrets)
 
+
+
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+if openai_api_key:
+    st.text(f"Loaded API Key: {openai_api_key}")
+
 # openai_api_key = secrets['OPENAI_API_KEY']
 # st.text(f"Loaded API Key: {openai_api_key}")
     
