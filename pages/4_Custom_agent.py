@@ -67,7 +67,7 @@ st.text(secrets_path)
 if os.path.exists(secrets_path):
     st.text("EXISTS")
 else:
-    st.text("DOES NOT EXISTS)
+    st.text("DOES NOT EXISTS")
 
 
 secrets = toml.load(secrets_path)
