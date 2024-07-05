@@ -61,7 +61,7 @@ with col2:
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
-
+st.text(st.secrets)
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
