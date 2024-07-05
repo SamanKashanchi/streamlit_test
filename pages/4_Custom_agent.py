@@ -61,7 +61,7 @@ with col2:
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
-
+secrets_path = os.path.join(".streamlit", "Saman Kashanchi Resume 2024.pdf")
 secrets = toml.load('secrets.toml')
 openai_api_key = secrets['secrets']['OPENAI_API_KEY']
 st.text(f"Loaded API Key: {openai_api_key}")
