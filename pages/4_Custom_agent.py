@@ -78,22 +78,24 @@ if openai_api_key:
     saman_pdf = PDFReader().load_data(file = pdf_path)
     saman_index = get_index(saman_pdf, 'saman PDF')
     saman_engine = saman_index.as_query_engine()
+    
+    
+    
+    tools = [   
+            QueryEngineTool(query_engine = saman_engine, 
+                             metadata = ToolMetadata(name = "saman_pdfData",
+                                                    description = 'this gives detailed information about Saman'))]
+    
+    llm = OpenAI(model = "gpt-3.5-turbo-0613")
+    agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+
+
+
 else:
     st.text("MISSING OPENAI API KEY")
 
 
     
-
-# tools = [   
-#         QueryEngineTool(query_engine = saman_engine, 
-#                          metadata = ToolMetadata(name = "saman_pdfData",
-#                                                 description = 'this gives detailed information about Saman'))]
-
-# llm = OpenAI(model = "gpt-3.5-turbo-0613")
-# agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
-
-
-
 
 # # if prompt:
 # #     result = agent.query(prompt)
