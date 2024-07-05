@@ -12,7 +12,8 @@ from streamlit_lottie import st_lottie
 import requests
 from langchain_community.llms import Ollama
 import toml
-
+from huggingface_hub import InferenceClient
+import json
 
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
@@ -43,7 +44,17 @@ def get_index(data, index_name):
         )
     return index
 
+def call_llm(inference_client: InferenceClient, prompt: str):
 
+    response = inference_client.post(
+        json={
+            "inputs": prompt,
+            "parameters": {"max_new_tokens": 200},
+            "task": "text-generation",
+        },)
+
+    return json.loads(response.decode())[0]["generated_text"]
+    
 chatbot_lottie = load_lottieurl("https://lottie.host/ce2c1273-eca3-4ee4-bd54-ac10f2b7f7dd/gcZayDkN8E.json")
 
 with st.container():
@@ -61,7 +72,6 @@ with col2:
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
-st.text(st.secrets)
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
@@ -122,12 +132,15 @@ else:
     
 
 
-# with tab2:
+with tab2:
     
-#     llm = Ollama(
-#         model="llama3"
-#     )  # assuming you have Ollama installed and have llama3 model pulled with `ollama pull llama3 `
+    repo_id = "microsoft/Phi-3-mini-4k-instruct"
+    llm_client = InferenceClient()
+        
+    llm_client = InferenceClient(
+        model=repo_id,
+        token = HF_TOKEN,
+        timeout=120)
     
-    
-#     st.text((llm.invoke("Tell me a joke")))
-
+    response=call_llm(llm_client, "What is happiness")
+    st.text(response)
