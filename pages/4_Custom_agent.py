@@ -142,7 +142,7 @@ with tab2:
         token = HF_TOKEN,
         timeout=120)
 
-    HF_prompt = st.chat_input("Ask any quesition this is an open source free LLM chat bot from huggin face: ", key='prompt_KEY')
+    HF_prompt = st.chat_input("Ask any quesition this is an open source free LLM chat bot from huggin face: ", key='HF_prompt_KEY')
 
     if HF_prompt:
     
