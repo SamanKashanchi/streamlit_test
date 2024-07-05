@@ -99,7 +99,6 @@ with tab1:
         llm = OpenAI(model = "gpt-3.5-turbo-0613")
         agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
     
-        prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
         
         # Initialize chat history
         if "messages" not in st.session_state:
@@ -110,7 +109,8 @@ with tab1:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
                 
-        
+        prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+
         if prompt :    
             st.session_state.messages.append({"role": "user", "content": prompt})
         
