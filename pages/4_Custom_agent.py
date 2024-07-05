@@ -58,38 +58,22 @@ with col2:
 
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
-with tab1:
-    
-    # Ask user to enter OpenAI API key
-    openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
-    
-    # Create a button for the user to submit their API key
-    
-    submit = st.button('Submit')
-    if submit:
-    
-    
-        del os.environ["OPENAI_API_KEY"]
-        openai.api_key = openai_api_key
-        
-        # Check if the API key is valid by making a simple API call
-        os.environ["OPENAI_API_KEY"] = openai_api_key
-        
+
         
     
         
         
-        st.text(openai_api_key)
-        
-        context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-                    information Saman, his experiences and his background. """
-        
-        
-        pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-        saman_pdf = PDFReader().load_data(file = pdf_path)
-        saman_index = get_index(saman_pdf, 'saman PDF')
-        saman_engine = saman_index.as_query_engine()
-    
+st.text(openai_api_key)
+
+context = """Purpose: The primary role of this agent is to assist users by providing accurate 
+            information Saman, his experiences and his background. """
+
+
+pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+saman_pdf = PDFReader().load_data(file = pdf_path)
+saman_index = get_index(saman_pdf, 'saman PDF')
+saman_engine = saman_index.as_query_engine()
+
     
     
     # tools = [   
