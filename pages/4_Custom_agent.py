@@ -42,6 +42,13 @@ def get_index(data, index_name):
         )
     return index
 
+def load_api_key(file_path):
+    with open(file_path, 'r') as config_file:
+        config_data = json.load(config_file)
+        api_key = config_data.get('OPENAI_API_KEY')
+        return api_key
+
+
 chatbot_lottie = load_lottieurl("https://lottie.host/ce2c1273-eca3-4ee4-bd54-ac10f2b7f7dd/gcZayDkN8E.json")
 
 with st.container():
@@ -59,12 +66,8 @@ with col2:
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
-
-os.environ.clear()
-
-
-
-openai_api_key = os.getenv("OPEN_API_KEY")
+config_file_path = 'config.json'
+api_key = load_api_key(config_file_path)
 st.text(f"Loaded API Key: {openai_api_key}")
     
 # context = """Purpose: The primary role of this agent is to assist users by providing accurate 
