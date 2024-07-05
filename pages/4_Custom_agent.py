@@ -64,6 +64,10 @@ tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 secrets_path = os.path.join(".streamlit", "secrets.toml")
 st.text(secrets_path)
 
+if os.path.exists(secrets_path):
+    st.text("EXISTS)
+
+
 secrets = toml.load(secrets_path)
 
 st.text(secrets)
@@ -73,6 +77,8 @@ st.text(secrets)
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 st.text(f"Loaded API Key: {openai_api_key}")
+
+
 
 # openai_api_key = secrets['OPENAI_API_KEY']
 # st.text(f"Loaded API Key: {openai_api_key}")
