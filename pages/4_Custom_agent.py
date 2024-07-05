@@ -61,20 +61,6 @@ with col2:
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
-secrets_path = os.path.join(".streamlit", "secrets.toml")
-st.text(secrets_path)
-
-if os.path.exists(secrets_path):
-    st.text("EXISTS")
-else:
-    st.text("DOES NOT EXISTS")
-
-
-secrets = toml.load(secrets_path)
-
-st.text(secrets)
-
-
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
