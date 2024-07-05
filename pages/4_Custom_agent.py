@@ -135,22 +135,6 @@ with tab1:
 with tab2:
     HF_TOKEN = os.getenv("HF_TOKEN")
 
-        # Headers for the request
-    headers = {
-        "Authorization": f"Bearer {HF_TOKEN}",
-    }
-    
-    # Endpoint for checking usage (example endpoint, verify with official documentation)
-    usage_endpoint = "https://api-inference.huggingface.co/usage"
-    
-    # Making the request
-    response = requests.get(usage_endpoint, headers=headers)
-    
-    # Check if the request was successful
-    if response.status_code == 200:
-        usage_data = response.json()
-        st.text(f"Usage Data: {usage_data}")
-
     
     repo_id = "microsoft/Phi-3-mini-4k-instruct"
     llm_client = InferenceClient()
