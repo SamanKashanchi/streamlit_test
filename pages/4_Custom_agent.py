@@ -133,7 +133,7 @@ else:
 
 
 with tab2:
-    
+    HF_TOKEN = os.getenv("HF_TOKEN")
     repo_id = "microsoft/Phi-3-mini-4k-instruct"
     llm_client = InferenceClient()
         
