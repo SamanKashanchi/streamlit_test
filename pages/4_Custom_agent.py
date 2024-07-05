@@ -10,6 +10,7 @@ from llama_index.readers.file import PDFReader
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
 from streamlit_lottie import st_lottie
 import requests
+from langchain_community.llms import Ollama
 
 
 def gradient(color1, color2, color3, content1, content2):
@@ -55,80 +56,91 @@ with col2:
     st_lottie(chatbot_lottie, height=280, key="data")
 
 
-
-# Ask user to enter OpenAI API key
-openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
-
-# Create a button for the user to submit their API key
-
-submit = st.button('Submit')
-if submit:
-
-
-    del os.environ["OPENAI_API_KEY"]
-    openai.api_key = openai_api_key
+tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
+tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
+with tab1:
     
-    # Check if the API key is valid by making a simple API call
-    os.environ["OPENAI_API_KEY"] = openai_api_key
+    # Ask user to enter OpenAI API key
+    openai_api_key = st.text_input("Enter your OpenAI API Key", type='password',help="https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key", key='API_KEY')
+    
+    # Create a button for the user to submit their API key
+    
+    submit = st.button('Submit')
+    if submit:
     
     
-
-    
-    
-    st.text(openai_api_key)
-    
-    context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-                information Saman, his experiences and his background. """
-    
-    
-    pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-    saman_pdf = PDFReader().load_data(file = pdf_path)
-    saman_index = get_index(saman_pdf, 'saman PDF')
-    saman_engine = saman_index.as_query_engine()
-
-
-
-# tools = [   
-#         QueryEngineTool(query_engine = saman_engine, 
-#                          metadata = ToolMetadata(name = "saman_pdfData",
-#                                                 description = 'this gives detailed information about Saman'))]
-
-# llm = OpenAI(model = "gpt-3.5-turbo-0613")
-# agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
-
-
-
-
-# # if prompt:
-# #     result = agent.query(prompt)
-# #     with st.chat_message("assistant"):
-
-# #         st.markdown(result)
-
-# # Initialize chat history
-# if "messages" not in st.session_state:
-#     st.session_state.messages = []
-
-# # Display chat messages from history on app rerun
-# for message in st.session_state.messages:
-#     with st.chat_message(message["role"]):
-#         st.markdown(message["content"])
+        del os.environ["OPENAI_API_KEY"]
+        openai.api_key = openai_api_key
         
-# prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
-
-
-# if prompt :    
-#     st.session_state.messages.append({"role": "user", "content": prompt})
-
-#     with st.chat_message("user"):
-#         st.markdown(prompt)
-
-
-#     result = agent.query(prompt)  
+        # Check if the API key is valid by making a simple API call
+        os.environ["OPENAI_API_KEY"] = openai_api_key
+        
+        
     
-#     with st.chat_message("assistant"):
-#         st.markdown(result)
-#     # Add assistant response to chat history
-#     st.session_state.messages.append({"role": "assistant", "content": result })
+        
+        
+        st.text(openai_api_key)
+        
+        context = """Purpose: The primary role of this agent is to assist users by providing accurate 
+                    information Saman, his experiences and his background. """
+        
+        
+        pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+        saman_pdf = PDFReader().load_data(file = pdf_path)
+        saman_index = get_index(saman_pdf, 'saman PDF')
+        saman_engine = saman_index.as_query_engine()
+    
+    
+    
+    # tools = [   
+    #         QueryEngineTool(query_engine = saman_engine, 
+    #                          metadata = ToolMetadata(name = "saman_pdfData",
+    #                                                 description = 'this gives detailed information about Saman'))]
+    
+    # llm = OpenAI(model = "gpt-3.5-turbo-0613")
+    # agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+    
+    
+    
+    
+    # # if prompt:
+    # #     result = agent.query(prompt)
+    # #     with st.chat_message("assistant"):
+    
+    # #         st.markdown(result)
+    
+    # # Initialize chat history
+    # if "messages" not in st.session_state:
+    #     st.session_state.messages = []
+    
+    # # Display chat messages from history on app rerun
+    # for message in st.session_state.messages:
+    #     with st.chat_message(message["role"]):
+    #         st.markdown(message["content"])
+            
+    # prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+    
+    
+    # if prompt :    
+    #     st.session_state.messages.append({"role": "user", "content": prompt})
+    
+    #     with st.chat_message("user"):
+    #         st.markdown(prompt)
+    
+    
+    #     result = agent.query(prompt)  
+        
+    #     with st.chat_message("assistant"):
+    #         st.markdown(result)
+    #     # Add assistant response to chat history
+    #     st.session_state.messages.append({"role": "assistant", "content": result })
 
+with tab2:
+    
+    llm = Ollama(
+        model="llama3"
+    )  # assuming you have Ollama installed and have llama3 model pulled with `ollama pull llama3 `
+    
+    
+    st.text((llm.invoke("Tell me a joke")))
 
