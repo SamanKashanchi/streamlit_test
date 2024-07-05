@@ -135,12 +135,12 @@ with tab1:
     #     # Add assistant response to chat history
     #     st.session_state.messages.append({"role": "assistant", "content": result })
 
-with tab2:
+# with tab2:
     
-    llm = Ollama(
-        model="llama3"
-    )  # assuming you have Ollama installed and have llama3 model pulled with `ollama pull llama3 `
+#     llm = Ollama(
+#         model="llama3"
+#     )  # assuming you have Ollama installed and have llama3 model pulled with `ollama pull llama3 `
     
     
-    st.text((llm.invoke("Tell me a joke")))
+#     st.text((llm.invoke("Tell me a joke")))
 
