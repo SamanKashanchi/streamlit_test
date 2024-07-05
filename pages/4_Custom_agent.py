@@ -65,7 +65,7 @@ os.environ.clear()
 
 
 openai_api_key = os.getenv("OPEN_API_KEY")
-print(f"Loaded API Key: {openai_api_key}")
+st.text(f"Loaded API Key: {openai_api_key}")
     
 # context = """Purpose: The primary role of this agent is to assist users by providing accurate 
 #             information Saman, his experiences and his background. """
