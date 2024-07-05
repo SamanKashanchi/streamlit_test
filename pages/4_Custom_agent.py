@@ -114,18 +114,19 @@ with tab1:
         if prompt :    
             st.session_state.messages.append({"role": "user", "content": prompt})
         
-            with st.chat_message("user"):
-                # st.markdown(prompt)
-                pass
+            # with st.chat_message("user"):
+            #     # st.markdown(prompt)
+            #     pass
         
         
             result = agent.query(prompt)  
             
-            with st.chat_message("assistant"):
-                # st.markdown(result)
-                pass
+            # with st.chat_message("assistant"):
+            #     # st.markdown(result)
+            #     pass
             # Add assistant response to chat history
             st.session_state.messages.append({"role": "assistant", "content": result })
+            st.rerun()
     
     else:
         st.text("MISSING OPENAI API KEY")
