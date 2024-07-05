@@ -60,10 +60,12 @@ tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
 
+os.environ.clear()
+
+
 openai_api_key =  os.getenv("OPEN_API_KEY")
 
 
-st.text(openai_api_key)
     
 context = """Purpose: The primary role of this agent is to assist users by providing accurate 
             information Saman, his experiences and his background. """
