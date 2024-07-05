@@ -67,17 +67,20 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 if openai_api_key:
     st.text("LOADED OPENAI API KEY")
+
+
+
+    context = """Purpose: The primary role of this agent is to assist users by providing accurate 
+                information Saman, his experiences and his background. """
+    
+    
+    pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
+    saman_pdf = PDFReader().load_data(file = pdf_path)
+    saman_index = get_index(saman_pdf, 'saman PDF')
+    saman_engine = saman_index.as_query_engine()
 else:
     st.text("MISSING OPENAI API KEY")
 
-context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-            information Saman, his experiences and his background. """
-
-
-pdf_path = os.path.join("data", "Saman Kashanchi Resume 2024.pdf")
-saman_pdf = PDFReader().load_data(file = pdf_path)
-saman_index = get_index(saman_pdf, 'saman PDF')
-saman_engine = saman_index.as_query_engine()
 
     
 
