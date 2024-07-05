@@ -90,6 +90,37 @@ if openai_api_key:
     agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
 
 
+    if prompt:
+        result = agent.query(prompt)
+        with st.chat_message("assistant"):
+    
+            st.markdown(result)
+    
+    # Initialize chat history
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+    
+    # Display chat messages from history on app rerun
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+            
+    prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+    
+    
+    if prompt :    
+        st.session_state.messages.append({"role": "user", "content": prompt})
+    
+        with st.chat_message("user"):
+            st.markdown(prompt)
+    
+    
+        result = agent.query(prompt)  
+        
+        with st.chat_message("assistant"):
+            st.markdown(result)
+        # Add assistant response to chat history
+        st.session_state.messages.append({"role": "assistant", "content": result })
 
 else:
     st.text("MISSING OPENAI API KEY")
@@ -97,37 +128,6 @@ else:
 
     
 
-# # if prompt:
-# #     result = agent.query(prompt)
-# #     with st.chat_message("assistant"):
-
-# #         st.markdown(result)
-
-# # Initialize chat history
-# if "messages" not in st.session_state:
-#     st.session_state.messages = []
-
-# # Display chat messages from history on app rerun
-# for message in st.session_state.messages:
-#     with st.chat_message(message["role"]):
-#         st.markdown(message["content"])
-        
-# prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
-
-
-# if prompt :    
-#     st.session_state.messages.append({"role": "user", "content": prompt})
-
-#     with st.chat_message("user"):
-#         st.markdown(prompt)
-
-
-#     result = agent.query(prompt)  
-    
-#     with st.chat_message("assistant"):
-#         st.markdown(result)
-#     # Add assistant response to chat history
-#     st.session_state.messages.append({"role": "assistant", "content": result })
 
 # with tab2:
     
