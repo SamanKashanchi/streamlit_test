@@ -77,49 +77,49 @@ saman_index = get_index(saman_pdf, 'saman PDF')
 saman_engine = saman_index.as_query_engine()
 
     
-    
-    # tools = [   
-    #         QueryEngineTool(query_engine = saman_engine, 
-    #                          metadata = ToolMetadata(name = "saman_pdfData",
-    #                                                 description = 'this gives detailed information about Saman'))]
-    
-    # llm = OpenAI(model = "gpt-3.5-turbo-0613")
-    # agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
-    
-    
-    
-    
-    # # if prompt:
-    # #     result = agent.query(prompt)
-    # #     with st.chat_message("assistant"):
-    
-    # #         st.markdown(result)
-    
-    # # Initialize chat history
-    # if "messages" not in st.session_state:
-    #     st.session_state.messages = []
-    
-    # # Display chat messages from history on app rerun
-    # for message in st.session_state.messages:
-    #     with st.chat_message(message["role"]):
-    #         st.markdown(message["content"])
-            
-    # prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
-    
-    
-    # if prompt :    
-    #     st.session_state.messages.append({"role": "user", "content": prompt})
-    
-    #     with st.chat_message("user"):
-    #         st.markdown(prompt)
-    
-    
-    #     result = agent.query(prompt)  
+
+tools = [   
+        QueryEngineTool(query_engine = saman_engine, 
+                         metadata = ToolMetadata(name = "saman_pdfData",
+                                                description = 'this gives detailed information about Saman'))]
+
+llm = OpenAI(model = "gpt-3.5-turbo-0613")
+agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+
+
+
+
+# if prompt:
+#     result = agent.query(prompt)
+#     with st.chat_message("assistant"):
+
+#         st.markdown(result)
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
         
-    #     with st.chat_message("assistant"):
-    #         st.markdown(result)
-    #     # Add assistant response to chat history
-    #     st.session_state.messages.append({"role": "assistant", "content": result })
+prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
+
+
+if prompt :    
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+
+    result = agent.query(prompt)  
+    
+    with st.chat_message("assistant"):
+        st.markdown(result)
+    # Add assistant response to chat history
+    st.session_state.messages.append({"role": "assistant", "content": result })
 
 # with tab2:
     
