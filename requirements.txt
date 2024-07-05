@@ -8,4 +8,4 @@ streamlit-lottie==0.0.5
 llama_index==0.10.34
 openai
 langchain_community
-
+huggingface_hub
