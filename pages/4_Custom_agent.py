@@ -56,8 +56,6 @@ with col2:
     st_lottie(chatbot_lottie, height=280, key="data")
 
 
-st.text("YOOOOOO")
-
 tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
 tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 with tab1:
