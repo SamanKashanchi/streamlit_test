@@ -141,6 +141,10 @@ with tab2:
         model=repo_id,
         token = HF_TOKEN,
         timeout=120)
+
+    HF_prompt = st.chat_input("Ask any quesition this is an open source free LLM chat bot from huggin face: ", key='prompt_KEY')
+
+    if HF_prompt:
     
-    response=call_llm(llm_client, "What is happiness")
-    st.text(response)
+        response=call_llm(llm_client, HF_prompt)
+        st.text(response)
