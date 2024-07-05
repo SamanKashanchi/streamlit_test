@@ -63,8 +63,6 @@ tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
 os.environ.clear()
 
 
-openai_api_key =  os.getenv("OPEN_API_KEY")
-
 
 openai_api_key = os.getenv("OPEN_API_KEY")
 print(f"Loaded API Key: {openai_api_key}")
