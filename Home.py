@@ -378,7 +378,7 @@ with right:
         </style>
         <div class="project-container">
         <div class="project-box">
-            <img src="https://raw.githubusercontent.com/Kimchi21/portfolio-app/main/assets/RAWG.png" alt="RAWG" class="project-img">
+            <img src="https://classicalwisdom.com/wp-content/uploads/2020/11/original-atlantic.jpg" alt="RAWG" class="project-img">
             <p style='margin: 15px 0 0 0;'>This analysis delves into the vast realm of gaming data, specifically focusing on insights derived from RAWG.io, a comprehensive video game database.</p>
             <br>
             <a href="{repo['RAWG']}" project>
