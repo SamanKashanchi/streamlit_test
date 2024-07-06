@@ -379,7 +379,9 @@ with right:
         <div class="project-container">
         <div class="project-box">
             <img src="https://classicalwisdom.com/wp-content/uploads/2020/11/original-atlantic.jpg" alt="RAWG" class="project-img">
-            <p style='margin: 15px 0 0 0;'>This analysis delves into the vast realm of gaming data, specifically focusing on insights derived from RAWG.io, a comprehensive video game database.</p>
+            <p style='margin: 15px 0 0 0;'>This project involves the creation of a Retrieval-Augmented Generation (RAG) based chatbot 
+            trained on the great works of Aristotle. The chatbot is designed to allow users to ask Aristotle questions and explore their moral dilemmas. 
+            It utilizes Google Cloud to store the embeddings and perform inference, and includes an API that integrates with Streamlit for a seamless user experience.</p>
             <br>
             <a href="{repo['RAWG']}" project>
                 <button class="repo-button">
