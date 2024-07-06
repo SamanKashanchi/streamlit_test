@@ -69,8 +69,8 @@ with col2:
     st_lottie(chatbot_lottie, height=280, key="data")
 
 
-tabs = ["Llama-Index OpenAI Portolio Agent", "LangChain Llama3 Chatbot"]
-tab1, tab2 = st.tabs([t.center(9, "\u2001") for t in tabs])
+tabs = ["Llama-Index OpenAI Portolio Agent", "Llama-Index OpenAI Aristotle Agent","LangChain Llama3 Chatbot"]
+tab1, tab2, tab3 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
