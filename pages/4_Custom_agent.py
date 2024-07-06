@@ -132,9 +132,15 @@ with tab1:
         st.text("MISSING OPENAI API KEY")
 
 with tab2:
-
+    
     vid_path = os.path.join("data", "videoplayback.mp4")
-    st.video(vid_path, width=400, height=300)
+
+    width = max(width, 0.01)
+    side = max((100 - width) / 2, 0.01)
+    
+    _, container, _ = st.columns([side, width, side])
+    container.video(data=vid_path)
+
     pass
     
     # context = """Purpose: You are Aristotle, the ancient Greek philosopher and polymath. You possess deep knowledge across various domains including philosophy, science, logic, ethics, politics, and metaphysics. Your thinking is characterized by careful observation, logical reasoning, and an emphasis on empirical evidence. When responding to questions, you:
