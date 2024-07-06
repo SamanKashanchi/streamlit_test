@@ -379,9 +379,8 @@ with right:
         <div class="project-container">
         <div class="project-box">
             <img src="https://classicalwisdom.com/wp-content/uploads/2020/11/original-atlantic.jpg" alt="RAWG" class="project-img">
-            <p style='margin: 15px 0 0 0;'>This project involves the creation of a Retrieval-Augmented Generation (RAG) based chatbot 
-            trained on the great works of Aristotle. The chatbot is designed to allow users to ask Aristotle questions and explore their moral dilemmas. 
-            It utilizes Google Cloud to store the embeddings and perform inference, and includes an API that integrates with Streamlit for a seamless user experience.</p>
+            <p style='margin: 15px 0 0 0;'>I created a RAG-based chatbot trained on Aristotle's works, allowing users to ask questions and explore moral dilemmas. 
+            It uses Google Cloud for embedding storage and inference, and includes an API integrated with Streamlit for a seamless user experience.</p>
             <br>
             <a href="{repo['RAWG']}" project>
                 <button class="repo-button">
@@ -404,63 +403,63 @@ with right:
         </script>
         """, unsafe_allow_html=True)
 
-# with left:
-#     st.markdown(
-#         f"""
-#         <style>
-#             .repo-button {{
-#                 background-color: #0067c3;
-#                 color: white;
-#                 padding: 12px 20px;
-#                 border: none;
-#                 border-radius: 4px;
-#                 cursor: pointer;
-#             }}
-#             .repo-button:hover {{
-#                 background-color: #0b35b6;
-#             }}
-#             .project-container {{
-#                 display: flex;
-#                 justify-content: center;
-#             }}
-#             .project-box {{
-#                 text-align: center;
-#                 border: 1px solid #ccc;
-#                 padding: 40px;
-#                 border-radius: 20px;
-#                 width: 550px;
-#                 margin: 10px;
-#             }}
-#             .project-img {{
-#                 width: 475px;
-#                 height: 275px;
-#             }}
-#         </style>
-#         <div class="project-container">
-#         <div class="project-box">
-#             <img src="https://raw.githubusercontent.com/Kimchi21/portfolio-app/main/assets/LS.png" alt="Lazada vs. Shopee" class="project-img">
-#             <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
-#             <br>
-#             <a href="{repo['Laz_Shopee']}" project>
-#                 <button class="repo-button">
-#                     <strong>Link to Repository</strong>
-#                 </button>
-#             </a>
-#         </div>
-#         <!-- Add similar structure for other projects -->
-#         </div>
-#         <script>
-#             var buttons = document.querySelectorAll('.repo-button');
-#             buttons.forEach(function(button) {{
-#                 button.addEventListener('mouseover', function() {{
-#                     button.style.backgroundColor = '#0b35b6';
-#                 }});
-#                 button.addEventListener('mouseout', function() {{
-#                     button.style.backgroundColor = '#0067c3';
-#                 }});
-#             }});
-#         </script>
-#         """,
-#         unsafe_allow_html=True
-#     )
+with left:
+    st.markdown(
+        f"""
+        <style>
+            .repo-button {{
+                background-color: #0067c3;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }}
+            .repo-button:hover {{
+                background-color: #0b35b6;
+            }}
+            .project-container {{
+                display: flex;
+                justify-content: center;
+            }}
+            .project-box {{
+                text-align: center;
+                border: 1px solid #ccc;
+                padding: 40px;
+                border-radius: 20px;
+                width: 550px;
+                margin: 10px;
+            }}
+            .project-img {{
+                width: 475px;
+                height: 275px;
+            }}
+        </style>
+        <div class="project-container">
+        <div class="project-box">
+            <img src="https://raw.githubusercontent.com/Kimchi21/portfolio-app/main/assets/LS.png" alt="Lazada vs. Shopee" class="project-img">
+            <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
+            <br>
+            <a href="{repo['Laz_Shopee']}" project>
+                <button class="repo-button">
+                    <strong>Link to Repository</strong>
+                </button>
+            </a>
+        </div>
+        <!-- Add similar structure for other projects -->
+        </div>
+        <script>
+            var buttons = document.querySelectorAll('.repo-button');
+            buttons.forEach(function(button) {{
+                button.addEventListener('mouseover', function() {{
+                    button.style.backgroundColor = '#0b35b6';
+                }});
+                button.addEventListener('mouseout', function() {{
+                    button.style.backgroundColor = '#0067c3';
+                }});
+            }});
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
 
