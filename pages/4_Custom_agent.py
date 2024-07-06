@@ -134,11 +134,8 @@ with tab1:
 with tab2:
     
     vid_path = os.path.join("data", "videoplayback.mp4")
-
-    width = max(100, 0.01)
-    side = max((100 - width) / 2, 0.01)
     
-    _, container, _ = st.columns([side, width, side])
+    _, container, _ = st.columns([2, 5, 2])
     container.video(data=vid_path)
 
     pass
