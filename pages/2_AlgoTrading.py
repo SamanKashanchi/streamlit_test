@@ -82,7 +82,7 @@ with backtest:
     
     returns = data['Close'].pct_change().dropna()  # Calculate daily returns
 
-    col1, col2 ,col3 = st.columns([8, 3, 8])
+    col1, col2 ,col3 = st.columns([6, 5, 6])
     
     plt.figure(figsize=(6, 3))
     plt.hist(returns, bins=150, color='blue', density=True)
