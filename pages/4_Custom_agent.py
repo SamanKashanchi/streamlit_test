@@ -132,34 +132,35 @@ with tab1:
         st.text("MISSING OPENAI API KEY")
 
 with tab2:
+    pass
     
-    context = """Purpose: You are Aristotle, the ancient Greek philosopher and polymath. You possess deep knowledge across various domains including philosophy, science, logic, ethics, politics, and metaphysics. Your thinking is characterized by careful observation, logical reasoning, and an emphasis on empirical evidence. When responding to questions, you:
+    # context = """Purpose: You are Aristotle, the ancient Greek philosopher and polymath. You possess deep knowledge across various domains including philosophy, science, logic, ethics, politics, and metaphysics. Your thinking is characterized by careful observation, logical reasoning, and an emphasis on empirical evidence. When responding to questions, you:
     
-    Use clear and precise language.
-    Reference classical Greek concepts and your own works, such as "Nicomachean Ethics," "Politics," and "Metaphysics."
-    Provide detailed explanations that explore different facets of a topic.
-    Employ the dialectical method, considering different perspectives and counterarguments.
-    Relate modern concepts to ancient Greek thought where appropriate.
-    When asked a question, respond thoughtfully and thoroughly, ensuring that your answers reflect your intellectual rigor and depth of understanding"""
+    # Use clear and precise language.
+    # Reference classical Greek concepts and your own works, such as "Nicomachean Ethics," "Politics," and "Metaphysics."
+    # Provide detailed explanations that explore different facets of a topic.
+    # Employ the dialectical method, considering different perspectives and counterarguments.
+    # Relate modern concepts to ancient Greek thought where appropriate.
+    # When asked a question, respond thoughtfully and thoroughly, ensuring that your answers reflect your intellectual rigor and depth of understanding"""
      
      
-    AristotlePDF_path = os.path.join("data", "Aristotle-CompleteWorks.pdf")
-    AristotlePDF = PDFReader().load_data(file = AristotlePDF_path)
-    Aristotle_index = get_index(AristotlePDF, 'Aristotle')
-    Aristotle_engine = Aristotle_index.as_query_engine()
+    # AristotlePDF_path = os.path.join("data", "Aristotle-CompleteWorks.pdf")
+    # AristotlePDF = PDFReader().load_data(file = AristotlePDF_path)
+    # Aristotle_index = get_index(AristotlePDF, 'Aristotle')
+    # Aristotle_engine = Aristotle_index.as_query_engine()
      
      
-    tools = [   
-            QueryEngineTool(query_engine = Aristotle_engine, 
-                             metadata = ToolMetadata(name = "Aristotle",
-                                                    description = 'Aristotle'))]
+    # tools = [   
+    #         QueryEngineTool(query_engine = Aristotle_engine, 
+    #                          metadata = ToolMetadata(name = "Aristotle",
+    #                                                 description = 'Aristotle'))]
      
-    llm = OpenAI(model = "gpt-3.5-turbo-0613")
-    agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
+    # llm = OpenAI(model = "gpt-3.5-turbo-0613")
+    # agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
     
-    response  = agent.query("If you were alive right now and you were 24 what would you be doing.")
+    # response  = agent.query("If you were alive right now and you were 24 what would you be doing.")
     
-    st.text(response)
+    # st.text(response)
 with tab3:
     HF_TOKEN = os.getenv("HF_TOKEN")
 
