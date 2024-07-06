@@ -128,7 +128,8 @@ with backtest:
     plt.ylabel('Autocorrelation')
     plt.grid(True)
     plt.show()
-    st.pyplot()
+    with col2:
+        st.pyplot()
     
     
     # 4. Half-Life of Mean Reversion (example using exponential decay)
@@ -148,7 +149,9 @@ with backtest:
     plt.title("Rolling Standard Deviation (Volatility)")
     plt.xlabel("Time")
     plt.ylabel("Volatility")
-    st.pyplot()
+
+    with col2:
+        st.pyplot()
     
     
     std_input = st.text_input("PLease Enter The Standered Deviation level you want to execute ", "")
