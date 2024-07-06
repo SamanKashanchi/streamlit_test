@@ -81,6 +81,8 @@ with backtest:
     st.dataframe(data, use_container_width = True)
     
     returns = data['Close'].pct_change().dropna()  # Calculate daily returns
+
+    col1, col2 ,col3 = st.columns([8, 3, 8])
     
     plt.figure(figsize=(6, 3))
     plt.hist(returns, bins=150, color='blue', density=True)
@@ -89,7 +91,8 @@ with backtest:
     plt.ylabel('Frequency')
     
     # Display the plot using Streamlit
-    st.pyplot()
+    with col2:
+        st.pyplot()
     
     statistic, p_value = shapiro(returns)
     
