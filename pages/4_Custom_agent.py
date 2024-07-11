@@ -172,7 +172,6 @@ with tab3:
 
     
     repo_id = "microsoft/Phi-3-mini-4k-instruct"
-    llm_client = InferenceClient()
         
     llm_client = InferenceClient(
         model=repo_id,
