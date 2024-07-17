@@ -77,8 +77,6 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 with tab1:
     if openai_api_key:
-        st.text("LOADED OPENAI API KEY")
-
         
         # Overview
         st.header("Overview")
