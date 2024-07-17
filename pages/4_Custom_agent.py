@@ -73,6 +73,36 @@ tabs = ["Llama-Index OpenAI Portolio Agent", "Llama-Index OpenAI Aristotle Agent
 tab1, tab2, tab3 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
+# Title
+st.title("Resume Q&A Project")
+
+# Overview
+st.header("Overview")
+st.write("""
+I developed a Retrieval-Augmented Generation (RAG) agent that answers questions about my resume. The project uses my resume PDF as a data source and is hosted on my Streamlit portfolio.
+""")
+
+# Tech Stack
+st.header("Tech Stack")
+st.write("""
+- **GPT Embedding**: Generates dense vector representations of textual data for semantic search and retrieval.
+- **Llama Index**: Manages and queries the embedded vectors for quick and accurate responses.
+- **Vector Database**: Stores and manages high-dimensional vector representations of the resume text, facilitating fast retrieval.
+- **Streamlit**: Provides an interactive interface for users to ask questions and receive responses about my resume.
+""")
+
+# Functionality
+st.header("Functionality")
+st.write("""
+Users can ask questions related to my professional experience, skills, and education. The RAG agent retrieves the most relevant information from the resume PDF stored in the vector database and generates precise answers.
+""")
+
+# Goals
+st.header("Goals")
+st.write("""
+The project demonstrates my expertise in AI and NLP technologies. By integrating a vector database, it ensures efficient handling of embedded data for high performance. The use of RAG methodology combines retrieval and generation techniques, providing a robust solution for complex query answering.
+""")
+
 
 with tab1:
     if openai_api_key:
