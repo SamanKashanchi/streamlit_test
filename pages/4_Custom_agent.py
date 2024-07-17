@@ -79,8 +79,6 @@ with tab1:
     if openai_api_key:
         st.text("LOADED OPENAI API KEY")
 
-        # Title
-        st.title("Resume Q&A Project")
         
         # Overview
         st.header("Overview")
