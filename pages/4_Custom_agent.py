@@ -67,7 +67,7 @@ with col1:
 with col2:
 
     st_lottie(chatbot_lottie, height=280, key="data")
-    st.write("_\Hi, I'm Saman's resume chat bot! Scroll to the bottom of this page to chat with me.\")
+    st.write("_Hi, I'm Saman's resume chat bot! Scroll to the bottom of this page to chat with me._")
 
 tabs = ["Llama-Index OpenAI Portolio Agent", "Llama-Index OpenAI Aristotle Agent","LangChain Llama3 Chatbot"]
 tab1, tab2, tab3 = st.tabs([t.center(9, "\u2001") for t in tabs])
