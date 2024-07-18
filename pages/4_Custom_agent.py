@@ -67,6 +67,7 @@ with col1:
 with col2:
 
     st_lottie(chatbot_lottie, height=280, key="data")
+    st.write("Hi, I'm Saman's resume chat bot! Scroll to the bottom of this page to chat with me and ask questions about Saman, his experiences, and qualifications.")
 
 
 tabs = ["Llama-Index OpenAI Portolio Agent", "Llama-Index OpenAI Aristotle Agent","LangChain Llama3 Chatbot"]
