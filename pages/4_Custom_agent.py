@@ -74,6 +74,7 @@ tab1, tab2, tab3 = st.tabs([t.center(9, "\u2001") for t in tabs])
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
+st.text(uploaded_files)
 
 
 with tab1:
