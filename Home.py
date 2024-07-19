@@ -378,6 +378,7 @@ with right:
         </style>
         <div class="project-container">
         <div class="project-box">
+             <h2>RAG-Based Chatbot</h2>
             <img src="https://classicalwisdom.com/wp-content/uploads/2020/11/original-atlantic.jpg" alt="RAWG" class="project-img">
             <p style='margin: 15px 0 0 0;'>I created a RAG-based chatbot trained on Aristotle's works, allowing users to ask questions and explore moral dilemmas. 
             It uses Google Cloud for embedding storage and inference, and includes an API integrated with Streamlit for a seamless user experience.</p>
