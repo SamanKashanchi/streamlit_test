@@ -438,7 +438,7 @@ with left:
         </style>
         <div class="project-container">
         <div class="project-box">
-            <img src="https://raw.githubusercontent.com/Kimchi21/portfolio-app/main/assets/LS.png" alt="Lazada vs. Shopee" class="project-img">
+            <img src="https://stocksonfire.in/wp-content/uploads/2018/01/algo-trading.png" alt="Lazada vs. Shopee" class="project-img">
             <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
             <br>
             <a href="{repo['Laz_Shopee']}" project>
