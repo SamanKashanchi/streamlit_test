@@ -64,7 +64,7 @@ with journey:
     Processing for market sentiment analysis, and Kalman filters for state space shits and risk management. Each week, we met for hours, synthesizing insights and devising strategies to exploit arbitrage opportunities arising from currency mispricing. Our process was rigorous, involving numerous backtests and learning from mistakes along the way.
     Through this collaborative effort and dedicated research, we developed our very first trading strategies, integrating cutting-edge methodologies to navigate the complexities of the financial markets effectively. This journey marked the beginning of our venture into algorithmic trading, laying the foundation for our continued exploration and growth in this dynamic field.""")
     
-    st.image("https://d1rwhvwstyk9gu.cloudfront.net/2020/01/Stages-in-algo-trading--simplified-1.PNG")
+    st.image("https://th.bing.com/th/id/OIP.2MCe49Eg66vWtgwgh5COfgHaD7?rs=1&pid=ImgDetMain")
     st.write("")
     st.write("After the summer, we decided to continue on this journey of developing trading strategies. We entered a prestigious trading competition called FTMO. After failing twice, we found ourselves on our last attempt. It was then that we learned the crucial lesson that proper risk management is just as important as the trading strategies themselves. So, we began exploring different methods of risk management, from implementing dynamic stop losses and take profits to utilizing state-space models that could detect market shifts and sentiment models that scoured news feeds and Twitter for quick increases in volatility. Since our strategies primarily relied on horizontal movements and steady markets, it was imperative that we understood and prepared for such occurrences.")
     
