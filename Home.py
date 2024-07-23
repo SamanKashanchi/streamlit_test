@@ -558,7 +558,7 @@ with left:
         <div class="project-container">
         <div class="project-box">
              <h4>Trading Algo Backtester / Optimizer</h4>
-            <img src="https://th.bing.com/th/id/OIP.2MCe49Eg66vWtgwgh5COfgHaD7?rs=1&pid=ImgDetMain" alt="Lazada vs. Shopee" class="project-img">
+            <img src="https://store.outrightcrm.com/wp-content/uploads/2021/06/topimage.png" alt="Lazada vs. Shopee" class="project-img">
             <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
             <br>
             <a href="{repo['Laz_Shopee']}" project>
