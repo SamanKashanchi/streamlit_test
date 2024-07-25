@@ -121,7 +121,10 @@ st.subheader("About Me")
 
 
 st.write('''
-:grin:  Skiing, Rugby, Kickboxing, Techno, Anime, Dogs, Persian Food, Forex Market, LLM & RAG''')
+Background: I was born and raised in Iran and attended a boarding school to complete my high school education. At the age of 18, I moved to the United States to pursue higher education. I hold three passports: Iranian, British, and American, and have lived in four different countries.
+
+interests: I have a passion for mathematics and physics and everything tech. I’m also deeply interested in various activities and subjects including skiing, rugby, kickboxing, techno, anime, and dogs. I enjoy Persian food, have a keen interest in the Forex market, and am passionate about statistics and natural language processing.
+''')
 st.write()
 
 
