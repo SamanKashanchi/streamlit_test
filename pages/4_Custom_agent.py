@@ -129,19 +129,8 @@ with tab1:
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
-        st.markdown("""
-        <style>
-        .custom-input-box input {
-            color: #ff0000; /* Change the text color to red */
-        }
-        </style>
-        """, unsafe_allow_html=True)
 
-        # Your input box with a custom class
-        st.markdown('<div class="custom-input-box">', unsafe_allow_html=True)
         prompt = st.chat_input("Ask me any question about Saman and his background ", key='prompt_KEY')
-        st.markdown('</div>', unsafe_allow_html=True)        
-
 
         if prompt :    
             st.session_state.messages.append({"role": "user", "content": prompt})
