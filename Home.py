@@ -121,8 +121,7 @@ st.subheader("About Me")
 
 
 st.write('''
-:grin: 
-.''')
+:grin:  Skiing, Rugby, Kickboxing, Techno, Anime, Dogs, Persian Food, Forex Market, LLM & RAG''')
 st.write()
 
 
