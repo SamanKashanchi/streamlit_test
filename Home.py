@@ -130,7 +130,7 @@ I was born and raised in Iran and attended a boarding school to complete my high
 
 - **Activities:** I’m actively involved in skiing, rugby, and kickboxing.  
 - **Hobbies:** Enjoy techno music, anime, and spending time with freinds.  
-- **I LOVE FOOD:** 1.Persian 2.Japanese 3.Itallian 4.Indian 5.French
+- **I LOVE FOOD:** 1.Persian :flag-ir:  2.Japanese 3.Itallian 4.Indian 5.French
 - **Finance:** Keen interest in the Forex market.  
 - **Analytics:** Passionate about statistics and natural language processing.
 
