@@ -99,14 +99,6 @@ with tab1:
         st.write("""
         Users can ask questions related to my professional experience, skills, and education. The RAG agent retrieves the most relevant information from the resume PDF stored in the vector database and generates precise answers.
         """)
-        
-        # Goals
-        st.header("Goals")
-        st.write("""
-        The project demonstrates my expertise in AI and NLP technologies. By integrating a vector database, it ensures efficient handling of embedded data for high performance. The use of RAG methodology combines retrieval and generation techniques, providing a robust solution for complex query answering.
-        """)
-
-    
     
     
         context = """Purpose: The primary role of this agent is to assist users by providing accurate 
