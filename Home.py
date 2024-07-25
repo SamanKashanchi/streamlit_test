@@ -119,18 +119,18 @@ st.subheader("About Me")
 
 # st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
-
+# - **Mathematics and Physics:** My passion for these subjects drives my approach to problem-solving and my career in data science.  
+# - **Tech:** Enthusiastic about the latest technologies and innovations.  
 
 st.markdown("""
 **Background:**  
 I was born and raised in Iran and attended a boarding school to complete my high school education. At the age of 18, I moved to the United States to pursue higher education. I hold three passports: Iranian, British, and American, and have lived in four different countries.
 
 **Interests:**  
-- **Mathematics and Physics:** My passion for these subjects drives my approach to problem-solving and my career in data science.  
-- **Tech:** Enthusiastic about the latest technologies and innovations.  
+
 - **Activities:** I’m actively involved in skiing, rugby, and kickboxing.  
-- **Hobbies:** Enjoy techno music, anime, and spending time with dogs.  
-- **Food:** I have a love for Persian cuisine.  
+- **Hobbies:** Enjoy techno music, anime, and spending time with freinds.  
+- **I LOVE FOOD:** 1.Persian 2.Japanese 3.Itallian 4.Indian 5.French
 - **Finance:** Keen interest in the Forex market.  
 - **Analytics:** Passionate about statistics and natural language processing.
 
