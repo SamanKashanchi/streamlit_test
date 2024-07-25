@@ -121,12 +121,8 @@ st.subheader("About Me")
 
 
 st.write('''
-
-💼 At work, I'm the architect of innovation and impact, crafting solutions that not only crunch numbers but also catalyze change. From optimizing supply chains to forecasting demand, I've led projects that make a real-world difference.
-
-🛠️ Off-duty, I'm a bit of a tinkerer. Whether it's building ML-powered web apps or diving into the exciting world of algorithmic trading, I'm always eager to explore new horizons and push the limits of what's possible.
-
-💡 But beyond the code and algorithms, what truly fuels my fire is the opportunity to make a meaningful impact. I believe in the transformative power of data and am passionate about using my skills to create tools that empower others and drive progress.''')
+:grin: 
+.''')
 st.write()
 
 
