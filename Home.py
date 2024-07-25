@@ -134,7 +134,7 @@ st.write()
 
 
 with st.container():
-    st.subheader('⚒️ Skills')
+    st.header('⚒️ Skills', divider='red')
     st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
     col1, col2, col3= st.columns([1, 1, 1])
     with col1:
