@@ -561,7 +561,7 @@ with left:
         <div class="project-box">
              <h4>Social Media Automation Suite</h4>
             <img src="https://store.outrightcrm.com/wp-content/uploads/2021/06/topimage.png" alt="Lazada vs. Shopee" class="project-img">
-            <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
+            <p style='margin: 15px 0 0 0;'>The Social Media Automation Suite is a versatile tool for efficient social media management. Utilizing web scrapers, GPT for caption and description generation, and integrated with the Telegram API, this suite allows for mass content scraping, user-specified editing (compilations, split screens, text overlays), post scheduling, and YouTube posting. It streamlines content creation and management across platforms, enhancing your social media strategy.</p>
             <br>
             <a href="{repo['Laz_Shopee']}" project>
                 <button class="repo-button">
