@@ -501,7 +501,7 @@ with left:
         <div class="project-box">
              <h4>Trading Algo Backtester / Optimizer</h4>
             <img src="https://th.bing.com/th/id/OIP.2MCe49Eg66vWtgwgh5COfgHaD7?rs=1&pid=ImgDetMain" alt="Lazada vs. Shopee" class="project-img">
-            <p style='margin: 15px 0 0 0;'>A sentiment analysis approach for analyzing two of the most popular e-commerce platforms in the Philippines by how how users perceive, experience and engage with these platforms.</p>
+            <p style='margin: 15px 0 0 0;'>Over the course of two years, I developed and executed a series of algorithmic trading strategies across forex and stock markets. The project involved implementing and refining arbitrage strategies, leveraging statistical analysis, machine learning techniques, and time series modeling. Key activities included backtesting strategies using historical data, optimizing algorithms for live execution, and continuously evaluating performance to adapt to market conditions.</p>
             <br>
             <a href="{repo['Laz_Shopee']}" project>
                 <button class="repo-button">
