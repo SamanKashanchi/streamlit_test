@@ -441,8 +441,7 @@ with right:
         <div class="project-box">
              <h4>Home Cash Flow Analyzer</h4>
             <img src="https://th.bing.com/th/id/R.ec01397906a56b80de12dd6b8b3a8eca?rik=uN0ZBKnEOhYWVg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f65566accc2f6cd400c787935%2f65566bf399dfea2786ab3a1a%2f655f55b3e3203141d1e5ee91%2f1701126089883%2fshutterstock_2121976568.jpg%3fformat%3d1500w&ehk=KdquSEOkJsekHOFw5%2bglDSeKbAQgJbdfk0Z145rQ33Y%3d&risl=&pid=ImgRaw&r=0" alt="RAWG" class="project-img">
-            <p style='margin: 15px 0 0 0;'>I created a RAG-based chatbot trained on Aristotle's works, allowing users to ask questions and explore moral dilemmas. 
-            It uses Google Cloud for embedding storage and inference, and includes an API integrated with Streamlit for a seamless user experience.</p>
+            <p style='margin: 15px 0 0 0;'>I developed a web-based application designed to analyze the cash flow of rental investments. The app utilizes web scraping techniques to gather and aggregate data from various online sources. By inputting a LinkedIn profile link, the application scrapes relevant information including crime statistics, median rental prices for the neighborhood, state property tax rates, and property insurance estimates.</p>
             <br>
             <a href="{repo['RAWG']}" project>
                 <button class="repo-button">
