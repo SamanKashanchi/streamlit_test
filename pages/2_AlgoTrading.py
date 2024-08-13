@@ -73,7 +73,7 @@ with backtest:
     
     
     warnings.filterwarnings("ignore")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    # st.set_option('deprecation.showPyplotGlobalUse', False)
     
     st.write("Mean reversion is a financial theory that suggests that asset prices and returns tend to revert to their historical average over time. It is based on the idea that when prices deviate significantly from their average or mean, they are likely to move back towards that mean in the future. This phenomenon is observed in various financial markets and can be driven by a variety of factors.  Mean reversion is often attributed to the idea of market inefficiency. If markets were perfectly efficient, prices would always reflect all available information, and there would be no tendency for prices to revert to a mean.")
     ticker = st.selectbox('Please pick a ticker', ['COKE', "MMM", "MNSO", 'OXM'])
