@@ -1,11 +1,1 @@
-yfinance==0.1.63
-openpyxl==3.1.1
-plotly==5.1.0
-matplotlib==3.4.3
-scipy==1.9.3
-statsmodels==0.14.1
-streamlit-lottie==0.0.5
-llama_index==0.10.34
-openai
-langchain_community
-huggingface_hub
+
