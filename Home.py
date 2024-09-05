@@ -123,14 +123,9 @@ st.subheader("About Me")
 # - **Tech:** Enthusiastic about the latest technologies and innovations.  
 
 st.markdown("""
-**Background:**  
-I was born and raised in Tehran Iran, I then moved to England at 16 to complete my education at an international boarding school, and later to the U.S. in 2017 to pursue higher studies. 
+From a childhood in Tehran to international studies in England, and now as a Data Scientist in the U.S., my journey has been fueled by curiosity and a passion for solving complex, real-world problems. Currently based in Los Angeles, I have a deep expertise in statistics, mathematics, and computer science, with experience applying machine learning and data analysis to create impactful solutions.
 
-What sets me apart as a Data Scientist is not just my love for statistics, math, and computer science—it’s my ability to see beyond the numbers. I take pride in translating complex data into clear, meaningful narratives for diverse audiences. To me, data is a story that reveals insights into the human experience, and the best solutions come from empathy, collaboration, and truly understanding the challenges at hand.
-**Interests:**  
-- **DAY TO DAY:** I enjoy techno music and going to events. Watching old school anime. Spending time with freinds and family.  
-- **I LOVE FOOD:** 1.Persian 2.Japanese 3.Itallian 4.Indian 5.French
-- **ACTIVITIES:** I love skiing, Rugby, Tennis and Kickboxing.  
+What sets me apart is my ability to see the bigger picture—transforming data into actionable insights that drive decision-making. I take pride in being not only technically skilled but also a strong communicator who can bridge technical and non-technical teams to create aligned, effective strategies.
 """)
 
 
