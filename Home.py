@@ -124,8 +124,8 @@ st.subheader("About Me")
 
 st.markdown("""
 **Background:**  
-I was born and raised in Iran and attended a boarding school to complete my high school education. At the age of 18, I moved to the United States to pursue higher education. I hold three passports: Iranian, British, and American, and have lived in four different countries.
 
+Born in Tehran, I moved to England at 16 to complete my education, and later to the U.S. in 2017 to pursue higher studies. My passion for statistics, mathematics, and computer science drives my work as a Data Scientist, but what truly sets me apart is my ability to communicate complex ideas and uncover insights from multiple perspectives.
 **Interests:**  
 
 - **DAY TO DAY:** I enjoy techno music and going to events. Watching old school anime. Spending time with freinds and family.  
