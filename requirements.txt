@@ -7,3 +7,4 @@ scipy
 statsmodels
 openpyxl
 llama_index
+langchain_community
