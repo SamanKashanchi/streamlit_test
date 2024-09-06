@@ -1,12 +1,9 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objs as go
 
 import matplotlib.pyplot as plt
 import warnings
 
-from scipy.stats import shapiro
-import statsmodels.api as sm
 import numpy as np
 import requests
 from streamlit_lottie import st_lottie
