@@ -4,3 +4,4 @@ streamlit-lottie
 yfinance
 plotly
 scipy
+statsmodels
