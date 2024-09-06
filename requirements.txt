@@ -3,3 +3,4 @@ matplotlib
 streamlit-lottie
 yfinance
 plotly
+scipy
