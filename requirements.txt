@@ -6,3 +6,4 @@ plotly
 scipy
 statsmodels
 openpyxl
+llama_index
