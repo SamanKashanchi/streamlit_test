@@ -33,3 +33,5 @@ def show_certifications():
             st.markdown(f"[View Certificate]({cert['details_link']})")
 
 
+if __name__ == "__main__":
+    show_certifications()
