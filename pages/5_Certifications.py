@@ -10,7 +10,7 @@ def show_certifications():
         {
             "title": "TestDome Python Certificate",
             "date": "September 2024",
-            "image_file": "TestDomePython.png",  # Local file path
+            "image_file": "TestDomePython.PNG",  # Local file path
             "organization": "TestDome",
             "details_link": "https://www.testdome.com/certificates/fa5728523f994b2ea040e0d5cf8870f6"
         }
