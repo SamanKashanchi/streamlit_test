@@ -117,7 +117,7 @@ with tab1:
                                  metadata = ToolMetadata(name = "saman_pdfData",
                                                         description = 'this gives detailed information about Saman'))]
         
-        llm = OpenAI(model = "gpt-3.5-turbo-0613")
+        llm = OpenAI(model = "gpt-3.5-turbo")
         agent = ReActAgent.from_tools(tools, llm = llm, verbose = True, context = context)
     
         
