@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from datetime import datetime
-
+st.text("YOOOZ")
 def show_certifications():
     st.title("Certifications 📊")
 
