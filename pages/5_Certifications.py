@@ -13,7 +13,6 @@ def show_certifications():
     # Display the PDF certificate using an iframe
     st.subheader("HackerRank Problem Solving Certificate")
     pdf_file_path = "HackerRankCertificate.pdf"
-    st.image("", use_column_width=True)
     st.image("hackerrank.png", use_column_width=True)
 
 show_certifications()
