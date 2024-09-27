@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 from datetime import datetime
-st.text("YOOOZ")
 def show_certifications():
     st.title("Certifications 📊")
 
@@ -42,6 +41,6 @@ def show_certifications():
             if "iframe_link" in cert:
                 # Embed the iframe
                 st.components.v1.iframe(cert["iframe_link"], height=500, scrolling=True)
+st.text("YOOOZ")
 
-if __name__ == "__main__":
-    show_certifications()
+show_certifications()
