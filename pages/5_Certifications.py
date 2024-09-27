@@ -37,11 +37,8 @@ def show_certifications():
                 - **Date:** {cert['date']}
                 - **Organization:** {cert['organization']}
             """)
-            if "details_link" in cert:
-                st.markdown(f"[View Certificate]({cert['details_link']})")
-            if "pdf_file" in cert:
-                with open(cert["pdf_file"], "rb") as pdf_file:
-                    st.download_button(label="Download Certificate PDF", data=pdf_file, file_name=cert["pdf_file"], mime="application/pdf")
+            st.image(cert["pdf_file"], use_column_width=True, width=500)  # Adjust width to 500px
+
 
 # Option to upload a PDF for the HackerRank certificate
 uploaded_file = st.file_uploader("Upload the HackerRank certificate as a PDF", type="pdf")
