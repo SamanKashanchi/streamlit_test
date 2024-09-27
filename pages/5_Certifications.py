@@ -41,6 +41,6 @@ def show_certifications():
             if "iframe_link" in cert:
                 # Embed the iframe
                 st.components.v1.iframe(cert["iframe_link"], height=500, scrolling=True)
-st.text("YOOOZ")
+st.text("YOOOZYYYY")
 
 show_certifications()
