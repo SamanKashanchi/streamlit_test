@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 from datetime import datetime
+
 def show_certifications():
     st.title("Certifications 📊")
 
@@ -16,7 +17,7 @@ def show_certifications():
         {
             "title": "HackerRank Problem Solving Certificate",
             "date": "August 2023",
-            "iframe_link": "https://www.hackerrank.com/certificates/iframe/e26e93338e02",
+            "pdf_file": "HackerRankCertificate.pdf",  # Local PDF file path
             "organization": "HackerRank"
         }
     ]
@@ -38,9 +39,17 @@ def show_certifications():
             """)
             if "details_link" in cert:
                 st.markdown(f"[View Certificate]({cert['details_link']})")
-            if "iframe_link" in cert:
-                # Embed the iframe
-                st.components.v1.iframe(cert["iframe_link"], height=500, scrolling=True)
-st.text("YOOOZYYYY")
+            if "pdf_file" in cert:
+                with open(cert["pdf_file"], "rb") as pdf_file:
+                    st.download_button(label="Download Certificate PDF", data=pdf_file, file_name=cert["pdf_file"], mime="application/pdf")
 
+# Option to upload a PDF for the HackerRank certificate
+uploaded_file = st.file_uploader("Upload the HackerRank certificate as a PDF", type="pdf")
+if uploaded_file is not None:
+    with open("HackerRankCertificate.pdf", "wb") as f:
+        f.write(uploaded_file.read())
+    st.success("File uploaded successfully!")
+
+st.text("YOOOZYYYY")
 show_certifications()
+
