@@ -13,6 +13,14 @@ def show_certifications():
             "image_file": "TestDomePython.PNG",  # Local file path
             "organization": "TestDome",
             "details_link": "https://www.testdome.com/certificates/fa5728523f994b2ea040e0d5cf8870f6"
+        },
+        ,
+        {
+            "title": "AWS Certified Solutions Architect",
+            "date": "August 2023",
+            "image_file": "AWSCertification.PNG",  # Local file path
+            "organization": "Amazon Web Services",
+            "details_link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
         }
     ]
 
