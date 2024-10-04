@@ -8,12 +8,12 @@ def show_certifications():
 
     # Display the PNG certificate
     st.subheader("TestDome Python Certificate")
-    st.image("TestDomePython.PNG", use_column_width=True)
+    st.image("TestDomePython.PNG", width=400)
 
     # Display the PDF certificate using an iframe
     st.subheader("HackerRank Problem Solving Certificate")
     pdf_file_path = "HackerRankCertificate.pdf"
-    st.image("hackerrank.png", use_column_width=True)
+    st.image("hackerrank.png", width=400)
 
 show_certifications()
 
