@@ -14,6 +14,7 @@ from langchain_community.llms import Ollama
 import toml
 from huggingface_hub import InferenceClient
 import json
+import streamlit.components.v1 as components
 
 
 particles_html = """
