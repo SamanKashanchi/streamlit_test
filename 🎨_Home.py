@@ -11,66 +11,6 @@ import streamlit.components.v1 as components
 
 # from llama_index.llms import OpenAI
 
-
-particles_background = """
-<div id="particles-js"></div>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 150, "density": { "enable": true, "value_area": 800 } },
-    "color": { "value": "#ffffff" },
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.5 },
-    "size": { "value": 2, "random": true },
-    "line_linked": {
-      "enable": true,
-      "distance": 100,
-      "color": "#ffffff",
-      "opacity": 0.2,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 0.3,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false
-    }
-  },
-  "interactivity": {
-    "events": {
-      "onhover": { "enable": true, "mode": "grab" },
-      "onclick": { "enable": true, "mode": "push" }
-    },
-    "modes": {
-      "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
-      "push": { "particles_nb": 4 }
-    }
-  },
-  "retina_detect": true
-});
-</script>
-
-<style>
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-</style>
-"""
-
-# Inject the background
-components.html(particles_background, height=0, width=0)
-
-
-
 st.set_page_config(page_title="PORTFOLIO", layout ='wide')
 st.markdown(
     """
