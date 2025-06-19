@@ -15,6 +15,90 @@ import toml
 from huggingface_hub import InferenceClient
 import json
 
+
+particles_html = """
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 200,
+          "density": {
+            "enable": true,
+            "value_area": 1000
+          }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+          "polygon": { "nb_sides": 5 }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 2,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 100,
+          "color": "#ffffff",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.5,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": true
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "repulse" },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": { "opacity": 1 }
+          },
+          "repulse": { "distance": 200, "duration": 0.4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
+"""
+
+
+
 def gradient(color1, color2, color3, content1, content2):
     # Create an HTML structure with styling for a gradient header
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
@@ -99,7 +183,8 @@ with tab1:
         st.write("""
         Users can ask questions related to my professional experience, skills, and education. The RAG agent retrieves the most relevant information from the resume PDF stored in the vector database and generates precise answers.
         """)
-    
+        st.set_page_config(page_title="Particles Demo", layout="wide")
+        components.html(particles_html, height=600, scrolling=False)
     
         context = """Purpose: The primary role of this agent is to assist users by providing accurate 
                     information Saman, his experiences and his background. """
