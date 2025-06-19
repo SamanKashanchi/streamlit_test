@@ -7,6 +7,7 @@ import warnings
 import numpy as np
 import requests
 from streamlit_lottie import st_lottie
+import streamlit.components.v1 as components
 
 # from llama_index.llms import OpenAI
 
@@ -26,6 +27,95 @@ st.markdown(
 profile_pic = 'profile_pic_circle.png'  
 
 # st.sidebar.image(profile_pic, caption='Saman Kashanchi', use_column_width=True)
+
+
+
+particles_html = """
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 200,
+          "density": {
+            "enable": true,
+            "value_area": 1000
+          }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+          "polygon": { "nb_sides": 5 }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 2,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 100,
+          "color": "#ffffff",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.5,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": true
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "repulse" },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": { "opacity": 1 }
+          },
+          "repulse": { "distance": 200, "duration": 0.4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
+"""
+
+st.set_page_config(page_title="Particles Demo", layout="wide")
+components.html(particles_html, height=600, scrolling=False)
+
+st.title("💫 Welcome to Your Streamlit App")
+st.write("This app includes a dynamic particles.js background.")
 
 
 def gradient(color1, color2, color3, content1, content2):
