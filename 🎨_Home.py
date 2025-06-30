@@ -120,7 +120,7 @@ I’ve worked across logistics, procurement, sales, and research—building fore
 
 I’m usually the person leadership turns to when something’s messy, urgent, or unclear. I’ve worked closely with executives, VPs, and cross-functional teams to cut through the noise, find the signal, and ship things that matter.
 
-Outside of work, I’m always experimenting — agentic workflows, scrapers, analytics tools, utility apps you name it. I like to biuld.
+Outside of work, I’m always experimenting agentic workflows, scrapers, analytics tools, utility apps you name it. I like to biuld.
 """)
 
 
