@@ -111,15 +111,16 @@ st.write("---")
 
 st.subheader("About Me")
 
-# st.markdown('<hr style="border-top: 2px solid red;">', unsafe_allow_html=True)
 
-# - **Mathematics and Physics:** My passion for these subjects drives my approach to problem-solving and my career in data science.  
-# - **Tech:** Enthusiastic about the latest technologies and innovations.  
 
 st.markdown("""
-From a childhood in Tehran to international studies in England, and now as a Data Scientist in the U.S., my journey has been fueled by curiosity and a passion for solving complex, real-world problems. Currently based in Los Angeles, I have a deep expertise in statistics, mathematics, and computer science, with experience applying machine learning and data analysis to create impactful solutions.
+I’m Saman. I grew up in Tehran, studied in the UK, and now live in LA. I work as a Data Scientist, but really, I just like solving hard problems with data, code, and a little creativity.
 
-What sets me apart is my ability to see the bigger picture—transforming data into actionable insights that drive decision-making. I take pride in being not only technically skilled but also a strong communicator who can bridge technical and non-technical teams to create aligned, effective strategies.
+I’ve worked across logistics, procurement, sales, and research—building forecasting systems that actually work in the real world, automating frustrating workflows, and designing tools that help teams move faster and make smarter decisions. No fluff, no buzzwords — just practical impact.
+
+I’m usually the person leadership turns to when something’s messy, urgent, or unclear. I’ve worked closely with executives, VPs, and cross-functional teams to cut through the noise, find the signal, and ship things that matter.
+
+Outside of work, I’m always experimenting — agentic workflows, scrapers, analytics tools, utility apps you name it. I like to biuld.
 """)
 
 
