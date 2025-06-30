@@ -84,7 +84,7 @@ with st.container():
         st.markdown("<br><br>", unsafe_allow_html=True)
 
         # st.subheader("DATA SCIENTIST & MACHINE LEARNING ENGINEER")
-        st.write('''Welcome to my online portfolio, where you'll discover not only overviews of my projects but also interactive pages allowing you to experience them firsthand. Take the opportunity to immerse yourself, gaining insights and experiencing the projects in action.''')
+        st.subheader('''Welcome to my online portfolio, where you'll discover not only overviews of my projects but also interactive pages allowing you to experience them firsthand.''')
 
         st.markdown("<br>", unsafe_allow_html=True)
 
