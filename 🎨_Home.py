@@ -125,206 +125,6 @@ Outside of work, I’m always experimenting agentic workflows, scrapers, analyti
 
 
 
-
-with st.container():
-    st.header('⚒️ Skills', divider='red')
-    col1, col2, col3= st.columns([1, 1, 1])
-    with col1:
-
-        st.markdown(
-            "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-            "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
-            "<br>"
-            "<div style='display: flex; justify-content: space-around;'>"
-            
-            "<div>"
-            f"<div style='display: flex; justify-content: center;'>"
-            f"<img src= 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
-            "</div>"
-            "<p style='margin: 10px 0;'>Python</p>"
-            
-            f"<div style='display: flex; justify-content: center;'>"
-            f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='c' style='width: 50px; height: 50px;'>"
-            "</div>"
-            "<p style='margin: 10px 0;'>C</p>"
-            
-            "</div>"
-            "<div>"
-            f"<div style='display: flex; justify-content: center;'>"
-            f"<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
-            "</div>"
-            "<p style='margin: 10px 0;'>SQL</p>"
-
-            
-            f"<div style='display: flex; justify-content: center;'>"
-            f"<img src='https://img.icons8.com/fluency/48/rstudio.png' alt='rstudio' style='width: 50px; height: 50px;'>"
-            "</div>"
-            "<p style='margin: 10px 0;'>R</p>"
-            "</div>"
-            "</div>"
-            "</div>",
-            unsafe_allow_html=True)
-
-        st.markdown(
-                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>Modules</strong></p>"
-                "<br>"
-                "<div style='display: flex; justify-content: space-around;'>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' alt='pandas' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Pandas</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' alt='numpy' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Numpy</p>"
-                "</div>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/iddpy6AFkF/idR-DMRMQW.svg' alt='SQLal' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>SQLAlchemy</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idUKrxFKe8/idwnJgWu7B.svg' alt='Jupyter' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Jupyter</p>"
-                "</div>"
-                "</div>"
-                "</div>",
-                unsafe_allow_html=True)
-        # st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
-        # st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
-    with col2:
-
-        st.markdown(
-                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>DataBase Tools</strong></p>"
-                "<br>"
-                "<div style='display: flex; justify-content: space-around;'>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://img.icons8.com/color/48/amazon-web-services.png' alt='amazon-web-services' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>AWS</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://img.icons8.com/nolan/64/mongo-db.png' alt='mongo-db' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>MangoDB</p>"
-                "</div>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idBdG8DdKe/idSEhEKy8_.svg' alt='MySQL' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Microsoft SQL Server</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://img.icons8.com/color/48/hadoop-distributed-file-system.png' alt='hadoop-distributed-file-system' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Apache Hadoop</p>"
-                "</div>"
-                "</div>"
-                "</div>",
-                unsafe_allow_html=True
-            )
-
-        st.markdown(
-                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>Visualization Tools</strong></p>"
-                "<br>"
-                "<div style='display: flex; justify-content: space-around;'>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idiyFucwEQ/idMfeYD37H.svg' alt='streamlit' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>StreamLit</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idVCtIagXj/idHweJIV_u.svg' alt='PowerBI' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>PowerBI</p>"
-                "</div>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idwPNp71Xw/id642wtAgP.jpeg' alt='Plotly' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Plotly</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idbyoKq4tZ/idvwpDn6Co.png' alt='mtplotlib' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Matplotlib</p>"
-                "</div>"
-                "</div>"
-                "</div>",
-                unsafe_allow_html=True)
-
-    
-        # st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
-        # st.markdown('<img width="60" height="60" src="https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png" alt="power-bi"/>', unsafe_allow_html=True)
-        # st.markdown("Apache AirFlow")
-
-
-    with col3:
-
-
-
-        st.markdown(
-                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>ML Tools</strong></p>"
-                "<br>"
-                "<div style='display: flex; justify-content: space-around;'>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/id6a4s3gXI/idncpUsO_z.jpeg' alt='LammaIidex' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>LlamaIndex</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idGqKHD5xE/idyUOkmwIu.svg' alt='huggingface' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>HuggingFace</p>"
-                "</div>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='tensorflow' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>TensorFlow</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://icon.icepanel.io/Technology/svg/scikit-learn.svg' alt='Sklearn' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Scikit-learn</p>"
-                "</div>"
-                "</div>"
-                "</div>",
-                unsafe_allow_html=True)
-
-
-        st.markdown(
-                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
-                "<p style='margin: 10px 0; font-size: 20px;'><strong>Workflow Automation</strong></p>"
-                "<br>"
-                "<div style='display: flex; justify-content: space-around;'>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/id3uyOwT-S/idgLpsQVbx.jpeg' alt='Selenium' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Selenium</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' alt='docker' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Docker</p>"
-                "</div>"
-                "<div>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://asset.brandfetch.io/idw382nG0m/idUCpm3axR.svg' alt='GitLab' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>GitLab</p>"
-                f"<div style='display: flex; justify-content: center;'>"
-                f"<img src='https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png?api=v2' alt='Apache AirFlow' style='width: 50px; height: 50px;'>"
-                "</div>"
-                "<p style='margin: 10px 0;'>Apache AirFlow</p>"
-                "</div>"
-                "</div>"
-                "</div>",
-                unsafe_allow_html=True)
-
 repo = {
     "RAWG": "https://github.com/Kimchi21/RAWG.io_Game-Data-Analysis",
     "AutoSales": "https://github.com/Kimchi21/Data-Analysis_Portfolio/tree/main/Automobile%20Sales",
@@ -576,3 +376,203 @@ with left:
     )
 
 
+
+
+with st.container():
+    st.header('⚒️ Skills', divider='red')
+    col1, col2, col3= st.columns([1, 1, 1])
+    with col1:
+
+        st.markdown(
+            "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+            "<p style='margin: 10px 0; font-size: 20px;'><strong>Languages</strong></p>"
+            "<br>"
+            "<div style='display: flex; justify-content: space-around;'>"
+            
+            "<div>"
+            f"<div style='display: flex; justify-content: center;'>"
+            f"<img src= 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='python' style='width: 50px; height: 50px;'>"
+            "</div>"
+            "<p style='margin: 10px 0;'>Python</p>"
+            
+            f"<div style='display: flex; justify-content: center;'>"
+            f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='c' style='width: 50px; height: 50px;'>"
+            "</div>"
+            "<p style='margin: 10px 0;'>C</p>"
+            
+            "</div>"
+            "<div>"
+            f"<div style='display: flex; justify-content: center;'>"
+            f"<img src='https://cdn-icons-png.flaticon.com/128/4248/4248443.png' alt='sql' style='width: 50px; height: 50px;'>"
+            "</div>"
+            "<p style='margin: 10px 0;'>SQL</p>"
+
+            
+            f"<div style='display: flex; justify-content: center;'>"
+            f"<img src='https://img.icons8.com/fluency/48/rstudio.png' alt='rstudio' style='width: 50px; height: 50px;'>"
+            "</div>"
+            "<p style='margin: 10px 0;'>R</p>"
+            "</div>"
+            "</div>"
+            "</div>",
+            unsafe_allow_html=True)
+
+        st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>Modules</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' alt='pandas' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Pandas</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' alt='numpy' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Numpy</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/iddpy6AFkF/idR-DMRMQW.svg' alt='SQLal' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>SQLAlchemy</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idUKrxFKe8/idwnJgWu7B.svg' alt='Jupyter' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Jupyter</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True)
+        # st_lottie(python_lottie, height=90,width=90, key="python", speed=2.5)
+        # st_lottie(sql_lottie, height=90,width=90, key="sql", speed=2.5)
+    with col2:
+
+        st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>DataBase Tools</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://img.icons8.com/color/48/amazon-web-services.png' alt='amazon-web-services' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>AWS</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://img.icons8.com/nolan/64/mongo-db.png' alt='mongo-db' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>MangoDB</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idBdG8DdKe/idSEhEKy8_.svg' alt='MySQL' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Microsoft SQL Server</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://img.icons8.com/color/48/hadoop-distributed-file-system.png' alt='hadoop-distributed-file-system' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Apache Hadoop</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True
+            )
+
+        st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>Visualization Tools</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idiyFucwEQ/idMfeYD37H.svg' alt='streamlit' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>StreamLit</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idVCtIagXj/idHweJIV_u.svg' alt='PowerBI' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>PowerBI</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idwPNp71Xw/id642wtAgP.jpeg' alt='Plotly' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Plotly</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idbyoKq4tZ/idvwpDn6Co.png' alt='mtplotlib' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Matplotlib</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True)
+
+    
+        # st_lottie(docker_lottie, height=90,width=90, key="docker", speed=2.5)
+        # st.markdown('<img width="60" height="60" src="https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png" alt="power-bi"/>', unsafe_allow_html=True)
+        # st.markdown("Apache AirFlow")
+
+
+    with col3:
+
+
+
+        st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>ML Tools</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/id6a4s3gXI/idncpUsO_z.jpeg' alt='LammaIidex' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>LlamaIndex</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idGqKHD5xE/idyUOkmwIu.svg' alt='huggingface' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>HuggingFace</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='tensorflow' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>TensorFlow</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://icon.icepanel.io/Technology/svg/scikit-learn.svg' alt='Sklearn' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Scikit-learn</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True)
+
+
+        st.markdown(
+                "<div style='text-align: center; border: 1px solid #ccc; padding: 15px; border-radius: 20px; width: 375px; margin: 10px;'>"
+                "<p style='margin: 10px 0; font-size: 20px;'><strong>Workflow Automation</strong></p>"
+                "<br>"
+                "<div style='display: flex; justify-content: space-around;'>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/id3uyOwT-S/idgLpsQVbx.jpeg' alt='Selenium' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Selenium</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' alt='docker' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Docker</p>"
+                "</div>"
+                "<div>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://asset.brandfetch.io/idw382nG0m/idUCpm3axR.svg' alt='GitLab' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>GitLab</p>"
+                f"<div style='display: flex; justify-content: center;'>"
+                f"<img src='https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png?api=v2' alt='Apache AirFlow' style='width: 50px; height: 50px;'>"
+                "</div>"
+                "<p style='margin: 10px 0;'>Apache AirFlow</p>"
+                "</div>"
+                "</div>"
+                "</div>",
+                unsafe_allow_html=True)
